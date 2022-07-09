@@ -265,10 +265,10 @@
 		The disc of points in $\mathbb{C}$ centered at $|z - i + 3|$ with a radius of $5.$
 		\item $|z + 2i| \leq 1$ \\
 		\\
-		The disc of radius $1$ that is at $z$ and moved vertically by $2i.$
+		The disc of radius $1$ that is centered at $z$ and moved vertically by $2i.$
 		\item $\mathfrak{Im}(z) > 0$ \\
 		\\
-		The set of points along the positive axis of $\mathbb{C}$ not including $0.$
+		The set of points in $\mathbb{C}$ not including $0$ that have real parts $= 0$ and imaginary parts $>0$, so the $y$-axis.
 		\item $\mathfrak{Im}(z) \geq 0$ \\
 		\\
 		The set of points along the positive axis of $\mathbb{C}$ including $0.$
@@ -311,21 +311,40 @@ Let $z = x +iy.$ \\
 	i.e. multiply the absolute values and add the angles.
 \end{thm}
 \subsection{Proofs}
+\textbf{Question:}\\
+Is there a trick using the factors of pi to make these easier for things like $1 + i\sqrt{2}?$
 \begin{enumerate}
 	\item Put the following complex numbers in polar form.
 	\begin{enumerate}
 		\item $z = 1 + i$ \\
-		\\
-		\textbf{Proof:} 
-		Find the radius and then notice we go over and up an equal amount, or $\theta = \frac{\pi}{4}.$
+		\\ 
+		Let's just change bases. Note that:
 		\begin{align*}
-			|r| &= \sqrt{x^2 + y^2} \\ 
+			e^0 = e^{2i\pi} &= 1 \\
+			e^{\sfrac{i\pi}{2}} &= i\\
+		\end{align*} 
+		\\
+		Then note:
+		\begin{align*}
+			r = |z| &= \sqrt{x^2 + y^2} \\ 
 			&= \sqrt{1 + 1} \\ 
-			&= \sqrt{2} \\
+			\therefore \; r &= \sqrt{2} \\
 			\\
-			\therefore \; 1 + i &= \sqrt{2} \cdot e^{(\sfrac{i\pi}{4})}  
+			\therefore \; 1 + i &= \sqrt{2} e^{2i\pi} e^{(\sfrac{i\pi}{2})} \\
+			&= \sqrt{2}e^{\sfrac{i\pi}{2}} \qed
 		\end{align*}
-		\item $1 + i\sqrt{2}$
+		\item $1 + i\sqrt{2}$ \\
+		\\
+		Note:
+		\begin{align*}
+			r = |z| &= \sqrt{1^2 + \sqrt{2}^2} \\
+			&= \sqrt{1 + 2} \\
+			\therefore \; r &= \sqrt{3}\\
+		\end{align*}
+		Now we have:
+		$$1 + i\sqrt{3} = \sqrt{3}e^{i\pi\theta}$$
+		\textbf{REVIEW}\\
+		I don't want to just use a calculator for inverses using the radius and $x = 1.$ There has to be a trick here and i've forgotten it.
 		\item $-3$
 		\item $4i$
 		\item $1 -i\sqrt{2}$
@@ -336,7 +355,13 @@ Let $z = x +iy.$ \\
 	
 	\item Put the following complex numbers in the ordinary form $x + iy.$
 	\begin{enumerate}
-		\item $e^{3i\pi}$
+		\item $e^{3i\pi}$ \\
+		Simple, change base!
+		\begin{align*}
+			e^{3i\pi} &= e^{i(2\pi + \pi)} \\
+			&= e^{i2\pi}e^{i\pi} \\
+			\therefore \; e^{3i\pi} &= (1)(-1) = -1 \qed
+		\end{align*}
 		\item $e^{\sfrac{2i\pi}{3}}$
 	\end{enumerate}
 \end{enumerate}

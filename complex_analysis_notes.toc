@@ -5,8 +5,8 @@
 \contentsline {section}{\numberline {1.2}Polar Form}{7}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Definitions}{7}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Proofs}{8}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Complex Valued Functions}{8}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Power Function}{8}{subsection.1.3.1}%
+\contentsline {section}{\numberline {1.3}Complex Valued Functions}{9}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Power Function}{9}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Polar coordinates}{9}{subsection.1.3.2}%
 \contentsline {subsection}{\numberline {1.3.3}Closed Disc}{9}{subsection.1.3.3}%
 \contentsline {section}{\numberline {1.4}Limits and Compact Sets}{10}{section.1.4}%

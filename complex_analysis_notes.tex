@@ -1,0 +1,61 @@
+\documentclass[10pt, openany]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{amsthm}  % Thm and Defns.
+\usepackage{amssymb} % Proof symbols.
+\usepackage{charter} % Font.
+\usepackage{graphicx} % Diagrams.
+\usepackage{hyperref} % Hyperlinks.
+\usepackage{color} % Needed for hyperlinks to display in TOC.
+\usepackage{geometry} % Body formatting.
+\usepackage{titlesec} % Chapter titles formatting.
+\usepackage[mathscr]{euscript} % For topology and scripted alphabet.
+
+\usepackage{fancyhdr} % Using to add name to header to prevent theft of IP.
+\fancyfoot[R]{\tiny\textit{Composed by: Travis Ravert}}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+
+% Body formatting.
+\geometry{left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+% Theorem and Defn formatting.
+\newtheorem{thm}{Thm}[chapter] % Reset thm count by chapter and set var thm.
+\newtheorem{defn}{Defn}[chapter] % Reset defn count by chapter and set var defn.
+\newtheorem{prop}{Prop}[section]
+\renewcommand\qedsymbol{$\blacksquare$} % Change proof completion symbol.
+
+% Chapter titles formatting.
+\titleformat{\chapter}[display]
+	% For the chapter title.
+	{\centering\bfseries\Large}
+	% For the chapter numbering above title.
+	{\centering\small\chaptertitlename~\thechapter}
+	{3ex}
+	% The title bars.
+	{\titlerule\vspace{1ex}}
+	[\vspace{0.5ex}\titlerule]
+	
+% TOC formatting.
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue,}
+\setlength{\parindent}{0ex}
+
+\begin{document}	
+	\author{Travis Ravert}
+	\title{Notes Over Serge Lang's Complex Analysis: \\ 4th Edition}
+	\date{June 20, 2022}
+	\frontmatter
+	\maketitle
+	\tableofcontents
+	\mainmatter
+	\include{./complex_analysis/chapter_one}
+	\include{./complex_analysis/chapter_two}
+	\backmatter
+	% bibliography, glossary and index would go here.
+\end{document}

@@ -1,0 +1,429 @@
+\chapter{Complex Numbers and Functions}
+\underline{\textbf{Assume}}: $\{ {z}_{n} \}$ is a complex valued sequence with $n,m, N \in \mathbb{N}$.
+\section{Complex Numbers}
+\subsection{Definitions}
+\begin{defn}[\textbf{Complex Numbers}]
+	A set of objects that can be added and multiplied together and produce another element of the set under the following conditions:
+	\begin{enumerate}
+		\item Every real number is a complex number, and if $\alpha, \beta \in \mathbb{R}$, then their sum and product as complex numbers are the same as their sum and products as real numbers.
+		\item There is a complex number denoted $i$ such that $i^2 = -1$.
+		\item $\forall z \in \mathbb{C}$ with $a, b \in \mathbb{R}$ can be written uniquely as: \[z = a + bi\]
+		\item The ordinary laws of arithmetic for addition and multiplication are satisfied $\forall z \in \mathbb{C}$:
+		\subitem distributive law holds
+		\subitem associative law holds
+		\subitem commutative law holds
+		\subitem if $1 \in \mathbb{R}$ then $1z = z$
+		\subitem if $0 \in \mathbb{R}$ then $0z = 0$
+		\subitem $z + (-1)z = 0$
+	\end{enumerate}
+\end{defn}
+\begin{defn}[\textbf{Conjugate}]
+	$\bar{z} \in \mathbb{C}$ such that: 
+	\[ z = a + bi\] \[\text{iff}\] \[\bar{z} = a - bi \]
+\end{defn}
+\begin{defn}[\textbf{Inverse}]
+	$z^{-1} \in \mathbb{C}$ such that \[z\cdot z^{-1} = 1\]
+\end{defn}
+\begin{defn}[\textbf{Absolute Value} $|z|$ of $z$]
+	\[|z| = \sqrt{a^2 + b^2}\]
+\end{defn}
+\begin{thm}
+	$|z|$ satisfies the following properties. If $\alpha, \beta \in \mathbb{C}$, then:
+	\[|\alpha\beta| = |\alpha||\beta|\]
+	\[|\alpha + \beta| \;\leq\; |\alpha| + |\beta| \;\;\text{(triangle inequality)}\]
+\end{thm}
+\subsection{Proofs}
+\begin{enumerate}
+	\item Express the following complex numbers in the form $x + iy$, where $x, y$ are real numbers.
+	\begin{enumerate}
+		\item $\;\;(-1 + 3i)^{-1}$ \\
+		\\
+		\textbf{Proof:}	Simply invert and separate, then use the conjugate/symmetry to rationalize the statement:
+		\begin{align*}
+		(-1 + 3i)^{-1} &= \frac{1}{(-1 + 3i)} \\
+		\frac{1}{(-1 + 3i)} &= \frac{1}{(-1 + 3i)}\frac{(-1 - 3i)}{(-1 - 3i)} \\
+		&= \frac{-1 - 3i}{1 + 3i - 3i + 9} \\
+		&= \frac{-1 - 3i}{10} \\
+		\\
+		\therefore \; (-1 + 3i)^{-1} &= -\frac{1}{10} - \frac{3i}{10} \qed
+		\end{align*}
+		Which just means from the origin of $\mathbb{C}$ go left $1$ then down $3$ then shrink by $\frac{1}{10}$ and that's the $z$ you're at in $\mathbb{C}.$
+		
+		\item $\;\;(1 + i)(1 - i)$ \\
+		\\
+		\textbf{Proof:} Distribute and collect:
+		\begin{align*}
+		(1 + i)(1 - i) &= 1 -i + i - i^2 \\
+		&= 1 - (-1) \\
+		&= 2 \\
+		\\
+		\therefore \; (1 + i)(1 - i) &= 2 + 0i \qed
+		\end{align*}
+		Which is a bit strange because that's the same result of $(1 + i) + ( 1 - i).$
+		
+		\item $(i + 1)(i - 2)(i + 3)$ \\
+		\\
+		\textbf{Proof:} Distribute collect, distribute and collect again.
+		\begin{align*}
+		(i + 1)(i - 2)(i + 3) &= (i^2 -2i + i - 2)(i + 3) \\
+		&= (-i - 3)(i + 3) \\
+		&= (1 - 3i - 3i - 9) \\
+		\\
+		\therefore \; (i + 1)(i - 2)(i + 3) &= -8 - 6i \qed
+		\end{align*}
+	\end{enumerate}
+	
+	\item Express the following complex numbers in the form $x + iy$, where $x, y$ are real numbers.
+	\begin{enumerate}
+		\item $\;\;(1 + i)^{-1}$ \\
+		\\
+		\textbf{Proof:} More of the same, just use the conjugate to solve these like problem 1 above.
+		\begin{align*}
+		(1 + i)^{-1} &= \frac{1}{1 + i} \\
+		&= \frac{1}{1 + i} \frac{(1 - i)}{(1 - i)} \\
+		&= \frac{1 - i}{(1 + i)(1 - i)} \\
+		&= \frac{1 - i}{1 - i + i - i^2} \\
+		&= \frac{1 - i}{1 - (-1)} \\
+		&= \frac{1 - i}{2} \\
+		\therefore \; (1 + i)^{-1} &= \frac{1}{2} - \frac{i}{2} \qed
+		\end{align*}
+	\end{enumerate}
+	
+	\item Let $\alpha$ be a complex number $\neq 0.$ What is the absolute value of $\alpha/\bar{\alpha}?$ What is $\bar{\bar{\alpha}}?$ \\
+	\\
+	\textbf{Proof:} First note that: 
+	\begin{align*}
+	\alpha &= x + yi \\
+	\bar{\alpha} &= x - yi \\
+	\therefore \; \left| \frac{\alpha}{\bar{\alpha}} \right| &= \frac{x + yi}{x - yi} \\
+	\end{align*}
+	\\
+	Now some algebra:
+	\begin{align*}
+	\frac{x + yi}{x - yi} &= \frac{(x + yi)}{(x - yi)} \frac{(x + yi)}{(x + yi)} \\
+	&= \frac{x^2 + 2xyi +y^2 i^2}{x^2 - y^2 i^2} \\
+	&= \frac{x^2 + 2xyi +y^2 i^2}{x^2 + y^2} \\
+	&= \frac{x^2 + 2xyi - y^2}{x^2 + y^2 } \\
+	&= \frac{x^2 + 2xyi - y^2}{ \left | \bar{\alpha} \right |^2  } \\
+	&= \frac{(x + yi)(x - yi)}{ \left | \bar{\alpha} \right |^2  } \\
+	\therefore \; \left| \frac{\alpha}{\bar{\alpha}} \right|  &= \frac{\alpha \cdot \bar{\alpha}}{ \left | \bar{\alpha} \right |^2  } \qed \\
+	\end{align*}
+	\\
+	\subitem \textbf{Part 3b:} What is $\bar{\bar{\alpha}}?$ \\
+	\\
+	\textbf{Proof:} Note 
+	\begin{align*}
+	\alpha = x + yi \;\; & \Leftrightarrow \;\; \bar{\alpha} = x - yi. \\ 
+	\therefore \; \bar{\bar{\alpha}} &= \overline{x - yi}\\
+	\end{align*}
+	\\
+	So now because the conjugate operation just changes the sign on the \textit{imaginary} part of $\alpha$ we have the straightforward result of:
+	\begin{align*}
+	\bar{\bar{\alpha}} &= \overline{x - yi} \\ 
+	&= x + yi \\
+	\therefore \; \bar{\bar{\alpha}} &= \alpha \qed
+	\end{align*}
+	
+	\item Let $\alpha, \beta$ be two complex numbers. Show that: 
+	$$\overline{\alpha \beta} = \bar{\alpha}\bar{\beta}$$ 
+	and that:
+	$$ \overline{\alpha + \beta} = \bar{\alpha} + \bar{\beta}$$
+	\\
+	\textbf{Proof:}
+	First is easy since we just distribute out $\alpha\cdot\beta$ and gather reals and imaginary parts together and see it is the same result as if we had simply taken the conjugate of each component.\\
+	\\ 
+	Algebraically, with $\alpha_n, \beta_n, \rho \in \mathbb{R}$ :
+	\begin{align*}
+		\overline{\alpha \beta} &= \overline{(\alpha_1 + \alpha_2 i)(\beta_1 + \beta_2 i)} \\
+		&= \overline{(\alpha_1\beta_1  + \alpha_1\beta_2 i + \beta_1 \alpha_2 i + \alpha_2 \beta_2 i^2)} \\
+		&= \overline{(\alpha_1\beta_1  + i(\alpha_1\beta_2 + \beta_1 \alpha_2) + \alpha_2 \beta_2 i^2)} \\
+		&= \overline{(\alpha_1\beta_1 + \alpha_2 \beta_2 i^2 + i(\alpha_1\beta_2 + \beta_1 \alpha_2))} \\
+		&= \overline{(\alpha_1\beta_1 - \alpha_2 \beta_2 + i(\alpha_1\beta_2 + \beta_1 \alpha_2))} \\
+		&= \overline{\rho_1  + i\rho_2} \\
+		\overline{\alpha \beta} &= \rho_1  - i\rho_2 \\
+	\end{align*}
+	Now we go the other way:
+	\begin{align*}
+		\bar{\alpha}\bar{\beta} &= \overline{(\alpha_1 + \alpha_2 i)} \cdot \overline{(\beta_1 + \beta_2 i)} \\
+		&= (\alpha_1 - \alpha_2 i) \cdot (\beta_1 - \beta_2 i) \\
+		&= (\alpha_1\beta_1 - \alpha_1\beta_2i -\alpha_2\beta_1 i + \alpha_2\beta_2 i^2 ) \\
+		&= (\alpha_1\beta_1 - \alpha_1\beta_2i -\alpha_2\beta_1 i - \alpha_2\beta_2 ) \\
+		&= (\alpha_1\beta_1 - \alpha_2\beta_2 - \alpha_1\beta_2i -\alpha_2\beta_1 i ) \\
+		&= (\alpha_1\beta_1 - \alpha_2\beta_2 - i(\alpha_1\beta_2 + \alpha_2\beta_1) ) \\
+		\bar{\alpha}\bar{\beta} &= \rho_1 - i\rho_2 \\
+		\\
+		\therefore \;  \overline{\alpha\beta} &= \bar{\alpha}\bar{\beta} \qed
+	\end{align*}
+	\\
+	Second is easier as we only convert the sign inside the complex numbers, and do nothing with the operation between the two complex numbers, only on the reals in the number. Again, basically just some algebra of converting to the real and imaginary parts and gathering terms. \qed
+	
+	\item Justify the assertion that the real part of a complex number is $\leq$ its absolute value.
+	\\
+	\\
+	\textbf{Proof:}
+	The value can be equal to the absolute value if it happens to be positive, in which case it coincides with the absolute value. \\
+	\\
+	Or, it can be the symmetric partner if it is negative and therefore equal in magnitude but opposite in direction, therefore ordered as $\le$ the absolute value by definition of well-ordering in $\mathbb{R}$. Because the reals are symmetric like my god damned shoes! \qed
+	
+	\item If $\alpha = a + ib$ with $a, b \in \mathbb{R}$ then $b$ is called the \textbf{imaginary part} of $\alpha$ and we write: 
+	$$\mathfrak{Im}(\alpha) = b.$$ \\
+	\\
+	\begin{enumerate}
+		\item Show that: 
+		$$\alpha - \bar{\alpha} = 2i \; \mathfrak{Im}(\alpha)$$
+		\textbf{Proof:}
+		Just do the algebra:
+		\begin{align*}
+			\alpha - \bar{\alpha} &= (a + ib) - (a - ib) \\
+			&= 2ib \\
+			\therefore \; \alpha - \bar{\alpha} &= 2i \; \mathfrak{Im}(\alpha) \qed
+		\end{align*}
+		\item Show that:
+		$$\mathfrak{Im}(\alpha) \leq \left | \mathfrak{Im}(\alpha) \right | \leq |\alpha|$$
+		\textbf{Proof:} Again, with some algebra we see the answer by considering the case of the imaginary part being either positive or negative while the absolute value will always be positive and therefore will be equal to this value or greater than it if it is negative. \\
+		\\
+		Next, think of whether part of $\alpha$ along just the real part or that part plus another would always make it larger than or equal to? If they always have the same imaginary part, then adding a real only increases the size of $\alpha$ while leaving the imaginary part at its maximum value. I'm too lazy to type this out right now, maybe later. \qed
+	\end{enumerate}
+	
+	\item Find the real and imaginary parts of $(1 + i)^{100}.$ \\
+	\\
+	\textbf{Proof:}
+	Working with a base of $(1 + i)$ we just find useful factors to work with:
+	\begin{align*}
+		(1 + i)^2 &= 2i \\
+		(1 + i)^4 &= 2i^2 \\
+		&= -4 \\
+		(1 + i)^{10} &= (1 + i)^4(1 + i)^4(1 + i)^2 \\
+		&= (-4)(-4)(2i) \\
+		&= 32i
+	\end{align*}
+	Now just plug and play:
+	\begin{align*}
+		(1 + i)^{100} &= ((1 + i)^{10})^{10} \\
+		&= (32i)^{10} \\
+		&= i^{10}32^{10} \\
+		&= -(32)^{10} \\
+		\\
+		\therefore \; (1 + i)^{100} &= -(32)^{10} +0i \qed
+	\end{align*}
+	
+	\item Prove that for any two complex numbers $z, w$ we have:
+	\begin{enumerate}
+		\item $|z| \leq |z - w| + |w|$ \\
+		\\
+		\textbf{Proof:}
+		Consider the three cases we could have have:
+		\begin{align*}
+			w < 0 \\
+			w = 0 \\
+			w > 0 \\
+		\end{align*}
+		If $w < 0$:
+		\begin{align*}
+			|z - (-w)| + |-w| &= |z + w| + |w| \\
+			\therefore \; z &< |z - w| + |w| \\
+		\end{align*}
+		If $w = 0$:
+		\begin{align*}
+			|z - w| + |w| &= |z - 0| + |0| = z \\
+			\therefore \; z &= |z -w| + |w| \\
+		\end{align*} 
+		If $w > 0$, with $z_w + w = z$:
+		\begin{align*}
+			|z - w| + |w| &= z_w + |w| = z \\
+			\therefore \; z &= |z - w | + |w|
+		\end{align*}
+		By these three cases combined we have:
+		\begin{align*}
+			|z| \leq |z - w| + |w| \qed \\
+		\end{align*}
+		\item $|z| - |w| \leq |z - w|$ \\
+		\\
+		\textbf{Proof:}
+		By (a) above we just subtract $|w|$ off the right and left, and have a logically equivalent statement. $\qed$
+		\item $|z| - |w| \leq |z + w|$ \\
+		\\
+		\textbf{Proof:}
+		If the above were not true, then (b) would be false, but (b) is true, so then: 
+		\[|z| -|w| \leq |z + w| \qed \]
+	\end{enumerate}
+	
+	\item Let $\alpha = a +ib$ and $z = x +iy.$ Let $c \in \mathbb{R} > 0.$ Transform the condition:
+	$$|z - \alpha| = c$$
+	into an equation involving only $x, y, a, b$ and $c$, and describe in a simple way what geometric figure is represented by this equation.
+	
+	\item Describe geometrically the sets of points $z$ satisfying the following conditions:
+	\begin{enumerate}
+		\item $|z - i + 3| = 5$ \\
+		\\
+		The perimeter of the circle that has a radius of $5$ and with an origin $|z - i + 3|$ from the origin of $\mathbb{C}.$
+		\item $|z - i + 3| > 5$ \\
+		\\
+		The complex plane outside a set that sits $|z -i + 3|$ from the origin of $\mathbb{C}$ with a radius of $5$ with no points \textit{on} the perimeter of the radius.
+		\item $|z - i + 3| \leq 5$ \\
+		\\
+		The disc of points in $\mathbb{C}$ centered at $|z - i + 3|$ with a radius of $5.$
+		\item $|z + 2i| \leq 1$ \\
+		\\
+		The disc of radius $1$ that is at $z$ and moved vertically by $2i.$
+		\item $\mathfrak{Im}(z) > 0$ \\
+		\\
+		The set of points along the positive axis of $\mathbb{C}$ not including $0.$
+		\item $\mathfrak{Im}(z) \geq 0$ \\
+		\\
+		The set of points along the positive axis of $\mathbb{C}$ including $0.$
+		\item $\mathfrak{Re}(z) > 0$ \\
+		\\
+		The set of points along the positive axis of $\mathbb{R} \subset \mathbb{C}$ not including $0.$
+		\item $\mathfrak{Re}(z) \geq 0$ \\
+		\\
+		The set of points along the positive axis of $\mathbb{R} \subset \mathbb{C}$ including $0.$
+	\end{enumerate}
+\end{enumerate}
+
+
+\section{Polar Form}
+\subsection{Definitions}
+Let $z = x +iy.$ \\
+\\
+\begin{defn}[\textbf{Polar Coordinates}]
+	An ordered pair $(r, \theta)$ with $r = radius$ and $\theta$ rotating from the $x$-axis such that:
+	\begin{enumerate}
+		\item $r \in \mathbb{R}$ and $r = |z| = \sqrt{x^2 + y^2}.$
+		\item $\theta  \in [0, 2\pi].$
+	\end{enumerate}
+\end{defn}
+\begin{defn}[\textbf{Polar Form}]
+	\[re^{i\theta} = r\cos{\theta} + ir\sin{\theta}\]
+	\[\text{Therefore}\] \[re^{i\theta} \in \mathbb{C}\]
+\end{defn}
+\begin{thm}
+	Let $\theta, \varphi \in \mathbb{R}$ then:
+	\[e^{i\theta + i\varphi} = e^{i\theta}e^{i\varphi}\]
+\end{thm}
+\begin{thm}
+	Let $\alpha, \beta \in \mathbb{C}$ then:
+	\[e^{\alpha + \beta} = e^{\alpha}e^{\beta}\]
+\end{thm}
+\begin{thm}[Thm 1.3 reworded]
+	Let $z_1 = r_1 e^{i\theta}$ and $z_2 = r_2 e^{i\varphi}$ then:
+	\[z_1 \cdot z_2 = r_1 r_2 e^{i(\theta + \varphi)} \]
+	i.e. multiply the absolute values and add the angles.
+\end{thm}
+\subsection{Proofs}
+\begin{enumerate}
+	\item Put the following complex numbers in polar form.
+	\begin{enumerate}
+		\item $z = 1 + i$ \\
+		\\
+		\textbf{Proof:} 
+		Find the radius and then notice we go over and up an equal amount, or $\theta = \frac{\pi}{4}.$
+		\begin{align*}
+			|r| &= \sqrt{x^2 + y^2} \\ 
+			&= \sqrt{1 + 1} \\ 
+			&= \sqrt{2} \\
+			\\
+			\therefore \; 1 + i &= \sqrt{2} \cdot e^{(\sfrac{i\pi}{4})}  
+		\end{align*}
+		\item $1 + i\sqrt{2}$
+		\item $-3$
+		\item $4i$
+		\item $1 -i\sqrt{2}$
+		\item $5i$
+		\item $-7$
+		\item $-1 - i$
+	\end{enumerate}
+	
+	\item Put the following complex numbers in the ordinary form $x + iy.$
+	\begin{enumerate}
+		\item $e^{3i\pi}$
+		\item $e^{\sfrac{2i\pi}{3}}$
+	\end{enumerate}
+\end{enumerate}
+
+\section{Complex Valued Functions}
+We write the association of the \textbf{value} $f(z)$ to $z$ by the special arrow:
+\[z \mapsto f(z) \]
+Since:
+\[f(z) = u(z) +iv(z)\]
+Then:
+\[z \mapsto u(z) \;\; \text{and} \;\;  z \mapsto v(z) \]
+We usually write:
+\[z = x + iy\]
+So then:
+\[f(z) = f(x + iy) = u(x,y) + iv(x,y)\]
+
+\subsection{Power Function}
+The most important examples are 
+\begin{defn}[\textbf{Power Function}]
+Any function of the form:
+	\[f(z) = z^n\]
+\end{defn}
+\subsection{Polar coordinates}
+Let us write $z$ in polar coordinates with $r \in \mathbb{R}$ and $\theta \in [0, 2\pi]$, then:
+\[ z = re^{i\theta}\]
+Then:
+\[f(z) = r^ne^{in\theta} = r^n(\cos{n\theta} + i\sin{n\theta})\]
+
+\subsection{Closed Disc}
+The set of complex numbers, denoted $\overline{D}$, such that all elements in the set with domain $\mathbb{C}$ are less than or equal to $0$ in the complex plain.
+\begin{defn}[\textbf{Closed Disc}]
+	\[\overline{D} = \{z \in \mathbb{C} \;\;|\;\; \forall z \leq 1 \} \]
+\end{defn}
+Note that if $z \in \overline{D}$ then $z^n \in \overline{D}$. Therefore $z \mapsto z^n$ maps $\overline{D}$ into itself. \\
+
+Let $S$ be the \textbf{sector} of $z = re^{i\theta}$ such that $0 \leq \theta \leq \frac{2\pi}{n}.$ 
+\begin{itemize}
+	\item This is breaking the circle up into $n$ sectors is how to think of what is happening. 
+	\item This gives us access to mapping roots of unity to $[0, 2\pi]$ I believe is the intent.
+\end{itemize}
+
+The function of a real variable $r$:
+\[r \mapsto r^n \]
+maps the unit interval $[0, 1]$ onto itself:
+\[[0, 1] \to [0, 1] \]
+\\
+\\
+The function of $\theta$:
+\[\theta \mapsto n\theta \]
+maps the interval $[0, \frac{2\pi}{n}]$ to the circumference of a circle $[0, 2\pi]$:
+\[ [0, \frac{2\pi}{n}] \to [0, 2\pi] \]
+\\
+In this way, we see that the function $f(z) = z^n$ maps the sector $S$ onto the full disc of all numbers $w$ where:
+\[w = te^{i\varphi} \]
+\[0 \leq t \leq 1\]
+\[0 \leq \varphi \leq 2\pi \]
+\\
+We may say that:
+\begin{itemize}
+	\item \textit{the power function wraps/tiles the sector $S$ around the disc $n$ times.}
+	\item Thus we see $z \mapsto z^n$ wraps the disc $n$ times around.
+\end{itemize}
+
+To express every complex number $w^n = z$ we end up with the following generalization:
+\begin{defn}[\textbf{Root of Unity}]
+	\[\zeta^k = e^{\sfrac{2\pi ik}{n}}\]
+\end{defn}
+Which has the $n$th power given as:
+\[ (\zeta^k)^n = ( e^{\sfrac{2\pi ik}{n}} )^n = e^{2\pi ik} = 1 \]
+The points $w_k$ are just the product of $e^{\frac{i\theta}{n}}$ with all the $n$-th roots of unity:
+\[w_k = e^{\sfrac{i\theta}{n}}\zeta^k\]
+\\
+One of the \textbf{major results of the theory of complex variables} is to reduce the study of certain functions, including most of the common functions we know like exponentials, logarithms, sine, cosine; to power series, which can be approximated by polynomials.\\
+
+Thus the power function is in some sense the unique basic function out of which the others are constructed.
+
+
+\section{Limits and Compact Sets}
+\section{Complex Differentiability}
+\section{The Cauchy-Reimann Equations}
+\section{title}
+
+\section{Cauchy Criterion}
+\begin{defn}[\textbf{Cauchy Sequence}]
+	If $\epsilon > 0$ then $\exists \; N$ such that if $m, n \geq N$ then:
+	\[|\; {z}_{n} - {z}_{m} \; | < \epsilon\]
+\end{defn}
+
+
+

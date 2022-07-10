@@ -294,9 +294,31 @@ Let $z = x +iy.$ \\
 	\end{enumerate}
 \end{defn}
 \begin{defn}[\textbf{Polar Form}]
-	\[re^{i\theta} = r\cos{\theta} + ir\sin{\theta}\]
-	\[\text{Therefore}\] \[re^{i\theta} \in \mathbb{C}\]
+	\begin{align*}
+		re^{i\theta} &= r\cos{\theta} + ir\sin{\theta} \\
+		&= x + iy \\
+		\therefore \;\; &re^{i\theta} \in \mathbb{C}
+	\end{align*}
 \end{defn}
+Note that:
+\[x = r\cos{\theta}, \;\;\; y = r\sin{\theta}\]\\
+\[\theta = \cos^{-1}{ \left( \frac{x}{r} \right)  }, \;\;\;\; \theta = \sin^{-1} \left( { \frac{y}{r} } \right) \]
+\begin{defn}[\textbf{Factors of Pi}]
+	If you don't know your factors of pi you don't know squat:
+	\begin{align*}
+		\text{If} \;\;\; e^z &= e^w \\ 
+		\text{then} \;\;\; z &= w + 2ik\pi \\
+		e^{k2i\pi} &= 1 \;\; \forall k \in \mathbb{N} \\
+		\\
+		e^{i\pi} &= -1 + i0 \\ 
+		e^{2i\pi} &= 1 + i0 \\ 
+		e^{\sfrac{i\pi}{2}} &= 0 +  i \\
+		e^{\sfrac{i\pi}{3}} &= \frac{1}{2} + i\frac{\sqrt{3}}{2} \\
+		e^{\sfrac{i\pi}{4}} &= \frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2} \\
+		e^{\sfrac{i\pi}{6}} &= \frac{\sqrt{3}}{2} + i\frac{1}{2}\\
+	\end{align*}
+\end{defn}
+ 
 \begin{thm}
 	Let $\theta, \varphi \in \mathbb{R}$ then:
 	\[e^{i\theta + i\varphi} = e^{i\theta}e^{i\varphi}\]
@@ -311,8 +333,6 @@ Let $z = x +iy.$ \\
 	i.e. multiply the absolute values and add the angles.
 \end{thm}
 \subsection{Proofs}
-\textbf{Question:}\\
-Is there a trick using the factors of pi to make these easier for things like $1 + i\sqrt{2}?$
 \begin{enumerate}
 	\item Put the following complex numbers in polar form.
 	\begin{enumerate}
@@ -341,16 +361,69 @@ Is there a trick using the factors of pi to make these easier for things like $1
 			&= \sqrt{1 + 2} \\
 			\therefore \; r &= \sqrt{3}\\
 		\end{align*}
-		Now we have:
-		$$1 + i\sqrt{3} = \sqrt{3}e^{i\pi\theta}$$
-		\textbf{REVIEW}\\
-		I don't want to just use a calculator for inverses using the radius and $x = 1.$ There has to be a trick here and i've forgotten it.
-		\item $-3$
-		\item $4i$
-		\item $1 -i\sqrt{2}$
-		\item $5i$
-		\item $-7$
-		\item $-1 - i$
+		Previously we selected the factor of $\pi$ which gave us equal $x$ and $y$ pieces, but here something else is going on. \\
+		\\
+		We need to go right along the $x$-axis by $1$ then up the $y$-axis by $\sqrt{2}.$ \\
+		\\
+		Note that we can normalize these with $\frac{1}{r}$ or use the Euler formula relating cosine to $x$ and $r$ to start. \\
+		
+		\begin{align*}
+			\frac{1}{\sqrt{3}}(1 + i\sqrt{2}) &= \frac{1}{\sqrt{3}} + \frac{i\sqrt{2}}{\sqrt{3}} \\
+		\end{align*}
+		\\
+		Try the Euler method here instead:
+		\begin{align*}
+			1 + i\sqrt{2} = \sqrt{3}\cos\theta + i\sqrt{3}\sin\theta \\
+		\end{align*}
+		Then
+		\begin{align*}
+			\frac{x}{r} = \frac{1}{\sqrt{3}} &= \cos\theta \\
+			\frac{y}{r} = \frac{\sqrt{2}}{\sqrt{3}} &= \sin\theta \\
+		\end{align*}
+		
+		\item $-3$ \\
+		\\
+		Go left on the real line in the complex plane:
+		\[-3 = 3e^{i\pi} \qed \]
+		
+		\item $4i$ \\
+		\\
+		Go up by $4i$ in the complex plane:
+		\[4i = 4e^{\sfrac{i\pi}{2}} \qed \]
+		
+		\item $1 -i\sqrt{2}$ \\
+		\\
+		Go right by $1$ and down by $\sqrt{2}$ in the complex plane:
+		\begin{align*}
+		r = |z| &= \sqrt{1^2 + \sqrt{2}^2} \\
+		&= \sqrt{1 + 2} \\
+		\therefore \; r &= \sqrt{3}\\
+		\end{align*}
+		And then:
+		\[ \theta = \cos^{-1}{\frac{1}{\sqrt{3}}} \]
+		So finally:
+		\[ 1 -i\sqrt{2} = \sqrt{3}e^{i\pi\cdot \cos^{-1}{\frac{1}{\sqrt{3}}} \qed } \]
+		
+		\item $5i$ \\
+		\\
+		Go up by $5i$ in the complex plane:
+		\[ 5i = 5e^{\sfrac{i\pi}{2}} \qed \]
+		
+		\item $-7$ \\
+		\\
+		Go left by $-7$ in the complex plane:
+		\[-7 = 7e^{i\pi} \qed \]
+		
+		\item $-1 - i$ \\
+		\\
+		Go left by $-1$ and down by $-1$ in the complex plane:
+		\begin{align*}
+		r = |z| &= \sqrt{1^2 + 1^2} \\
+		&= \sqrt{1 + 1} \\
+		\therefore \; r &= \sqrt{2}\\
+		\end{align*}
+		So then:
+		\[ -1 - i = \sqrt{2}e^{\sfrac{5i\pi}{4}} \qed \]
 	\end{enumerate}
 	
 	\item Put the following complex numbers in the ordinary form $x + iy.$
@@ -363,6 +436,68 @@ Is there a trick using the factors of pi to make these easier for things like $1
 			\therefore \; e^{3i\pi} &= (1)(-1) = -1 \qed
 		\end{align*}
 		\item $e^{\sfrac{2i\pi}{3}}$
+		\item $3e^{\sfrac{-i\pi}{4}}$
+		\item $\pi e^{\sfrac{-i\pi}{3}}$
+		\item $e^{\sfrac{2i\pi}{6}}$
+		\item $e^{\sfrac{-i\pi}{2}}$
+		\item $e^{-i\pi}$
+		\item $e^{\sfrac{-5i\pi}{4}}$
+	\end{enumerate}
+	
+	\item Let $\alpha$ be a complex number $\neq 0.$ Show there are two distinct complex numbers whose square is $\alpha.$ \\
+	\\
+	\textbf{Proof:}
+	For any $z \in \mathbb{C}$ with $z = a + bi$ we have a symmetric partner such that $z \neq z_{sym}$ and $z_{sym} =  a - bi.$ \\ 
+	\\
+	So then 
+	\begin{align*}
+		z_{sym}^2 &= (a - bi)(a - bi) \\
+		&= 
+	\end{align*}
+	\\
+	which then means $z_{sym}^2 = z^2 = \zeta$ where $\zeta \in \mathbb{C}$
+	
+	
+	\item Let $a + bi$ be a complex number. Find real numbers $x, y$ such that:
+	\[(x + iy)^2 = a + bi\] \\
+	expressing $x, y$ in terms of $a$ and $b.$ \\
+	\\
+	\textbf{Proof:}
+	
+	\item Plot all the complex numbers $z$ such that $z^n = 1$ for $ n = 2, 3, 4$ and $5.$
+	
+	\item Let $a$ be a complex number $\neq 0.$ Let $n$ be a positive integer. Show that there are $n$ distinct complex numbers $z$ such that $z^n = \alpha.$ Write these complex numbers in polar form. \\
+	\\
+	\textbf{Proof:}
+	
+	\item Find the real and imaginary parts of $i^{\sfrac{i}{4}}$, taking the fourth root such that its angle lies in $[0, \sfrac{\pi}{2}].$ \\
+	\\
+	\textbf{Proof:} This requires some algebra and breaking identities.
+	
+	\item
+	\begin{enumerate}
+		\item Describe all complex numbers $z$ such that $e^z = 1.$ \\
+		\\
+		\textbf{Proof:}
+		\item Let $w$ be a complex number. Let $\alpha$ be a complex number such that $e^{\alpha} = w.$ Describe all complex numbers $\alpha$ such that $e^\alpha = w.$ \\
+		\\
+		\textbf{Proof:}
+	\end{enumerate} 
+
+	\item If $e^z = e^w$ show that there is an integer $k$ such that $z = w + 2\pi k i.$ \\
+	\\
+	\textbf{Proof:} Use the fact that every $2\pi$ we come back around.
+	
+	\item 
+	\begin{enumerate}
+		\item If $\theta$ is real, show that:
+		\[\cos{\theta} = \frac{e^{i\theta} + e^{-i\theta}}{2} \;\;\;\;\;\;\;\: \text{and} \;\;\;\;\;\;\;\; \sin{\theta} = {\frac{e^{i\theta} - e^{-i\theta}}{2i}}\] \\
+		\\
+		\textbf{Proof:} Just expand the exponentials to the polar coordinates of $\sin$ and $\cos$ and then do the algebra. \\
+	
+		\item For arbitrary complex $z$, suppose we define $\cos{z}$ and $\sin{z}$ by replacing $\theta$ with $z$ in the above formula. Show that the only values of $z$ for which $\cos{z} = 0$ and $\sin{z} = 0$ are the usual real values from trigonometry. \\
+		\\
+		\textbf{Proof:}
 	\end{enumerate}
 \end{enumerate}
 

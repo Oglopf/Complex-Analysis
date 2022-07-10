@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.23)  8 JUL 2022 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.23)  10 JUL 2022 00:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -649,41 +649,146 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--289
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 319--322
+Underfull \hbox (badness 10000) in paragraph at lines 339--342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--339
+Underfull \hbox (badness 10000) in paragraph at lines 356--359
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+Underfull \hbox (badness 10000) in paragraph at lines 363--369
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+bch on input line 4
-02.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1bch.fd
-File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 409--413
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--387
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--392
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--397
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 435--438
+Underfull \hbox (badness 10000) in paragraph at lines 407--410
 
  []
 
-) [10]
+
+Underfull \hbox (badness 10000) in paragraph at lines 412--415
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--420
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--453
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--453
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 462--466
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--472
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--476
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 479--482
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 482--485
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 494--497
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 494--497
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 498--501
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 533--534
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+bch on input line 5
+37.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1bch.fd
+File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 544--548
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 570--573
+
+ []
+
+) [13]
 \openout2 = `./complex_analysis/chapter_two.aux'.
 
  (./complex_analysis/chapter_two.tex
 Chapter 2.
-) [11
+) [14
 
 
 
@@ -705,9 +810,9 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
  ) 
 Here is how much of TeX's memory you used:
- 8586 strings out of 483183
- 134819 string characters out of 5966291
- 411771 words of memory out of 5000000
+ 8608 strings out of 483183
+ 134975 string characters out of 5966291
+ 412773 words of memory out of 5000000
  23301 multiletter control sequences out of 15000+600000
  589545 words of font info for 107 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -724,14 +829,15 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on complex_analysis_notes.pdf (13 pages, 186534 bytes).
+-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/symbols/msbm10.pfb>
+Output written on complex_analysis_notes.pdf (16 pages, 204796 bytes).
 PDF statistics:
- 332 PDF objects out of 1000 (max. 8388607)
- 298 compressed objects within 3 object streams
- 98 named destinations out of 1000 (max. 500000)
+ 372 PDF objects out of 1000 (max. 8388607)
+ 333 compressed objects within 4 object streams
+ 120 named destinations out of 1000 (max. 500000)
  193 words of extra memory for PDF output out of 10000 (max. 10000000)
 

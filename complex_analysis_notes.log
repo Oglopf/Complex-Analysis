@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.23)  10 JUL 2022 00:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.23)  10 JUL 2022 00:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -655,131 +655,131 @@ Underfull \hbox (badness 10000) in paragraph at lines 304--305
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 339--342
+Underfull \hbox (badness 10000) in paragraph at lines 340--343
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--359
+Underfull \hbox (badness 10000) in paragraph at lines 357--360
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 363--369
+Underfull \hbox (badness 10000) in paragraph at lines 364--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--369
+Underfull \hbox (badness 10000) in paragraph at lines 364--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--369
+Underfull \hbox (badness 10000) in paragraph at lines 364--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--387
+Underfull \hbox (badness 10000) in paragraph at lines 385--388
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--392
+Underfull \hbox (badness 10000) in paragraph at lines 390--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--397
+Underfull \hbox (badness 10000) in paragraph at lines 395--398
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 407--410
+Underfull \hbox (badness 10000) in paragraph at lines 408--411
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--415
+Underfull \hbox (badness 10000) in paragraph at lines 413--416
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 417--420
+Underfull \hbox (badness 10000) in paragraph at lines 418--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--453
+Underfull \hbox (badness 10000) in paragraph at lines 448--454
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--453
+Underfull \hbox (badness 10000) in paragraph at lines 448--454
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 462--466
+Underfull \hbox (badness 10000) in paragraph at lines 463--467
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--472
+Underfull \hbox (badness 10000) in paragraph at lines 470--473
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 473--476
+Underfull \hbox (badness 10000) in paragraph at lines 474--477
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--482
+Underfull \hbox (badness 10000) in paragraph at lines 480--483
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--485
+Underfull \hbox (badness 10000) in paragraph at lines 483--486
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--490
+Underfull \hbox (badness 10000) in paragraph at lines 488--491
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 494--497
+Underfull \hbox (badness 10000) in paragraph at lines 495--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 494--497
+Underfull \hbox (badness 10000) in paragraph at lines 495--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 498--501
+Underfull \hbox (badness 10000) in paragraph at lines 499--502
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 533--534
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
 
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+bch on input line 5
-37.
+38.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1bch.fd
 File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 544--548
+Underfull \hbox (badness 10000) in paragraph at lines 545--549
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 570--573
+Underfull \hbox (badness 10000) in paragraph at lines 571--574
 
  []
 
@@ -801,7 +801,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
 Package rerunfilecheck Info: File `complex_analysis_notes.out' has not changed.
 
-(rerunfilecheck)             Checksum: BB7D437DD29813A9DF8DFBE3DC2DBA3D;1618.
+(rerunfilecheck)             Checksum: 6D41E022809F030C4F74DCC55AD693A8;1685.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -810,10 +810,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
  ) 
 Here is how much of TeX's memory you used:
- 8608 strings out of 483183
- 134975 string characters out of 5966291
- 412773 words of memory out of 5000000
- 23301 multiletter control sequences out of 15000+600000
+ 8610 strings out of 483183
+ 135009 string characters out of 5966291
+ 413773 words of memory out of 5000000
+ 23302 multiletter control sequences out of 15000+600000
  589545 words of font info for 107 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  37i,19n,75p,423b,498s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -834,10 +834,10 @@ onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/symbols/msbm10.pfb>
-Output written on complex_analysis_notes.pdf (16 pages, 204796 bytes).
+Output written on complex_analysis_notes.pdf (16 pages, 204936 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
- 333 compressed objects within 4 object streams
- 120 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 378 PDF objects out of 1000 (max. 8388607)
+ 339 compressed objects within 4 object streams
+ 121 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

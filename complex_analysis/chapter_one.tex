@@ -430,19 +430,85 @@ Note that:
 	\item Put the following complex numbers in the ordinary form $x + iy.$
 	\begin{enumerate}
 		\item $e^{3i\pi}$ \\
-		Simple, change base!
+		Simple, use Theorems 1.2 and 1.3 and change base!
 		\begin{align*}
 			e^{3i\pi} &= e^{i(2\pi + \pi)} \\
 			&= e^{i2\pi}e^{i\pi} \\
 			\therefore \; e^{3i\pi} &= (1)(-1) = -1 \qed
 		\end{align*}
-		\item $e^{\sfrac{2i\pi}{3}}$
-		\item $3e^{\sfrac{-i\pi}{4}}$
-		\item $\pi e^{\sfrac{-i\pi}{3}}$
-		\item $e^{\sfrac{2i\pi}{6}}$
-		\item $e^{\sfrac{-i\pi}{2}}$
-		\item $e^{-i\pi}$
-		\item $e^{\sfrac{-5i\pi}{4}}$
+		\item $e^{\sfrac{2\pi i}{3}}$ \\
+		Use Theorem 1.3 and notice:
+		\begin{align*}
+			e^{\sfrac{2\pi i}{3}} &= e^{\sfrac{\pi i}{3}}e^{\sfrac{\pi i}{3}}
+		\end{align*} 
+
+		Now check the Factors of Pi for $e^{\sfrac{\pi i}{3}}$ to see that we have:
+
+		\begin{align*}
+			e^{\sfrac{\pi i}{3}} &= \left( \frac{1}{2} + \frac{i\sqrt{3}}{2} \right)
+		\end{align*}
+		Then we have:
+		\begin{align*}
+			e^{\sfrac{2\pi i}{3}} &= e^{(\sfrac{\pi i}{3} \; + \; \sfrac{\pi i}{3} )} \\
+			&= e^{\sfrac{\pi i}{3}} e^{\sfrac{\pi i}{3}} \\
+			e^{\sfrac{2\pi i}{3}} &= \left( \frac{1}{2} + \frac{i\sqrt{3}}{2} \right) \left( \frac{1}{2} + \frac{i\sqrt{3}}{2} \right) \\
+			&= \frac{1}{2} \frac{1}{2} + \frac{1}{2} \frac{i \sqrt{3}}{2} + \frac{1}{2} \frac{i \sqrt{3}}{2} + \frac{i \sqrt{3}}{2} \frac{i \sqrt{3}}{2} \\
+			&= \frac{1}{4} +\frac{i \sqrt{3}}{4} + \frac{i \sqrt{3}}{4} - \frac{3}{4} \\
+			&= \frac{1}{4} + \frac{2i \sqrt{3}}{4} - \frac{3}{4} \\
+			\therefore \; e^{\sfrac{2\pi i}{3}} &=  - \frac{1}{2} + \frac{i \sqrt{3}}{2}  \qed \\
+		\end{align*}
+		
+		\item $3e^{\sfrac{-i\pi}{4}}$ \\
+		\\
+		Here we just see that we are using $r = |z| = 3$ and moving \textit{downward} from the $x$-axis to start with rotation $\frac{\pi}{4}.$
+		\begin{align*}
+			\therefore \; 3e^{\sfrac{-i\pi}{4}} &= 3 \left( \frac{\sqrt{2}}{2} - i\frac{\sqrt{2}}{2} \right) \qed \\
+		\end{align*}
+
+
+
+		\item $\pi e^{\sfrac{-i\pi}{3}}$ \\
+		\\
+		Here we just have $ r = |z| = \pi$ and rotate \textit{down} again by factor of $\frac{\pi}{3}.$ \\
+
+		Looking at the Factors of Pi and moving down we get:
+		\begin{align*}
+			e^{\sfrac{i\pi}{3}} &= \left( \frac{1}{2} + i\frac{\sqrt{3}}{2} \right) \\
+			\therefore \; \pi e^{\sfrac{-i\pi}{3}} &= \pi \left( \frac{1}{2} - i\frac{\sqrt{3}}{2} \right) \qed \\
+		\end{align*}
+
+		\item $e^{\sfrac{2i\pi}{6}}$ \\
+		\\
+		Lets factor, get some basis and then rotate to what we want:
+		\begin{align*}
+			e^{\sfrac{2i\pi}{6}} &= e^{\sfrac{i\pi}{3}} \\
+			\therefore \; e^{\sfrac{2i\pi}{6}} &= \left( \frac{1}{2} + i\frac{\sqrt{3}}{2} \right) \qed \\  
+		\end{align*}
+
+		\item $e^{\sfrac{-i\pi}{2}}$ \\
+		\\
+		Simple, factor we know but just going in different $y$ direction.
+		\begin{align*}
+			e^{\sfrac{-i\pi}{2}} &= \left( \frac{\sqrt{2}}{2} - i\frac{\sqrt{2}}{2} \right) \qed
+		\end{align*}
+
+		\item $e^{-i\pi}$ \\
+		\\
+		We know this already, just going in different $y$ direction.
+		\begin{align*}
+			e^{-i\pi} &= \left( -1 + 0i \right) \\
+			&= -1 \qed
+		\end{align*}
+
+		\item $e^{\sfrac{-5i\pi}{4}}$ \\
+		\\
+		Just break up the factors and use theorem 1.2 and 1.3.
+		\begin{align*}
+			e^{\sfrac{-5i\pi}{4}} &= e^{\sfrac{-i\pi}{4}} e^{\sfrac{-4i\pi}{4}} \\
+			&= \left( \frac{\sqrt{2}}{2} - i\frac{\sqrt{2}}{2} \right) e^{-i\pi} \\
+			&= \left( \frac{\sqrt{2}}{2} - i\frac{\sqrt{2}}{2} \right) (-1) \\
+			\therefore \; e^{\sfrac{-5i\pi}{4}} &= \left( -\frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2} \right) \qed \\
+		\end{align*}
 	\end{enumerate}
 	
 	\item Let $\alpha$ be a complex number $\neq 0.$ Show there are two distinct complex numbers whose square is $\alpha.$ \\
@@ -453,10 +519,17 @@ Note that:
 	So then 
 	\begin{align*}
 		z_{sym}^2 &= (a - bi)(a - bi) \\
-		&= 
+		&= a^2 -abi - abi + i^2 b^ 2 \\
+		&= a^2 - b^2 - 2abi \\
+	\end{align*}
+	And then:
+	\begin{align*}
+		z^2 &= (a + bi)(a + bi) \\
+		&= a^2 + abi + abi +i^2 b^2 \\
+		&= a^2 - b^2 + 2abi \\
 	\end{align*}
 	\\
-	which then means $z_{sym}^2 = z^2 = \zeta$ where $\zeta \in \mathbb{C}$
+	which then means $|z_{sym}^2| = z^2 = \zeta$ where $\zeta \in \mathbb{C}$
 	
 	
 	\item Let $a + bi$ be a complex number. Find real numbers $x, y$ such that:
@@ -464,12 +537,42 @@ Note that:
 	expressing $x, y$ in terms of $a$ and $b.$ \\
 	\\
 	\textbf{Proof:}
+	Let $x, y \in \mathbb{R}$ then:
+	\begin{align*}
+		(x + iy)(x + iy) &= x^2 +2xyi + i^2 y^2 \\
+		&= (x^2 - y^2) + 2xyi \\
+		&= a + bi \\
+		\therefore \; (x + iy)^2 &= a + bi \;\; \forall x, y \in \mathbb{R} \; \qed
+	\end{align*}
 	
 	\item Plot all the complex numbers $z$ such that $z^n = 1$ for $ n = 2, 3, 4$ and $5.$
 	
-	\item Let $a$ be a complex number $\neq 0.$ Let $n$ be a positive integer. Show that there are $n$ distinct complex numbers $z$ such that $z^n = \alpha.$ Write these complex numbers in polar form. \\
+	\item Let $\alpha$ be a complex number $\neq 0.$ Let $n$ be a positive integer. Show that there are $n$ distinct complex numbers $z$ such that $z^n = \alpha.$ Write these complex numbers in polar form. \\
 	\\
-	\textbf{Proof:}
+	\textbf{Proof:} \\
+	\\
+	Let:
+	\begin{align*}
+		\alpha &= \alpha_1 + \alpha_2 i \\ 
+		&= |\alpha|e^{i\theta} \\
+		&= r e^{i\theta} \\
+	\end{align*}
+	Note:
+	\begin{align*}
+		\theta &= \sfrac{2\pi}{n} \\
+		z &= x + iy \\ 
+		&= re^{i\theta} \\
+	\end{align*}
+	Then:
+	\begin{align*}
+		& \forall n\in \mathbb{N} \\
+		 z^n &=  r(e^{i\theta} )^n \\
+		 &=  r(e^{\sfrac{2\pi i}{n}} )^n \\
+		 &= re^{2\pi i} \\
+	\end{align*}
+	
+	And so we have $n$ distinct roots 
+	 
 	
 	\item Find the real and imaginary parts of $i^{\sfrac{i}{4}}$, taking the fourth root such that its angle lies in $[0, \sfrac{\pi}{2}].$ \\
 	\\
@@ -492,9 +595,23 @@ Note that:
 	\item 
 	\begin{enumerate}
 		\item If $\theta$ is real, show that:
-		\[\cos{\theta} = \frac{e^{i\theta} + e^{-i\theta}}{2} \;\;\;\;\;\;\;\: \text{and} \;\;\;\;\;\;\;\; \sin{\theta} = {\frac{e^{i\theta} - e^{-i\theta}}{2i}}\] \\
+		\[\cos{\theta} = \frac{e^{i\theta} + e^{-i\theta}}{2} \;\;\;\ \text{and} \;\;\;\; \sin{\theta} = {\frac{e^{i\theta} - e^{-i\theta}}{2i}}\] \\
 		\\
 		\textbf{Proof:} Just expand the exponentials to the polar coordinates of $\sin$ and $\cos$ and then do the algebra. \\
+
+		Like the following:
+		\begin{align*}
+			e^{i\theta} &= \cos\theta + i\sin\theta \\
+			e^{-i\theta} &= \cos\theta - i\sin\theta \\
+		\end{align*}
+		Then we have:
+		\begin{align*}
+			e^{i\theta} + e^{-i\theta} &= \cos\theta + i\sin\theta + \cos\theta - i\sin\theta \\
+			&= \cos\theta + \cos\theta \\
+			\therefore \; e^{i\theta} + e^{-i\theta} &= 2\cos\theta \; \qed 
+		\end{align*}
+
+		We see a similar argument doing it for $\sin\theta.$
 	
 		\item For arbitrary complex $z$, suppose we define $\cos{z}$ and $\sin{z}$ by replacing $\theta$ with $z$ in the above formula. Show that the only values of $z$ for which $\cos{z} = 0$ and $\sin{z} = 0$ are the usual real values from trigonometry. \\
 		\\

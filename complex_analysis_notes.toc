@@ -6,20 +6,20 @@
 \contentsline {subsection}{\numberline {1.2.1}Definitions}{7}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Factors of Pi}{8}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Proofs}{8}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}Complex Valued Functions}{12}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Power Function}{12}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Polar coordinates}{12}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Closed Disc}{12}{subsection.1.3.3}%
-\contentsline {section}{\numberline {1.4}Limits and Compact Sets}{13}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Complex Differentiability}{13}{section.1.5}%
-\contentsline {section}{\numberline {1.6}The Cauchy-Reimann Equations}{13}{section.1.6}%
-\contentsline {section}{\numberline {1.7}title}{13}{section.1.7}%
-\contentsline {section}{\numberline {1.8}Cauchy Criterion}{13}{section.1.8}%
-\contentsline {chapter}{\numberline {2}Power Series}{14}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Formal Power Series}{14}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Convergent Power Series}{14}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Relations Between Formal and Convergent Series}{14}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Analytic Functions}{14}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Differentiation of Power Series}{14}{section.2.5}%
-\contentsline {section}{\numberline {2.6}The Inverse and Open Mapping Theorems}{14}{section.2.6}%
-\contentsline {section}{\numberline {2.7}The Local Maximum Modulus Principle}{14}{section.2.7}%
+\contentsline {section}{\numberline {1.3}Complex Valued Functions}{14}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Power Function}{14}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Polar coordinates}{14}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Closed Disc}{15}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Limits and Compact Sets}{16}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Complex Differentiability}{16}{section.1.5}%
+\contentsline {section}{\numberline {1.6}The Cauchy-Reimann Equations}{16}{section.1.6}%
+\contentsline {section}{\numberline {1.7}title}{16}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Cauchy Criterion}{16}{section.1.8}%
+\contentsline {chapter}{\numberline {2}Power Series}{17}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Formal Power Series}{17}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Convergent Power Series}{17}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Relations Between Formal and Convergent Series}{17}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Analytic Functions}{17}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Differentiation of Power Series}{17}{section.2.5}%
+\contentsline {section}{\numberline {2.6}The Inverse and Open Mapping Theorems}{17}{section.2.6}%
+\contentsline {section}{\numberline {2.7}The Local Maximum Modulus Principle}{17}{section.2.7}%

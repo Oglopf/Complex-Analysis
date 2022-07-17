@@ -6,9 +6,9 @@
 \contentsline {subsection}{\numberline {1.2.1}Definitions}{7}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Factors of Pi}{8}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Proofs}{8}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}Complex Valued Functions}{14}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Power Function}{14}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Polar coordinates}{14}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.3}Complex Valued Functions}{15}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Power Function}{15}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Polar coordinates}{15}{subsection.1.3.2}%
 \contentsline {subsection}{\numberline {1.3.3}Closed Disc}{15}{subsection.1.3.3}%
 \contentsline {section}{\numberline {1.4}Limits and Compact Sets}{16}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Complex Differentiability}{16}{section.1.5}%

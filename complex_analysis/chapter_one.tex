@@ -514,22 +514,16 @@ Note that:
 	\item Let $\alpha$ be a complex number $\neq 0.$ Show there are two distinct complex numbers whose square is $\alpha.$ \\
 	\\
 	\textbf{Proof:}
-	For any $z \in \mathbb{C}$ with $z = a + bi$ we have a symmetric partner such that $z \neq z_{sym}$ and $z_{sym} =  a - bi.$ \\ 
+	For any $z \in \mathbb{C}$ with $z = a + bi$ we have a symmetric partner such that $z \neq \bar{z} = a - bi.$\\ 
 	\\
 	So then 
 	\begin{align*}
-		z_{sym}^2 &= (a - bi)(a - bi) \\
-		&= a^2 -abi - abi + i^2 b^ 2 \\
-		&= a^2 - b^2 - 2abi \\
+		z \bar{z} &= (a + bi)(a - bi) \\
+		&= a^2 -abi +abi -i^2 b^2 \\
+		&= a^2 + b^2 \\
+		&= \zeta  
 	\end{align*}
-	And then:
-	\begin{align*}
-		z^2 &= (a + bi)(a + bi) \\
-		&= a^2 + abi + abi +i^2 b^2 \\
-		&= a^2 - b^2 + 2abi \\
-	\end{align*}
-	\\
-	which then means $|z_{sym}^2| = z^2 = \zeta$ where $\zeta \in \mathbb{C}$
+ where $\zeta \in \mathbb{C}$
 	
 	
 	\item Let $a + bi$ be a complex number. Find real numbers $x, y$ such that:
@@ -545,7 +539,46 @@ Note that:
 		\therefore \; (x + iy)^2 &= a + bi \;\; \forall x, y \in \mathbb{R} \; \qed
 	\end{align*}
 	
-	\item Plot all the complex numbers $z$ such that $z^n = 1$ for $ n = 2, 3, 4$ and $5.$
+	\item Plot all the complex numbers $z$ such that $z^n = 1$ for $ n = 2, 3, 4$ and $5.$ \\
+	\\
+	Just use $ e^{ \sfrac{2 \pi i}{n} } $ to cut the circle up so that you then just tile that slice $n$ times to get back to $1.$ \\
+	\\
+	So then:
+	\begin{align*}
+		z_n &= e^{ \sfrac{2 \pi i}{n} } \\
+	\end{align*}
+	Which would then give:
+	\begin{align*}
+		(z_n)^n &= ( e^{ \sfrac{2 \pi i}{n} } )^n \\
+		&= e^{2 \pi i } \\
+		&= 1 \\
+		& = (1, 0) \\
+	\end{align*}
+	Which satisfies the fist condition. Now to give the plots for the remaining $z$'s.\\
+
+	Suppose we start with $n = 2:$
+	\begin{align*}
+		z_2 &= e^{ \pi i}  \\
+		&= (-1, 0) \\
+	\end{align*}
+
+	Now with $n = 3:$
+	\begin{align*}
+		z_3 &= e^{\sfrac{2 \pi i}{3}} \\
+		&= \left( \frac{1}{2}, \frac{\sqrt{3}}{2} \right) \\
+	\end{align*}
+
+	For $n = 4:$ \\
+	\begin{align*}
+		z_4 &= e^{\sfrac{\pi i}{2}} \\
+		&= ( 0, i ) \\
+	\end{align*}
+
+	For $n = 5:$ \\
+	\begin{align*}
+		z_5 &= e^{\sfrac{2 \pi i}{5}} \\
+		&= e^{(\sfrac{\pi i}{5} \; + \; \sfrac{\pi i}{5})} \\
+	\end{align*}
 	
 	\item Let $\alpha$ be a complex number $\neq 0.$ Let $n$ be a positive integer. Show that there are $n$ distinct complex numbers $z$ such that $z^n = \alpha.$ Write these complex numbers in polar form. \\
 	\\
@@ -566,12 +599,12 @@ Note that:
 	Then:
 	\begin{align*}
 		& \forall n\in \mathbb{N} \\
-		 z^n &=  r(e^{i\theta} )^n \\
-		 &=  r(e^{\sfrac{2\pi i}{n}} )^n \\
-		 &= re^{2\pi i} \\
+		 z^n &=  (re^{i\theta} )^n \\
+		 &=  r^n (e^{\sfrac{2\pi i}{n}} )^n \\
+		 &= r^n e^{2\pi i} \\
 	\end{align*}
 	
-	And so we have $n$ distinct roots 
+	And so we have $n$ distinct roots.. \\
 	 
 	
 	\item Find the real and imaginary parts of $i^{\sfrac{i}{4}}$, taking the fourth root such that its angle lies in $[0, \sfrac{\pi}{2}].$ \\
@@ -582,7 +615,11 @@ Note that:
 	\begin{enumerate}
 		\item Describe all complex numbers $z$ such that $e^z = 1.$ \\
 		\\
-		\textbf{Proof:}
+		\textbf{Proof:} \\
+		\\
+		This will happen in the cases when $ z = 2 i \pi $ \\
+
+
 		\item Let $w$ be a complex number. Let $\alpha$ be a complex number such that $e^{\alpha} = w.$ Describe all complex numbers $\alpha$ such that $e^\alpha = w.$ \\
 		\\
 		\textbf{Proof:}

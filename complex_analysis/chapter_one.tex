@@ -514,18 +514,31 @@ Note that:
 	\item Let $\alpha$ be a complex number $\neq 0.$ Show there are two distinct complex numbers whose square is $\alpha.$ \\
 	\\
 	\textbf{Proof:}
-	For any $z \in \mathbb{C}$ with $z = a + bi$ we have a symmetric partner such that $z \neq \bar{z} = a - bi.$\\ 
+	For any $z \in \mathbb{C}$ with $z = a + bi$ we have a symmetric partner such that: 
+	\begin{align*}
+		z &= (a + bi) \\
+		\bar{z} &= a - bi \\
+		\therefore \; z &\neq \bar{z} \\
+	\end{align*}
 	\\
-	So then 
+	So $z$ and $\bar{z}$ are distinct. \\
+
+	Now take their square:
 	\begin{align*}
 		z \bar{z} &= (a + bi)(a - bi) \\
 		&= a^2 -abi +abi -i^2 b^2 \\
-		&= a^2 + b^2 \\
-		&= \zeta  
+		&= a^2 + b^2 \in \mathbb{C} \\
+		&= \zeta \in \mathbb{C} \\
+		&\neq 0
 	\end{align*}
- where $\zeta \in \mathbb{C}$
-	
-	
+	Which demonstrates $\forall z \neq 0$ and $\forall z \in \mathbb{C}$ we get:
+	\begin{align*}
+		z & \neq \bar{z} \\
+		z \bar{z} &= \zeta \in \mathbb{C} \\
+		&\neq 0 \qed
+	\end{align*}
+
+
 	\item Let $a + bi$ be a complex number. Find real numbers $x, y$ such that:
 	\[(x + iy)^2 = a + bi\] \\
 	expressing $x, y$ in terms of $a$ and $b.$ \\

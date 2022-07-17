@@ -584,43 +584,44 @@ Note that:
 	For $n = 4:$ \\
 	\begin{align*}
 		z_4 &= e^{\sfrac{\pi i}{2}} \\
-		&= ( 0, i ) \\
+		&= ( 0, 1 ) \\
 	\end{align*}
 
 	For $n = 5:$ \\
 	\begin{align*}
 		z_5 &= e^{\sfrac{2 \pi i}{5}} \\
 		&= e^{(\sfrac{\pi i}{5} \; + \; \sfrac{\pi i}{5})} \\
+		&= e^{\sfrac{\pi i}{5}} e^{\sfrac{\pi i}{5}} \\
+		&= (?, ?)
 	\end{align*}
+	I'm not sure what the Factors of Pi are for the angle $\sfrac{\pi}{5}...$
 	
 	\item Let $\alpha$ be a complex number $\neq 0.$ Let $n$ be a positive integer. Show that there are $n$ distinct complex numbers $z$ such that $z^n = \alpha.$ Write these complex numbers in polar form. \\
 	\\
 	\textbf{Proof:} \\
 	\\
-	Let:
+	Suppose:
 	\begin{align*}
 		\alpha &= \alpha_1 + \alpha_2 i \\ 
 		&= |\alpha|e^{i\theta} \\
 		&= r e^{i\theta} \\
 	\end{align*}
-	Note:
+	Now let:
 	\begin{align*}
-		\theta &= \sfrac{2\pi}{n} \\
-		z &= x + iy \\ 
+		z &= r^{\sfrac{1}{n}}e^{\sfrac{i\theta}{n}} \\
+	\end{align*}
+	Then we have $\forall n \in \mathbb{N}:$
+	\begin{align*}
+		z^n &= r^{(\sfrac{1}{n})^n} e^{(\sfrac{i\theta}{n})^n} \\
 		&= re^{i\theta} \\
 	\end{align*}
-	Then:
+	And so:
 	\begin{align*}
-		& \forall n\in \mathbb{N} \\
-		 z^n &=  (re^{i\theta} )^n \\
-		 &=  r^n (e^{\sfrac{2\pi i}{n}} )^n \\
-		 &= r^n e^{2\pi i} \\
+		z^n &= \alpha \qed
 	\end{align*}
-	
-	And so we have $n$ distinct roots.. \\
 	 
 	
-	\item Find the real and imaginary parts of $i^{\sfrac{i}{4}}$, taking the fourth root such that its angle lies in $[0, \sfrac{\pi}{2}].$ \\
+	\item Find the real and imaginary parts of $i^{\sfrac{1}{4}}$, taking the fourth root such that its angle lies in $[0, \sfrac{\pi}{2}].$ \\
 	\\
 	\textbf{Proof:} This requires some algebra and breaking identities.
 	

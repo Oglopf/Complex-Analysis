@@ -662,15 +662,32 @@ Note that:
 	
 	\item Find the real and imaginary parts of $i^{\sfrac{1}{4}}$, taking the fourth root such that its angle lies in $[0, \sfrac{\pi}{2}].$ \\
 	\\
-	\textbf{Proof:} This requires some algebra and breaking identities.
+	\textbf{Proof:} \\
+	\\
+	This requires some algebra and change of base. \\
+	\begin{align*}
+		i &= e^{\sfrac{i\pi}{2}} \\
+	\end{align*}
+	So then:
+	\begin{align*}
+		i^{\sfrac{1}{4}} &= e^{(\sfrac{i \pi}{2})^{\sfrac{1}{4}}} \\
+		&= e^{(\sfrac{i \pi}{8})}
+	\end{align*}
+	Which then just means $\theta = \sfrac{\pi}{8}$ and we can get the real and imaginary parts with:
+	\begin{align*}
+		x = &\cos{(\sfrac{\pi}{8})} \;\; \text{and} \;\; y = \sin{(\sfrac{\pi}{8})} \\
+		\\
+		\therefore \; i^{\sfrac{1}{4}} &= \cos{(\sfrac{\pi}{8})} + i\sin{(\sfrac{\pi}{8})} \qed
+	\end{align*}
 	
+
 	\item
 	\begin{enumerate}
 		\item Describe all complex numbers $z$ such that $e^z = 1.$ \\
 		\\
 		\textbf{Proof:} \\
 		\\
-		This will happen in the cases when $ z = 2 i \pi $ \\
+		This will happen in the cases when $ z = 2 i \pi k$ \\
 
 
 		\item Let $w$ be a complex number. Let $\alpha$ be a complex number such that $e^{\alpha} = w.$ Describe all complex numbers $\alpha$ such that $e^\alpha = w.$ \\

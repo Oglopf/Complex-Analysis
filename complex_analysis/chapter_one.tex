@@ -829,6 +829,36 @@ One of the \textbf{major results of the theory of complex variables} is to reduc
 Thus the power function is in some sense the unique basic function out of which the others are constructed.
 
 
+\subsection{Proofs}
+\begin{enumerate}
+	\item Let $f(z) = \sfrac{1}{z}.$ Describe what $f$ does to the inside and ouside of the unit circle, and also, what it does to points on the uit circle. This map is called \textbf{inversion} through the unit circle. \\
+
+	\textbf{Proof:} \\
+	Take the points $|z| < 1$ and move them to outside the unit disc.
+	\begin{align*}
+		&z < 1 \\
+		&z \mapsto \frac{1}{z} > 1
+	\end{align*}
+	\\
+	Then, Take the points outside the unit circle $|z| > 1$ and put them in the unit circle:
+	\begin{align*}
+		&z > 1 \\
+		&z \mapsto \frac{1}{z} < 1 \qed
+	\end{align*}
+
+
+	\item Let $f(z) = \sfrac{1}{\bar{z}}.$ Describe $f$ in the same manner as Exercise 1. This map is called \textbf{reflection} through the unit circele. \\
+
+	\textbf{Proof:} \\
+	Take a point outside the unit circle, $|z| > 1$, reflect it across the line of symmetry to $\bar{z}$ and then map it to the same quadrant inside the unit circle:
+	\begin{align*}
+		z \mapsto \sfrac{1}{\bar{z}} \\
+	\end{align*}
+
+	Take a point inside the unit circle, $0 < |z| < 1$, reflect it across the line of symmetry to $\bar{z}$ and then map it to the same quadrant outside the unit circle. \qed
+\end{enumerate}
+
+
 \section{Limits and Compact Sets}
 \section{Complex Differentiability}
 \section{The Cauchy-Reimann Equations}

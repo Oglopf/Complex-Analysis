@@ -686,19 +686,25 @@ Note that:
 		\item Describe all complex numbers $z$ such that $e^z = 1.$ \\
 		\\
 		\textbf{Proof:} \\
-		\\
-		This will happen in the cases when $ z = 2 i \pi k$ \\
+		Because we have $e^{2\pi i k} = 1 \;\; \forall k \in \mathbb{N}$ we then see this will happen in the cases when $ z = 2 i \pi k$ \\
+		\qed
 
 
 		\item Let $w$ be a complex number. Let $\alpha$ be a complex number such that $e^{\alpha} = w.$ Describe all complex numbers $\alpha$ such that $e^\alpha = w.$ \\
 		\\
-		\textbf{Proof:}
+		\textbf{Proof:} \\
+		This is true for any $w \in \mathbb{C}$ and $k \in \mathbb{N}$ such that $w = \alpha + 2i \pi k$ or else $e^{2\pi i} \neq 1,$ which is absurd. \\
+		\qed
 	\end{enumerate} 
 
 
 	\item If $e^z = e^w$ show that there is an integer $k$ such that $z = w + 2\pi k i.$ \\
 	\\
-	\textbf{Proof:} Use the fact that every $2\pi$ we come back around.
+	\textbf{Proof:} \\
+	Let $z, w \in \mathbb{C}$ with $z \neq w$ and $e^z = e^w.$ \\
+	
+	Using the results of problem 8.b above, we see this can only be true when $z = w + 2\pi i k$ which means $\exists k \in \mathbb{N}.$ \\
+	\qed
 	
 
 	\item 
@@ -832,7 +838,7 @@ Thus the power function is in some sense the unique basic function out of which 
 \subsection{Proofs}
 \begin{enumerate}
 	\item Let $f(z) = \sfrac{1}{z}.$ Describe what $f$ does to the inside and ouside of the unit circle, and also, what it does to points on the uit circle. This map is called \textbf{inversion} through the unit circle. \\
-
+	\\
 	\textbf{Proof:} \\
 	Take the points $|z| < 1$ and move them to outside the unit disc.
 	\begin{align*}
@@ -848,7 +854,7 @@ Thus the power function is in some sense the unique basic function out of which 
 
 
 	\item Let $f(z) = \sfrac{1}{\bar{z}}.$ Describe $f$ in the same manner as Exercise 1. This map is called \textbf{reflection} through the unit circele. \\
-
+	\\
 	\textbf{Proof:} \\
 	Take a point outside the unit circle, $|z| > 1$, reflect it across the line of symmetry to $\bar{z}$ and then map it to the same quadrant inside the unit circle:
 	\begin{align*}

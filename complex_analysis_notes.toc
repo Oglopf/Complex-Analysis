@@ -2,25 +2,25 @@
 \contentsline {section}{\numberline {1.1}Complex Numbers}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Definitions}{1}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Proofs}{2}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Polar Form}{7}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Definitions}{7}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.2}Polar Form}{8}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Definitions}{8}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Factors of Pi}{8}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Proofs}{8}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}Complex Valued Functions}{16}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Power Function}{17}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Polar coordinates}{17}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Closed Disc}{17}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.3.4}Proofs}{18}{subsection.1.3.4}%
-\contentsline {section}{\numberline {1.4}Limits and Compact Sets}{19}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Complex Differentiability}{19}{section.1.5}%
-\contentsline {section}{\numberline {1.6}The Cauchy-Reimann Equations}{19}{section.1.6}%
-\contentsline {section}{\numberline {1.7}title}{19}{section.1.7}%
-\contentsline {section}{\numberline {1.8}Cauchy Criterion}{19}{section.1.8}%
-\contentsline {chapter}{\numberline {2}Power Series}{20}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Formal Power Series}{20}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Convergent Power Series}{20}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Relations Between Formal and Convergent Series}{20}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Analytic Functions}{20}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Differentiation of Power Series}{20}{section.2.5}%
-\contentsline {section}{\numberline {2.6}The Inverse and Open Mapping Theorems}{20}{section.2.6}%
-\contentsline {section}{\numberline {2.7}The Local Maximum Modulus Principle}{20}{section.2.7}%
+\contentsline {subsection}{\numberline {1.2.3}Proofs}{9}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Complex Valued Functions}{17}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Power Function}{18}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Polar coordinates}{18}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Closed Disc}{18}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Proofs}{19}{subsection.1.3.4}%
+\contentsline {section}{\numberline {1.4}Limits and Compact Sets}{20}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Complex Differentiability}{20}{section.1.5}%
+\contentsline {section}{\numberline {1.6}The Cauchy-Reimann Equations}{20}{section.1.6}%
+\contentsline {section}{\numberline {1.7}title}{20}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Cauchy Criterion}{20}{section.1.8}%
+\contentsline {chapter}{\numberline {2}Power Series}{21}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Formal Power Series}{21}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Convergent Power Series}{21}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Relations Between Formal and Convergent Series}{21}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Analytic Functions}{21}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Differentiation of Power Series}{21}{section.2.5}%
+\contentsline {section}{\numberline {2.6}The Inverse and Open Mapping Theorems}{21}{section.2.6}%
+\contentsline {section}{\numberline {2.7}The Local Maximum Modulus Principle}{21}{section.2.7}%

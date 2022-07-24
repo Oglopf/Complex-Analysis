@@ -335,18 +335,21 @@ Note that:
 \[\theta = \cos^{-1}{ \left( \frac{x}{r} \right)  }, \;\;\;\; \theta = \sin^{-1} \left( { \frac{y}{r} } \right) \]
 \subsection{Factors of Pi}
 \begin{defn}[\textbf{Factors of Pi}]
-	If you don't know your factors of pi you don't know squat:
+	"If you don't know your factors of pi you don't know squat"
 	\begin{align*}
-		\text{If} \;\;\; e^z &= e^w \\ 
-		\text{then} \;\;\; z &= w + 2ik\pi \\
-		e^{k2i\pi} &= 1 \;\; \forall k \in \mathbb{N} \\
+		\forall k &\in \mathbb{N} \\
+		e^{2k\pi i} &= 1 \\
 		\\
-		e^{i\pi} &= -1 + i0 \\ 
-		e^{2i\pi} &= 1 + i0 \\ 
-		e^{\sfrac{i\pi}{2}} &= 0 +  i \\
-		e^{\sfrac{i\pi}{3}} &= \frac{1}{2} + i\frac{\sqrt{3}}{2} \\
-		e^{\sfrac{i\pi}{4}} &= \frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2} \\
-		e^{\sfrac{i\pi}{6}} &= \frac{\sqrt{3}}{2} + i\frac{1}{2}\\
+		\text{If} \;\;\; e^z &= e^w \\ 
+		\text{then} \;\;\; z &= w + 2k\pi i \\
+		\\
+		e^{i\pi} &= -1 + i0 = (-1, 0) \\ 
+		e^{2i\pi} &= 1 + i0 = (1, 0) \\ 
+		e^{\sfrac{i\pi}{2}} &= 0 +  i  = (0, 1) \\
+		e^{\sfrac{i\pi}{3}} &= \frac{1}{2} + i\frac{\sqrt{3}}{2} = \left(\frac{1}{2}, \frac{\sqrt{3}}{2} \right) \\
+		e^{\sfrac{i\pi}{4}} &= \frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2} = \left( \frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right) \\
+		e^{\sfrac{i\pi}{6}} &= \frac{\sqrt{3}}{2} + i\frac{1}{2} = \left( \frac{\sqrt{3}}{2}, \frac{1}{2} \right)  \\
+		\text{Now take sums or use polar form above to find the \;} &(x, y) \text{\; coordinates.}
 	\end{align*}
 \end{defn}
  
@@ -658,9 +661,7 @@ Note that:
 	For $n = 5:$ \\
 	\begin{align*}
 		z_5 &= e^{\sfrac{2 \pi i}{5}} \\
-		&= e^{(\sfrac{\pi i}{5} \; + \; \sfrac{\pi i}{5})} \\
-		&= e^{\sfrac{\pi i}{5}} e^{\sfrac{\pi i}{5}} \\
-		&= \left( \cos( \sfrac{\pi i}{5}), \; \sin(\sfrac{\pi i}{5}) \right)
+		&= \left( \cos( \sfrac{2\pi i}{5}), \; \sin(\sfrac{2\pi i}{5}) \right)
 	\end{align*}
 	\qed
 
@@ -915,15 +916,102 @@ Thus the power function is in some sense the unique basic function out of which 
 
 
 \section{Limits and Compact Sets}
+\begin{defn}[\textbf{Open Disc of radius $r > 0$ centered at $\alpha$}]
+	The set $S \subset \mathbb{C}$ with elements $z$ such that:
+	\[ |z - \alpha | < r \]
+	Denoted $D(\alpha, r).$
+\end{defn}
+
+\begin{defn}[\textbf{Open Set $U \subset \mathbb{C}$}]
+	$U$ is an open set if for every point $\alpha \in U$:
+	\begin{enumerate}
+		\item there is a disc $D(\alpha,r)$ centered at $\alpha$
+		\item there is a disc of some radius $r > 0$ such that this disc $D(\alpha, r)$ is contained in $U.$
+	\end{enumerate}
+\end{defn}
+
+\begin{defn}[\textbf{Boundary Point of $S$}]
+	A point $\alpha$ such that every disc $D(\alpha, r)$ centered at $\alpha$ and of 
+	radius $r > 0$ contains both points of $S$ and points not in $S.$
+\end{defn}
+
+\begin{defn}[\textbf{Adherent Point to $S$}]
+	$\alpha$ is adherent to $S$ if: 
+	\begin{itemize}
+		\item every disc $D(\alpha, r)$ with $r > 0$ contains \textit{some} element of $S.$
+	\end{itemize}
+\end{defn}
+
+\begin{defn}[\textbf{Interior point to $S$}]
+	$\alpha$ is an interior point of $S$ if:
+	\begin{itemize}
+		\item there exists a disc $D(\alpha, r)$ which is contained in $S.$
+	\end{itemize}
+\end{defn}
+
+Note that:
+\begin{itemize}
+	\item An adherent point can be a boundary point
+	\item An adherent point can be an interior point
+\end{itemize}
+
+\begin{defn}[\textbf{Closed Set}]
+	A set is closed if it contains all its boundary points.
+\end{defn}
+
+\begin{defn}[\textbf{Bounded Set}]
+	$S$ is bounded if there exists a number $C > 0$ such that:
+	\begin{align*}
+		|z| \leq C \;\;\;\;\; \forall z \in S
+	\end{align*}
+\end{defn}
+
+\begin{defn}[\textbf{Closure of a Set $S$}]
+	The unioin of $S$ and all its boundary points.
+	\begin{itemize}
+		\item Denoted $\bar{S}$
+	\end{itemize}
+\end{defn}
+
+Let $f$ be a function on $S,$ and let $\alpha$ be an adherent point of $S.$ Let $w$ be a complex number. We say that:
+	\[ z \in S \]
+	\[ w = \lim_{z \to \alpha} f(z) \]
+If given $\epsilon > 0$ there exists $\delta > 0$ such that if $z \in S$ and $|z - \alpha| < \delta,$ then:
+\[ |f(z) - w | < \epsilon \]
+
+\begin{defn}[\textbf{Continuous}]
+	$f$ is continuous at $\alpha$ if:
+	\[ \lim_{z \to \alpha} f(z) = f(\alpha) \]
+\end{defn} 
+
+\begin{defn}[\textbf{Cauchy Sequence}]
+	If $\epsilon > 0$ then $\exists \; N$ such that if:
+	\[ m, n \geq N \]
+	then:
+	\[| \; {z}_{n} - {z}_{m} \; | < \epsilon \]
+\end{defn}
+
+\subsection{Compact Sets}
+This section is a bit peculiar and wasn't all that useful. I'll circle back around later for this.
+
+\subsection{Proofs}
+\begin{enumerate}
+	\item Let $\alpha$ be a complex number of absolute value $< 1.$ What is $\lim_{n \to \infty} \alpha^n ?$ Proof? \\
+
+	\textbf{Proof:} \\
+	\\
+	Think about the expansion
+
+	\item If $|\alpha| > 1$ does $\lim_{n \to \infty} \alpha^n$ exist? Why?
+\end{enumerate}
+
+
 \section{Complex Differentiability}
 \section{The Cauchy-Reimann Equations}
 \section{title}
 
 \section{Cauchy Criterion}
-\begin{defn}[\textbf{Cauchy Sequence}]
-	If $\epsilon > 0$ then $\exists \; N$ such that if $m, n \geq N$ then:
-	\[|\; {z}_{n} - {z}_{m} \; | < \epsilon\]
-\end{defn}
+
 
 
 

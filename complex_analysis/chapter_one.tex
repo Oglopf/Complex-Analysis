@@ -787,6 +787,7 @@ Note that:
 	
 	\textbf{Proof:} \\
 	\\
+	Strategy: Just add the $z^{n + 1}$ term to both sides and notice that you end up back to the original statement on the right.
 
 
 	\item Using the preceding exercise, and taking real parts, prove:
@@ -797,7 +798,7 @@ Note that:
 
 	\textbf{Proof:} \\
 	\\
-
+	Need help here. There's some kind of identity I'm missing to get each $\cos^n$ term to map respectively to each $\cos n.$
 
 	\item Let $z, w$ be two complex numbers such that $\bar{z}w \neq 1.$ Prove that
 	\begin{align*}
@@ -807,8 +808,14 @@ Note that:
 	
 	\textbf{Proof:} \\
 	\\
-
+	Not sure yet, needs some work.
+	
 \end{enumerate}
+
+\subsection{Incomplete Proofs}
+\begin{itemize}
+	\item 11, 12, 13
+\end{itemize}
 
 \section{Complex Valued Functions}
 We write the association of the \textbf{value} $f(z)$ to $z$ by the special arrow:
@@ -912,7 +919,33 @@ Thus the power function is in some sense the unique basic function out of which 
 
 	Take a point inside the unit circle, $0 < |z| < 1$, reflect it across the line of symmetry to $\bar{z}$ and then map it to the same quadrant outside the unit circle. 
 	\qed
+
+
+	\item Let $f(z) = e^{2\pi iz}.$ Describe the image under $f$ of the set consisting of the points $x + iy$ with:
+	\[ \frac{-1}{2} \leq x \leq \frac{1}{2} \]
+	and
+	\[ y \geq B := \{ z = x + iy \;\;|\;\; y > 0 \} \] \\
+
+	\textbf{Proof:} \\
+
+	\item Let $f(z) = e^z.$ Describe th image under $f$ of the following sets:
+	\begin{enumerate}
+		\item The set of $z = x + iy$ such that $x \leq 1$ and $0 \leq y \leq \pi.$ \\
+		
+		\textbf{Proof:} \\
+
+		\item The set of $z = x + iy$ such that $0 \leq y \leq \pi$ and no condition on $x.$ \\
+		
+		\textbf{Proof:} \\
+
+	\end{enumerate}
+	
 \end{enumerate}
+
+\subsection{Incomplete Proofs}
+\begin{itemize}
+	\item 3, 4
+\end{itemize}
 
 
 \section{Limits and Compact Sets}
@@ -992,19 +1025,73 @@ If given $\epsilon > 0$ there exists $\delta > 0$ such that if $z \in S$ and $|z
 \end{defn}
 
 \subsection{Compact Sets}
-This section is a bit peculiar and wasn't all that useful. I'll circle back around later for this.
+This section is a bit peculiar and full of theorems I've not had a use for yet, but may be useful later. \\
+
+The main point is this:
+\begin{thm}
+	A set $S$ is compact $\iff$ it is closed and bounded.
+\end{thm}
 
 \subsection{Proofs}
 \begin{enumerate}
-	\item Let $\alpha$ be a complex number of absolute value $< 1.$ What is $\lim_{n \to \infty} \alpha^n ?$ Proof? \\
+	\item Let $\alpha$ be a complex number of absolute value $< 1.$ What is $\lim\limits_{n \to \infty} \alpha^n ?$ Proof? \\
 
 	\textbf{Proof:} \\
-	\\
 	Think about the expansion
 
-	\item If $|\alpha| > 1$ does $\lim_{n \to \infty} \alpha^n$ exist? Why?
-\end{enumerate}
+	\item If $|\alpha| > 1$ does $\lim\limits_{n \to \infty} \alpha^n$ exist? Why? \\
+	
+	\textbf{Proof:} \\
 
+	
+	\item Show that for any complex number $z \neq 1,$ we have
+	\[ 1 + z + \cdots + z^n = \frac{z^{n + 1} - 1}{z - 1}\]
+	If $|z| < 1,$ show that
+	\[ \lim_{n \to \infty} (1 + z + \cdots + z^n ) = \frac{1}{1 - z} \] \\
+		
+	\textbf{Proof:} \\
+
+	\item Let $f$ be the function defined by
+	\[ f(z) = \lim_{n \to \infty} \frac{1}{1 + n^2 z} \]
+	Show that $f$ is the characteristic function of the set $\{0\},$ that is, $f(0) = 1,$ and $f(z) = 0$ if $z \neq 0.$ \\
+			
+	\textbf{Proof:} \\
+
+	\item For $|z| \neq 1$ show that the following limit exists:
+	\[ f(z) = \lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right) \]
+
+	Is it possible to define $f(z)$ when $|z| = 1$ in such a way to make $f$ continuous? \\
+		
+	\textbf{Proof:} \\
+
+
+	\item Let
+	\[ f(z) = \lim_{n \to \infty} \frac{z^n}{1 + z^n} \]
+	\begin{enumerate}
+		\item What is the domain of definition of $f,$ that is, for which complex numbers $z$ does the limit exist? \\
+		
+		\textbf{Proof:} \\
+	
+		\item Give explicitly the values of $f(z)$ for the various $z$ in the domain of $f.$ \\
+		
+		\textbf{Proof:} \\
+	
+	\end{enumerate}
+
+	\item Show that the series
+	\[ \sum_{n = 1}^{\infty} \frac{z^{n - 1}}{(1 - z^n )(1 - z^{n + 1})} \]
+	Converges to
+	\[ \frac{1}{(1 - z)^2 } \;\;\; |z| < 1 \]
+	and
+	\[\frac{1}{z(1 - z)^2 } \;\;\; |z| > 1\] \\
+
+	Prove that the convergence is uniform for $|z| \leq c < 1$ in the first case, and $|z| \geq b > 1$ in the second case. 
+
+	[\textit{Hint:} multiply and divide each term by $1 - z,$ and do a partial fraction decomposition, getting a telescoping effect. ] \\
+			
+	\textbf{Proof:} \\
+
+\end{enumerate}
 
 \section{Complex Differentiability}
 \section{The Cauchy-Reimann Equations}

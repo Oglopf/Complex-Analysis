@@ -787,7 +787,39 @@ Note that:
 	
 	\textbf{Proof:} \\
 	\\
-	Strategy: Just add the $z^{n + 1}$ term to both sides and notice that you end up back to the original statement on the right.
+	Strategy: Just add the $z^{n + 1}$ term to both sides and notice that you end up back to the original statement on the right. \\
+
+	Base case: let $n = 1$ and:
+	\begin{align*}
+		\frac{z^{1 + 1} - 1}{z -1} &= \frac{z^2 - 1}{z - 1} \\
+		&= \frac{(z + 1)(z - 1)}{z - 1} \\
+	\end{align*}
+	\begin{align}
+		&= z + 1
+	\end{align}
+	And the result is true for the sum as well:
+	\begin{align}
+		\sum_{n = 1}^{1} (1 + z^n) &= 1 + z
+	\end{align}
+
+	By $(1.1)$ and $(1.2)$ we see the base is true. \\
+
+	Suppose it is true for $n \in \mathbb{N}.$ \\
+
+	Let $k = n + 1$ so that:
+	\begin{align*}
+		1 + z + \cdot\cdot\cdot + z^n + z^k &= \frac{z^{n + 1} - 1}{z - 1} + z^k \\
+		&= \frac{z^{n + 1} - 1}{z - 1} + \frac{z^k(z - 1)}{(z - 1)} \\
+		&= \frac{z^{n + 1} - 1}{z - 1} + \frac{z^{k + 1} - z^k}{(z - 1)} \\
+		&= \frac{z^{n + 1} - 1 + z^{k + 1} - z^k}{z - 1} \\ 
+	\end{align*}
+	Note that $z^{n + 1} = z^k$ and we have:
+	\begin{align*}
+		1 + z + \cdot\cdot\cdot + z^n + z^k &= \frac{ - 1 + z^{k + 1}}{z - 1} \\
+		&= \frac{z^{k + 1} - 1}{z - 1} \\
+	\end{align*}
+	Noting again that $k$ is the $n + 1$ case, we prove the statement holds $\forall n \in \mathbb{N}.$
+	\qed 
 
 
 	\item Using the preceding exercise, and taking real parts, prove:
@@ -809,12 +841,12 @@ Note that:
 	\textbf{Proof:} \\
 	\\
 	Not sure yet, needs some work.
-	
+
 \end{enumerate}
 
 \subsection{Incomplete Proofs}
 \begin{itemize}
-	\item 11, 12, 13
+	\item 12, 13
 \end{itemize}
 
 \section{Complex Valued Functions}
@@ -909,7 +941,8 @@ Thus the power function is in some sense the unique basic function out of which 
 	\qed
 
 
-	\item Let $f(z) = \sfrac{1}{\bar{z}}.$ Describe $f$ in the same manner as Exercise 1. This map is called \textbf{reflection} through the unit circele. \\
+	\item Let $f(z) = \sfrac{1}{\bar{z}}.$ Describe $f$ in the same manner as Exercise 1. 
+	This map is called \textbf{reflection} through the unit circele. \\
 	
 	\textbf{Proof:} \\
 	Take a point outside the unit circle, $|z| > 1$, reflect it across the line of symmetry to $\bar{z}$ and then map it to the same quadrant inside the unit circle:

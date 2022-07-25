@@ -343,12 +343,18 @@ Note that:
 		\text{If} \;\;\; e^z &= e^w \\ 
 		\text{then} \;\;\; z &= w + 2k\pi i \\
 		\\
-		e^{i\pi} &= -1 + i0 = (-1, 0) \\ 
-		e^{2i\pi} &= 1 + i0 = (1, 0) \\ 
-		e^{\sfrac{i\pi}{2}} &= 0 +  i  = (0, 1) \\
-		e^{\sfrac{i\pi}{3}} &= \frac{1}{2} + i\frac{\sqrt{3}}{2} = \left(\frac{1}{2}, \frac{\sqrt{3}}{2} \right) \\
-		e^{\sfrac{i\pi}{4}} &= \frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2} = \left( \frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right) \\
-		e^{\sfrac{i\pi}{6}} &= \frac{\sqrt{3}}{2} + i\frac{1}{2} = \left( \frac{\sqrt{3}}{2}, \frac{1}{2} \right)  \\
+		e^{i\pi} &= -1 + i0 
+		&= (-1, 0) \\
+		e^{2i\pi} &= 1 + i0 
+		&= (1, 0) \\ 
+		e^{\sfrac{i\pi}{2}} &= 0 +  i  
+		&= (0, 1) \\
+		e^{\sfrac{i\pi}{3}} &= \frac{1}{2} + i\frac{\sqrt{3}}{2} 
+		&= \left(\frac{1}{2}, \frac{\sqrt{3}}{2} \right) \\
+		e^{\sfrac{i\pi}{4}} &= \frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2} 
+		&= \left( \frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2} \right) \\
+		e^{\sfrac{i\pi}{6}} &= \frac{\sqrt{3}}{2} + i\frac{1}{2} 
+		&= \left( \frac{\sqrt{3}}{2}, \frac{1}{2} \right)  \\
 		\text{Now take sums or use polar form above to find the \;} &(x, y) \text{\; coordinates.}
 	\end{align*}
 \end{defn}
@@ -846,7 +852,7 @@ Note that:
 
 \subsection{Incomplete Proofs}
 \begin{itemize}
-	\item 12, 13
+	\item 10.b, 12, 13
 \end{itemize}
 
 \section{Complex Valued Functions}
@@ -1070,7 +1076,9 @@ The main point is this:
 	\item Let $\alpha$ be a complex number of absolute value $< 1.$ What is $\lim\limits_{n \to \infty} \alpha^n ?$ Proof? \\
 
 	\textbf{Proof:} \\
-	Think about the expansion
+	Suppose $|\alpha| < 1$ and recall that if $|\{z^n\}|$ converges then the sequence is absolutely convergent. \\
+
+	Let's find our $\epsilon > 0$ to show the limit exists. 
 
 	\item If $|\alpha| > 1$ does $\lim\limits_{n \to \infty} \alpha^n$ exist? Why? \\
 	
@@ -1083,6 +1091,26 @@ The main point is this:
 	\[ \lim_{n \to \infty} (1 + z + \cdots + z^n ) = \frac{1}{1 - z} \] \\
 		
 	\textbf{Proof:} \\
+	Just take the limit and factor out the $z$ so that the terms go to zero. \\
+
+	\begin{align*}
+		\lim_{n \to \infty} (1 + z + \cdots + z^n ) &= \lim_{n \to \infty}  \frac{z^{n + 1} - 1}{z - 1} \\
+		&= \lim_{n \to \infty} \frac{z}{z} \frac{z^n - \frac{1}{z}}{1 - \frac{1}{z} } \\
+		&= \lim_{n \to \infty} \frac{z^n - \frac{1}{z}}{1 - \frac{1}{z}} \\
+		&= \lim_{n \to \infty} z^n \\
+	\end{align*}
+	Which will have different behaviof for:
+	\begin{align}
+		|z| &< 1 \\
+		|z| &> 1
+	\end{align}
+	For the first case $(1.3)$ we have:
+	\begin{align*}
+		c, z \in \mathbb{C} \\
+		c > z \\
+		f: z \mapsto \frac{c}{z}
+	\end{align*}
+	So now we have 
 
 	\item Let $f$ be the function defined by
 	\[ f(z) = \lim_{n \to \infty} \frac{1}{1 + n^2 z} \]

@@ -1222,6 +1222,53 @@ In this section:
 	\item We derive the equivalent conditions on $u$ and $v$ for $f$ to be holomorphic.
 \end{itemize}
 
+At a fixed $z$: 
+\begin{itemize}
+	\item let $f'(z) = a + bi.$ \\
+	\item let $w = h + ik \,\,\,\, h, k \in \mathbb{R}$
+	\item Suppose:
+	\begin{align*}
+		\lim_{w \to 0} \sigma(w) &= 0 \\
+		f(z + w) - f(z) &= f'(z)w + \sigma(w)w \\
+	\end{align*}
+	\item Let:
+	\begin{align*}
+		\vec{F}: U \to \mathbb{R}^2 \\
+	\end{align*}
+	\item such that:
+	\begin{align*}
+		\vec{F}(x, y) &= (u(x, y), v(x, y))
+	\end{align*}
+\end{itemize}
 
+We call $\vec{F}$ the (real) \textbf{Field Associated with} $f.$ \\
+
+If we assume that $f$ is holomorphic then $\vec{F}$ is differentiable, and its derivative is represented by the \textbf{Jacobian Matrix}:
+\begin{align*}
+	J_{\vec{F}}(x, y) = \left( \begin{matrix}
+		a & -b \\
+		b &\,\,\,\,  a 
+	\end{matrix}
+	\right)
+	= \left( \begin{matrix}
+		\frac{\partial u}{\partial x} & \frac{\partial u}{\partial y} \\
+		\frac{\partial v}{\partial x} & \frac{\partial v}{\partial y}
+	\end{matrix} \right)
+\end{align*}
+
+This shows:
+\begin{align*}
+	f'(z) = \frac{\partial u}{\partial x} - i\frac{\partial u}{\partial y}
+\end{align*}
+
+And this gives the important result:
+
+\begin{defn}[Cauchy-Riemann Equations]
+	\begin{align*}
+		\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} \,\,\,\, \text{and} \,\,\,\, \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}
+	\end{align*}	
+\end{defn}
+
+Last bit over Jacobian Determinant $\triangle_{\vec{F}}$ needed.
 
 \section{Angles Under Holomorphic Maps}

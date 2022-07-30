@@ -20,12 +20,12 @@
 \contentsline {section}{\numberline {1.5}Complex Differentiability}{24}{section.1.5}%
 \contentsline {subsection}{\numberline {1.5.1}Holomorphic Function}{25}{subsection.1.5.1}%
 \contentsline {section}{\numberline {1.6}The Cauchy-Reimann Equations}{25}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Angles Under Holomorphic Maps}{25}{section.1.7}%
-\contentsline {chapter}{\numberline {2}Power Series}{26}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Formal Power Series}{26}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Convergent Power Series}{26}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Relations Between Formal and Convergent Series}{26}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Analytic Functions}{26}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Differentiation of Power Series}{26}{section.2.5}%
-\contentsline {section}{\numberline {2.6}The Inverse and Open Mapping Theorems}{26}{section.2.6}%
-\contentsline {section}{\numberline {2.7}The Local Maximum Modulus Principle}{26}{section.2.7}%
+\contentsline {section}{\numberline {1.7}Angles Under Holomorphic Maps}{26}{section.1.7}%
+\contentsline {chapter}{\numberline {2}Power Series}{27}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Formal Power Series}{27}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Convergent Power Series}{27}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Relations Between Formal and Convergent Series}{27}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Analytic Functions}{27}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Differentiation of Power Series}{27}{section.2.5}%
+\contentsline {section}{\numberline {2.6}The Inverse and Open Mapping Theorems}{27}{section.2.6}%
+\contentsline {section}{\numberline {2.7}The Local Maximum Modulus Principle}{27}{section.2.7}%

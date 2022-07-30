@@ -988,6 +988,8 @@ Thus the power function is in some sense the unique basic function out of which 
 
 
 \section{Limits and Compact Sets}
+\subsection{Limits In $\mathbb{C}$}
+
 \begin{defn}[\textbf{Open Disc of radius $r > 0$ centered at $\alpha$}]
 	The set $S \subset \mathbb{C}$ with elements $z$ such that:
 	\[ |z - \alpha | < r \]
@@ -1045,9 +1047,17 @@ Note that:
 	\end{itemize}
 \end{defn}
 
-Let $f$ be a function on $S,$ and let $\alpha$ be an adherent point of $S.$ Let $w$ be a complex number. We say that:
+\begin{defn}[\textbf{Limit of $f$}]
+	
+\end{defn}
+\begin{itemize}
+	\item Let $f$ be a function on $S \subseteq \mathbb{C}.$ 
+	\item Let $\alpha$ be an adherent point of $S.$ 
+	\item Let $w$ be a complex number. 
+\end{itemize}
+We say that:
 	\[ z \in S \]
-	\[ w = \lim_{z \to \alpha} f(z) \]
+	\[ \lim_{z \to \alpha} f(z) = w \]
 If given $\epsilon > 0$ there exists $\delta > 0$ such that if $z \in S$ and $|z - \alpha| < \delta,$ then:
 \[ |f(z) - w | < \epsilon \]
 
@@ -1078,7 +1088,7 @@ The main point is this:
 	\textbf{Proof:} \\
 	Suppose $|\alpha| < 1$ and recall that if $|\{z^n\}|$ converges then the sequence is absolutely convergent. \\
 
-	Let's find our $\epsilon > 0$ to show the limit exists. 
+	Let's find our $\epsilon > 0$ to show the limit exists. Likely candidate will be $ \sqrt[n]{\epsilon} = \delta$
 
 	\item If $|\alpha| > 1$ does $\lim\limits_{n \to \infty} \alpha^n$ exist? Why? \\
 	
@@ -1094,7 +1104,7 @@ The main point is this:
 	Just take the limit and factor out the $z$ so that the terms go to zero. \\
 
 	\begin{align*}
-		\lim_{n \to \infty} (1 + z + \cdots + z^n ) &= \lim_{n \to \infty}  \frac{z^{n + 1} - 1}{z - 1} \\
+		\lim_{n \to \infty} (1 + z + \cdots + z^n ) &= \lim_{n \to \infty}  \frac{z^{n + 1} - 1}{z - 1}  \\
 		&= \lim_{n \to \infty} \frac{z}{z} \frac{z^n - \frac{1}{z}}{1 - \frac{1}{z} } \\
 		&= \lim_{n \to \infty} \frac{z^n - \frac{1}{z}}{1 - \frac{1}{z}} \\
 		&= \lim_{n \to \infty} z^n \\
@@ -1155,11 +1165,63 @@ The main point is this:
 \end{enumerate}
 
 \section{Complex Differentiability}
+\begin{itemize}
+	\item Let $U$ be an open set. 
+	\item Let $f$ be a function on $U.$
+\end{itemize}
+
+\begin{defn}[$f$ \textbf{Complex Differentiable at} $z$]
+	If the limit exists:
+	\begin{align*}
+		\lim_{h \to 0} \frac{f(z + h) - f(z)}{h} \\
+	\end{align*}
+	denoted by $f'(z)$ or $df/dz.$ \\
+\end{defn}
+If $f$ is differentiablre at $z$ then $f$ is continuous at $z.$ \\
+
+All that really matters in this section 
+is that all the usual rules for sums, products, quotients, and functions of functions are the same 
+wrt complex Differentiability as they were with real Differentiability.
+
+\subsection{Holomorphic Function}
+A function $f$ defined on an open set $U$ is said to be \textbf{differentiable} if it is differentiable at every point.
+\begin{itemize}
+	\item Also say that $f$ is \textbf{Holomorphic} on $U.$
+	\item Holomorphic is usually used to specify \textit{complex} differentiability as distinguised from \textit{real} differentiability.
+\end{itemize}
+
+\begin{defn}[\textbf{Holomorphic Isomorphism}]
+	A holomorphic function
+	\begin{align*}
+		f: U \to V
+	\end{align*}
+	From an open set into another open set is a \textbf{holomorphic isomorphism} if there exists a holomorphic function
+	\begin{align*}
+		g: V \to U
+	\end{align*}
+	such that $g$ is the inverse of $f.$ That is;
+	\begin{align*}
+		g \circ f &= id_u \,\,\,\,
+		and \,\,\,\,
+		f \circ g = id_v
+	\end{align*}
+\end{defn}
+
+\begin{defn}[\textbf{Holomorphic Automorphism}]
+	A holomorphic isomorphism of an open set $U$ with itself.
+\end{defn}
+
 \section{The Cauchy-Reimann Equations}
-\section{title}
+In this section:
+\begin{itemize}
+	\item Let $f$ be a function on an open set $U.$
+	\item Write $f$ in terms of its \textit{real} and \textit{imaginary} parts.
+	\begin{align*}
+		f(x + iy) = u(x, y) + iv(x, y) \\
+	\end{align*}
+	\item We derive the equivalent conditions on $u$ and $v$ for $f$ to be holomorphic.
+\end{itemize}
 
-\section{Cauchy Criterion}
 
 
-
-
+\section{Angles Under Holomorphic Maps}

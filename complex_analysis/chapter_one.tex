@@ -914,6 +914,12 @@ We may say that:
 	\item Thus we see $z \mapsto z^n$ wraps the disc $n$ times around.
 \end{itemize}
 
+Diagram of this tiling: \\
+\begin{tikzpicture}
+	\draw (0, 0) circle (1cm);
+	\draw (0, 0) -- (1,0);
+\end{tikzpicture}
+
 To express every complex number $w^n = z$ we end up with the following generalization:
 \begin{defn}[\textbf{Root of Unity}]
 	\[\zeta^k = e^{\sfrac{2\pi ik}{n}}\]
@@ -1143,9 +1149,9 @@ The main point is this:
 		
 		\textbf{Proof:} \\
 	
-		\item Give explicitly the values of $f(z)$ for the various $z$ in the domain of $f.$ \\
-		
-		\textbf{Proof:} \\
+		\item Give explicitly the values of $f(z)$ for the various $z$ in the domain of $f.$
+
+		\textbf{Proof:}
 	
 	\end{enumerate}
 
@@ -1154,17 +1160,21 @@ The main point is this:
 	Converges to
 	\[ \frac{1}{(1 - z)^2 } \;\;\; |z| < 1 \]
 	and
-	\[\frac{1}{z(1 - z)^2 } \;\;\; |z| > 1\] \\
+	\[\frac{1}{z(1 - z)^2 } \;\;\; |z| > 1\]
 
 	Prove that the convergence is uniform for $|z| \leq c < 1$ in the first case, and $|z| \geq b > 1$ in the second case. 
 
-	[\textit{Hint:} multiply and divide each term by $1 - z,$ and do a partial fraction decomposition, getting a telescoping effect. ] \\
-			
-	\textbf{Proof:} \\
+	[\textit{Hint:} multiply and divide each term by $1 - z,$ and do a partial fraction decomposition, getting a telescoping effect. ]
+
+	\textbf{Proof:}
 
 \end{enumerate}
 
+\subsection{Incomplete proofs}
+3, 4, 5, 6
+
 \section{Complex Differentiability}
+\textit{(There are no exercises in this section.)}
 \begin{itemize}
 	\item Let $U$ be an open set. 
 	\item Let $f$ be a function on $U.$
@@ -1175,9 +1185,12 @@ The main point is this:
 	\begin{align*}
 		\lim_{h \to 0} \frac{f(z + h) - f(z)}{h} \\
 	\end{align*}
-	denoted by $f'(z)$ or $df/dz.$ \\
+
+	denoted by $f'(z)$ or $df/dz.$
 \end{defn}
-If $f$ is differentiablre at $z$ then $f$ is continuous at $z.$ \\
+\begin{itemize}
+	\item \textit{Note:} If $f$ is differentiablre at $z$ then $f$ is continuous at $z.$
+\end{itemize}
 
 All that really matters in this section 
 is that all the usual rules for sums, products, quotients, and functions of functions are the same 
@@ -1241,34 +1254,49 @@ At a fixed $z$:
 	\end{align*}
 \end{itemize}
 
-We call $\vec{F}$ the (real) \textbf{Field Associated with} $f.$ \\
-
-If we assume that $f$ is holomorphic then $\vec{F}$ is differentiable, and its derivative is represented by the \textbf{Jacobian Matrix}:
-\begin{align*}
-	J_{\vec{F}}(x, y) = \left( \begin{matrix}
-		a & -b \\
-		b &\,\,\,\,  a 
-	\end{matrix}
-	\right)
-	= \left( \begin{matrix}
-		\frac{\partial u}{\partial x} & \frac{\partial u}{\partial y} \\
-		\frac{\partial v}{\partial x} & \frac{\partial v}{\partial y}
-	\end{matrix} \right)
-\end{align*}
-
-This shows:
-\begin{align*}
-	f'(z) = \frac{\partial u}{\partial x} - i\frac{\partial u}{\partial y}
-\end{align*}
-
-And this gives the important result:
-
-\begin{defn}[Cauchy-Riemann Equations]
+\begin{itemize}
+		\item We call $\vec{F}$ the (real) \textbf{Field Associated with} $f.$ 
+		\item If we assume that $f$ is holomorphic then $\vec{F}$ is differentiable, and its derivative is represented by the \textbf{Jacobian Matrix}:
+		\begin{align*}
+			J_{\vec{F}}(x, y) = \left( \begin{matrix}
+				a & -b \\
+				b &\,\,\,\,  a 
+			\end{matrix}
+			\right)
+			= \left( \begin{matrix}
+				\frac{\partial u}{\partial x} & \frac{\partial u}{\partial y} \\
+				\frac{\partial v}{\partial x} & \frac{\partial v}{\partial y}
+			\end{matrix} \right)
+		\end{align*}
+		\item This shows:
+		\begin{align*}
+			f'(z) = \frac{\partial u}{\partial x} - i\frac{\partial u}{\partial y}
+		\end{align*}
+\end{itemize}
+This all culminates to the incredibly important result of:
+\begin{defn}[\textbf{Cauchy-Riemann Equations}]
 	\begin{align*}
 		\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} \,\,\,\, \text{and} \,\,\,\, \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}
 	\end{align*}	
 \end{defn}
 
+
 Last bit over Jacobian Determinant $\triangle_{\vec{F}}$ needed.
 
+\subsection{Proofs}
+\begin{enumerate}
+	\item Prove in detail that if $u, v$ satisfy the Cauch-Riemann equations, then the function
+	\begin{align*}
+		f(z) = f(x + iy) = u(x, y) + iv(x, y) \\
+	\end{align*}
+	is holomorphic.
+\end{enumerate}
+\begin{proof}
+	Let $u,v$ satisfy the Cauchy-Riemann equations.
+\end{proof}
+
 \section{Angles Under Holomorphic Maps}
+\textit{(There are no exercises in this section.)}
+
+What is important here is a simple geometric property of holomorphic maps. Roughly speaking, they preserve angles.
+

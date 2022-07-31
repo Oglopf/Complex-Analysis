@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.23)  29 JUL 2022 23:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.10.23)  30 JUL 2022 23:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -311,27 +311,27 @@ Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \c@thm=\count274
 \c@defn=\count275
 \c@prop=\count276
-Package hyperref Info: Option `colorlinks' set `true' on input line 46.
+Package hyperref Info: Option `colorlinks' set `true' on input line 67.
  (./complex_analysis_notes.aux (./complex_analysis/chapter_one.aux) (./complex_analysis/chapter_two.aux))
 \openout1 = `complex_analysis_notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Trying to load font information for T1+bch on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Trying to load font information for T1+bch on input line 70.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1bch.fd
 File: t1bch.fd 2004/10/18 font definitions for T1/bch.
 ) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -354,7 +354,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \AtBeginShipoutBox=\box52
-Package hyperref Info: Link coloring ON on input line 49.
+Package hyperref Info: Link coloring ON on input line 70.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -364,9 +364,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count283
 )
-LaTeX Info: Redefining \ref on input line 49.
-LaTeX Info: Redefining \pageref on input line 49.
-LaTeX Info: Redefining \nameref on input line 49.
+LaTeX Info: Redefining \ref on input line 70.
+LaTeX Info: Redefining \pageref on input line 70.
+LaTeX Info: Redefining \nameref on input line 70.
  (./complex_analysis_notes.out) (./complex_analysis_notes.out)
 \@outlinefile=\write3
 \openout3 = `complex_analysis_notes.out'.
@@ -406,11 +406,11 @@ LaTeX Info: Redefining \nameref on input line 49.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -462,17 +462,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--121
 
  []
 
-
+[3]
 Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
-[3]
+
 Underfull \hbox (badness 10000) in paragraph at lines 144--148
 
  []
 
-[4]
+
+Underfull \vbox (badness 5446) has occurred while \output is active []
+
+ [4]
 Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
@@ -510,22 +513,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--207
 
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
-[5]
+
 Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
-[6]
+
 Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
@@ -560,7 +563,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 302--305
 
  []
 
-
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 305--308
 
  []
@@ -580,17 +583,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 317--319
 
  []
 
-[7]
+
 Underfull \hbox (badness 10000) in paragraph at lines 334--335
 
  []
 
-[8]
+
+Underfull \vbox (badness 5681) has occurred while \output is active []
+
+ [8]
 Underfull \hbox (badness 10000) in paragraph at lines 385--388
 
  []
 
-
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 404--407
 
  []
@@ -610,7 +616,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 411--417
 
  []
 
-[9]
+
 Underfull \hbox (badness 10000) in paragraph at lines 433--436
 
  []
@@ -625,7 +631,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 447--450
 
  []
 
-
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 462--465
 
  []
@@ -640,12 +646,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 476--479
 
  []
 
-[10]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 528--531
 
  []
 
-[11]
+
 Underfull \hbox (badness 10000) in paragraph at lines 537--540
 
  []
@@ -660,7 +666,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 549--552
 
  []
 
-
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 558--561
 
  []
@@ -675,7 +681,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 577--580
 
  []
 
-[12]
+
 Underfull \hbox (badness 10000) in paragraph at lines 590--591
 
  []
@@ -685,12 +691,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 598--601
 
  []
 
-
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 619--621
 
  []
 
-[13]
+
 Underfull \hbox (badness 10000) in paragraph at lines 632--637
 
  []
@@ -705,7 +711,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 646--648
 
  []
 
-
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 661--662
 
  []
@@ -720,7 +726,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 675--676
 
  []
 
-[14]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 712--713
 
  []
@@ -735,7 +741,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 735--736
 
  []
 
-[15]
+
 Underfull \hbox (badness 10000) in paragraph at lines 742--743
 
  []
@@ -750,7 +756,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 752--754
 
  []
 
-
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 763--764
 
  []
@@ -775,7 +781,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 785--787
 
  []
 
-[16]
+
 Underfull \hbox (badness 10000) in paragraph at lines 794--797
 
  []
@@ -790,12 +796,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 811--812
 
  []
 
-
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 813--814
 
  []
 
-[17]
+
 Underfull \hbox (badness 10000) in paragraph at lines 834--836
 
  []
@@ -833,7 +839,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 933--934
 
  []
 
-
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 950--952
 
  []
@@ -843,7 +849,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 966--967
 
  []
 
-[20]
+
 Underfull \hbox (badness 10000) in paragraph at lines 968--969
 
  []
@@ -886,7 +892,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1086--1087
 
  []
 
-
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 1088--1090
 
  []
@@ -901,7 +907,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1095--1096
 
  []
 
-[22]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1101--1102
 
  []
@@ -911,7 +917,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1103--1105
 
  []
 
-
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 1126--1128
 
  []
@@ -936,7 +942,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1142--1143
 
  []
 
-[23]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1144--1145
 
  []
@@ -966,7 +972,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1163--1164
 
  []
 
-
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 1177--1179
 
  []
@@ -976,17 +982,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1180--1181
 
  []
 
-[24]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1227--1228
 
  []
 
-
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 1244--1245
 
  []
 
-[25]) [26]
+) [26]
 \openout2 = `./complex_analysis/chapter_two.aux'.
 
  (./complex_analysis/chapter_two.tex
@@ -996,11 +1002,11 @@ Chapter 2.
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
  (./complex_analysis_notes.aux (./complex_analysis/chapter_one.aux) (./complex_analysis/chapter_two.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
 Package rerunfilecheck Info: File `complex_analysis_notes.out' has not changed.
 (rerunfilecheck)             Checksum: 4CCDD2B0BDBA3DEB4C4272DA66F5719F;2113.
 
@@ -1008,18 +1014,18 @@ Package rerunfilecheck Info: File `complex_analysis_notes.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  ) 
 Here is how much of TeX's memory you used:
  8682 strings out of 483183
- 135843 string characters out of 5966291
- 415777 words of memory out of 5000000
+ 135847 string characters out of 5966291
+ 417707 words of memory out of 5000000
  23313 multiletter control sequences out of 15000+600000
  593649 words of font info for 112 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,20n,75p,458b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,20n,75p,458b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on complex_analysis_notes.pdf (29 pages, 252459 bytes).
+Output written on complex_analysis_notes.pdf (29 pages, 254265 bytes).
 PDF statistics:
  516 PDF objects out of 1000 (max. 8388607)
  462 compressed objects within 5 object streams

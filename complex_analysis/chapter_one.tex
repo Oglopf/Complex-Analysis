@@ -836,7 +836,24 @@ Note that:
 
 	\textbf{Proof:} \\
 	\\
-	Need help here. There's some kind of identity I'm missing to get each $\cos^n$ term to map respectively to each $\cos n.$
+	Need help here. There's some kind of identity I'm missing to get each $\cos^n$ term to map respectively to each $\cos n.$ \\
+
+	The trick is de Moivre's Formula!
+	\begin{align*}
+		\left( \cos x + i \sin x \right)^n = \cos nx + i \sin nx \\
+	\end{align*}
+
+	And since we only use the real part we have $\sin nx = 0$ and so:
+	\begin{align*}
+		\left( \cos x \right)^n = \cos nx \\
+	\end{align*}
+
+	This completes the mapping of terms on the left side. \\
+
+	Now, we need to show:
+	\begin{align*}
+		\frac{1}{2} + \frac{\sin (n + \frac{1}{2}\theta)}{2 \sin \frac{\theta}{2}} = \frac{z^{n + 1} - 1}{z - 1}
+	\end{align*}
 
 	\item Let $z, w$ be two complex numbers such that $\bar{z}w \neq 1.$ Prove that
 	\begin{align*}
@@ -1080,26 +1097,49 @@ If given $\epsilon > 0$ there exists $\delta > 0$ such that if $z \in S$ and $|z
 \end{defn}
 
 \subsection{Compact Sets}
-This section is a bit peculiar and full of theorems I've not had a use for yet, but may be useful later. \\
-
-The main point is this:
+This section is a bit peculiar and full of theorems I've not had a use for yet, but may be useful later. The main point is this:
 \begin{thm}
 	A set $S$ is compact $\iff$ it is closed and bounded.
 \end{thm}
 
+\subsection{Sequence of Complex Numbers: my note}
+
+\begin{defn}[\textbf{Sequence of Complex Numbers}]
+	A function defined on the set of Natural numbers whose 
+	range is contained in the set of Complex numbers.
+	\[n \to z\]
+\end{defn}
+
+If a sequence has a limit, it converges. Else, it diverges.
+
 \subsection{Proofs}
 \begin{enumerate}
-	\item Let $\alpha$ be a complex number of absolute value $< 1.$ What is $\lim\limits_{n \to \infty} \alpha^n ?$ Proof? \\
+	\item 
+	\subitem a. Let $\alpha$ be a complex number of absolute value $< 1.$ 
+	What is $\lim\limits_{n \to \infty} \alpha^n ?$ Proof?
 
 	\textbf{Proof:} \\
-	Suppose $|\alpha| < 1$ and recall that if $|\{z^n\}|$ converges then the sequence is absolutely convergent. \\
+	$ \alpha = |z| < 1.$ Clearly each term is less than the next in this sequence and 
+	looks to go to $0$ as the limit so we try:
+	\begin{align*}
+		\left| \alpha_n - 0 \right| < \epsilon
+	\end{align*}
+	By the Archimedean principle we can choose $m \geq n$ so that  $a_m \leq a_n$ and:
+	\begin{align*}
+		\left| \alpha_m - 0 \right| \leq \left| \alpha_n - 0 \right| < \epsilon \\
+		\therefore \left| \alpha_m\right| < \epsilon
+	\end{align*}
+	And so the sequence converges to $0$ by definition. \qed
+	\\
+	\subitem b. Let $\alpha$ be a complex number of absolute value $> 1.$ 
+	What is $\lim\limits_{n \to \infty} \alpha^n ?$ Proof?
 
-	Let's find our $\epsilon > 0$ to show the limit exists. Likely candidate will be $ \sqrt[n]{\epsilon} = \delta$
-
-	\item If $|\alpha| > 1$ does $\lim\limits_{n \to \infty} \alpha^n$ exist? Why? \\
-	
 	\textbf{Proof:} \\
-
+	$ \alpha = |z| > 1$ and $\alpha_n = |z|^n.$ 
+	Looking at the \textit{limit of the sequence} we see it increasing arbitrarily, and so each 
+	term is larger than the previous which means we can't ever satisfy our definition of a limit 
+	since we \textit{can} choose some $m, n$ that would have some arbitrarily large difference between 
+	them $> \epsilon.$ \qed
 	
 	\item Show that for any complex number $z \neq 1,$ we have
 	\[ 1 + z + \cdots + z^n = \frac{z^{n + 1} - 1}{z - 1}\]
@@ -1107,26 +1147,45 @@ The main point is this:
 	\[ \lim_{n \to \infty} (1 + z + \cdots + z^n ) = \frac{1}{1 - z} \] \\
 		
 	\textbf{Proof:} \\
-	Just take the limit and factor out the $z$ so that the terms go to zero. \\
+	Now we need to look at the \textit{limit of a sequence of partial sums} and test convergence. \\
 
 	\begin{align*}
-		\lim_{n \to \infty} (1 + z + \cdots + z^n ) &= \lim_{n \to \infty}  \frac{z^{n + 1} - 1}{z - 1}  \\
-		&= \lim_{n \to \infty} \frac{z}{z} \frac{z^n - \frac{1}{z}}{1 - \frac{1}{z} } \\
-		&= \lim_{n \to \infty} \frac{z^n - \frac{1}{z}}{1 - \frac{1}{z}} \\
-		&= \lim_{n \to \infty} z^n \\
+		S_1 &= 1 \\
+		S_2 &= 1 + z \\
+		S_3 &= 1 + z + z^2 \\
+		\vdots &= \vdots \\
+		S_n &= 1 + z + z^2 + \cdots + z^n
 	\end{align*}
-	Which will have different behaviof for:
-	\begin{align}
-		|z| &< 1 \\
-		|z| &> 1
-	\end{align}
-	For the first case $(1.3)$ we have:
+	Now play with the algebra and multiply both sides by $z$ for shits and giggles
 	\begin{align*}
-		c, z \in \mathbb{C} \\
-		c > z \\
-		f: z \mapsto \frac{c}{z}
+		zS_n &= z + z^2 + \cdots + z^{n +1} \\
+		zS_n - S_n &= z + z^2 + \cdots + z^{n +1} - S_n \\
+		S_n(z - 1) &= z + z^2 + \cdots + z^{n +1} - S_n \\
 	\end{align*}
-	So now we have 
+	The telescoping series starts to look more obvious
+	\begin{align*}
+		S_n(z - 1) &= z + z^2 + \cdots + z^{n +1} - (1 + z + z^2 + \cdots + z^n) \\
+	\end{align*}
+	Matching up the pairs we see the result we need
+	\begin{align*}
+		S_n(z - 1) &= z + z^2 + \cdots + z^{n +1} - 1 - z - z^2 - \cdots - z^n) \\
+		S_n(z - 1) &= z^{n +1} - 1 + z - z + z^2 - z^2 + z^3 - z^3 + \cdots + z^n - z^n) \\
+		\therefore S_n &= \frac{z^{n +1} - 1}{z - 1} \\
+	\end{align*}
+	And now we do as we said, \textit{take the limit of a sequence of partial sums}
+	\begin{align*}
+		\lim_{n \to \infty} S_n &= \lim_{n \to \infty} \frac{z^{n +1} - 1}{z - 1} \\
+	\end{align*}
+	And clearly this sequence diverges if $|z| > 1$ since the numerator grows unbounded over a fixed denominator. \\
+
+	Now consider if $|z| < 1$ and 
+	\begin{align*}
+		\lim_{n \to \infty} S_n &= \lim_{n \to \infty} \frac{z^{n +1} - 1}{z - 1} \\
+		&=  \frac{- 1}{z - 1} \\
+		&=  \frac{1}{1 - z} \\
+		\therefore \lim_{n \to \infty} (1 + z + \cdots + z^n ) &= \frac{1}{1 - z}
+	\end{align*}
+	\qed
 
 	\item Let $f$ be the function defined by
 	\[ f(z) = \lim_{n \to \infty} \frac{1}{1 + n^2 z} \]
@@ -1167,11 +1226,69 @@ The main point is this:
 	[\textit{Hint:} multiply and divide each term by $1 - z,$ and do a partial fraction decomposition, getting a telescoping effect. ]
 
 	\textbf{Proof:}
+	
+	For this problem, just follow along with Lang's suggestion and watch the telescope emerge. Let's look at the $n$th term for $z$ and see 
+	if there's something there.
 
+	\begin{align*}
+		z_n &= \frac{z^{n - 1}}{(1 - z^{n})(1 - z^{n + 1})} \\
+		z_n \cdot \frac{(1 - z)}{(1 - z)} &= \frac{z^{n - 1}}{(1 - z^{n})(1 - z^{n + 1})} \\
+		z_n (1 - z) &= (1 - z) \cdot \frac{z^{n - 1}}{(1 - z^{n})(1 - z^{n + 1})} \\
+		z_n (1 - z) &=  \frac{(1 - z)z^{n - 1}}{(1 - z^{n})(1 - z^{n + 1})} \\
+		z_n (1 - z) &=  \frac{z^{n - 1} - z^n}{(1 - z^{n})(1 - z^{n + 1})} \\
+	\end{align*}
+
+	Now use a \textbf{partial fraction decomposotion} here:
+
+	\begin{align*}
+		\frac{z^{n - 1} - z^n}{(1 - z^{n})(1 - z^{n + 1})} &=  \frac{z^{n - 1}}{(1 - z^{n})} - \frac{z^n}{(1 - z^{n + 1})} \\
+	\end{align*}
+
+	So then
+
+	\begin{align*}
+		z_n (1 - z) &=  \frac{z^{n - 1}}{(1 - z^{n})} - \frac{z^n}{(1 - z^{n + 1})} \\
+		\therefore \;\;\; z_n &=  \frac{1}{(1 - z)} \left( \frac{z^{n - 1}}{1 - z^{n}} - \frac{z^n}{1 - z^{n + 1}} \right) \\
+	\end{align*}
+
+	And then we see the terms create telescoping terms between them using this new expression
+
+	\begin{align*}
+		z_1 &= \frac{1}{(1 - z)} \left( \frac{z^{1 - 1}}{1 - z^{1}} - \frac{z^1}{1 - z^{1 + 1}} \right) \\
+		&= \frac{1}{(1 - z)} \left( \frac{1}{1 - z} - \frac{z}{1 - z^{2}} \right) \\
+		&= \frac{1}{(1 - z)^2} - \frac{z}{(1 - z)(1 - z^{2})} \\
+	\end{align*}
+
+	And then note
+
+	\begin{align*}
+		z_2 &= \frac{1}{(1 - z)} \left( \frac{z^{2 - 1}}{1 - z^{2}} - \frac{z^2}{1 - z^{2 + 1}} \right) \\
+		&= \frac{1}{(1 - z)} \left( \frac{z}{1 - z^2} - \frac{z^2}{1 - z^{3}} \right) \\
+		&= \frac{z}{(1 - z)(1 - z)^2} - \frac{z}{(1 - z)(1 - z^{2})} \\
+	\end{align*}
+
+	And so 
+
+	\begin{align*}
+		z_1 + z_2 &= \frac{1}{(1 - z)^2} - \frac{z}{(1 - z)(1 - z^{2})} + \frac{z}{(1 - z)(1 - z)^2} - \frac{z}{(1 - z)(1 - z^{2})} \\
+		z_1 + z_2 &= \frac{1}{(1 - z)^2} - \frac{z}{(1 - z)(1 - z^{2})} \\
+	\end{align*}
+
+	And so now we see how the terms will match up and we are left with
+
+	\begin{align*}
+		z_1 + z_2 + \cdots + z_n &= \frac{1}{(1 - z)^2} \\
+		&- \frac{z}{(1 - z)(1 - z^{2})} + \frac{z}{(1 - z)(1 - z)^2} \\
+		&- \frac{z^2}{(1 - z)(1 - z^{2})} + \frac{z^2}{(1 - z)(1 - z^{2})} + \cdots \\
+		&- \frac{z^n-1}{(1 - z)(1 - z^{n})} +\frac{z^n-1}{(1 - z)(1 - z^{n})} - \frac{z^n}{(1 - z)(1 - z^{n + 1})} \\
+		&= \frac{1}{(1 - z)^2} - \frac{z^n}{(1 - z)(1 - z^{n + 1})} \\
+	\end{align*}
+
+	And so clearly for the case $|z| < 1$ and taking the $\lim n \to \infty$ the last term goes to $0$ and we are left with the desired result.
 \end{enumerate}
 
 \subsection{Incomplete proofs}
-3, 4, 5, 6
+4, 5, 6
 
 \section{Complex Differentiability}
 \textit{(There are no exercises in this section.)}
@@ -1185,6 +1302,7 @@ The main point is this:
 	\begin{align*}
 		\lim_{h \to 0} \frac{f(z + h) - f(z)}{h} \\
 	\end{align*}
+
 
 	denoted by $f'(z)$ or $df/dz.$
 \end{defn}
@@ -1202,6 +1320,7 @@ A function $f$ defined on an open set $U$ is said to be \textbf{differentiable} 
 	\item Also say that $f$ is \textbf{Holomorphic} on $U.$
 	\item Holomorphic is usually used to specify \textit{complex} differentiability as distinguised from \textit{real} differentiability.
 \end{itemize}
+
 
 \begin{defn}[\textbf{Holomorphic Isomorphism}]
 	A holomorphic function

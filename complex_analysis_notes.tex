@@ -32,14 +32,15 @@
 % except for \fancyhead where H is implied and \fancyfoot where F is implied.
 %
 %\fancyhead[places]{field}
-\usepackage{fancyhdr} 
+\usepackage{fancyhdr}
 \pagestyle{fancy}
 % creating custom command to change Chapter # display in header
 % and some custom changes to the headrle and page # display
 \renewcommand{\chaptermark}[1]{%
  \markboth{\thechapter.\ #1}{}}
-\rfoot{\tiny\textit{Composed by: Travis Ravert}}
-\lfoot{\thepage}
+% \rfoot{\tiny\textit{Composed by: Travis Ravert}}
+%\lfoot{\thepage}
+\rhead{\thepage}
 \cfoot{}
 \renewcommand{\headrulewidth}{0pt}
 

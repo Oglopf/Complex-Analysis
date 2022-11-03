@@ -763,9 +763,7 @@ Note that:
 		\[\cos{\theta} = \frac{e^{i\theta} + e^{-i\theta}}{2} \;\;\;\ \text{and} \;\;\;\; \sin{\theta} = {\frac{e^{i\theta} - e^{-i\theta}}{2i}}\] \\
 		
 		\textbf{Proof:} \\
-		Just expand the exponentials to the polar coordinates of $\sin$ and $\cos$ and then do the algebra. \\
-		\\
-		Like the following:
+		Just expand the exponentials to the polar coordinates of $\sin\theta$ and $\cos\theta$ and then do the algebra. \\
 		\begin{align*}
 			e^{i\theta} &= \cos\theta + i\sin\theta \\
 			e^{-i\theta} &= \cos\theta - i\sin\theta \\
@@ -774,45 +772,61 @@ Note that:
 		\begin{align*}
 			e^{i\theta} + e^{-i\theta} &= \cos\theta + i\sin\theta + \cos\theta - i\sin\theta \\
 			&= \cos\theta + \cos\theta \\
-			\therefore \; e^{i\theta} + e^{-i\theta} &= 2\cos\theta
+			\therefore \; \cos\theta &=  \frac{e^{i\theta} + e^{-i\theta}}{2}
 		\end{align*}
-		We see a similar argument doing it for $\sin\theta.$ \\
+		We see a similar argument doing it for $\sin\theta$ and noting the sign change between the $e$ terms. \\
 		\qed
 	
 
-		\item For arbitrary complex $z$, suppose we define $\cos{z}$ and $\sin{z}$ by replacing $\theta$ with $z$ in the above formula. Show that the only values of $z$ for which $\cos{z} = 0$ and $\sin{z} = 0$ are the usual real values from trigonometry. \\
+		\item For arbitrary complex $z$, suppose we define $\cos{z}$ and $\sin{z}$ by replacing $\theta$ with $z$ in the above formula. 
+		Show that the only values of $z$ for which $\cos{z} = 0$ and $\sin{z} = 0$ are the usual real values from trigonometry. \\
 		
 		\textbf{Proof:} \\
-		\\
+		This is easy given the identities above! In that case we have:
+		\begin{align*}
+			\cos{z} = \frac{e^{iz} + e^{-iz}}{2} \;\;\;\ \text{and} \;\;\;\; \sin{z} = {\frac{e^{iz} - e^{-iz}}{2i}}
+		\end{align*}
+		So we just need to check when those exponential forms equal zero. Clearly this happens when the $e$ terms in the numerator are equal as they will 
+		have a sign change that points in opposite directions by the exponential $e$ is raised to. 
+		\begin{align*}
+			\cos{z} &= \frac{e^{iz} + e^{-iz}}{2} \\
+			&= \frac{e^{i(x + iy)} + e^{-i(x + iy)}}{2} \\
+			&= \frac{e^{ix + i^2 y} + e^{-ix - i^2 y}}{2} \\
+			&= \frac{e^{ix - y} + e^{-ix + y}}{2} \\
+			&= \frac{e^{ix} + e^{-ix} + e^{-y} + e^{y}}{2} \\
+		\end{align*}
+
+		Bad path above, trick is to use the base $e$ and theorem 1.2 and 1.3 I think, show that only the real factor can be $= 0$ and we know when $e^x = 0$ which
+		is exactly when $x = k\pi.$
+		\\0
+		
+
 	\end{enumerate}
 
 	\item Prove that for any complex number $z \neq 1$ we have
 	\begin{align*}
 		1 + z + \cdot\cdot\cdot + z^n = \frac{z^{n + 1} - 1}{z - 1} \\
 	\end{align*}
-	
+
 	\textbf{Proof:} \\
-	\\
 	Strategy: Just add the $z^{n + 1}$ term to both sides and notice that you end up back to the original statement on the right. \\
 
-	Base case: let $n = 1$ and:
+	\emph{Base case:} let $n = 1$:
 	\begin{align*}
 		\frac{z^{1 + 1} - 1}{z -1} &= \frac{z^2 - 1}{z - 1} \\
 		&= \frac{(z + 1)(z - 1)}{z - 1} \\
 	\end{align*}
 	\begin{align}
-		&= z + 1
+		\therefore \; \frac{z^{1 + 1} - 1}{z -1} = z + 1
 	\end{align}
 	And the result is true for the sum as well:
 	\begin{align}
 		\sum_{n = 1}^{1} (1 + z^n) &= 1 + z
 	\end{align}
 
-	By $(1.1)$ and $(1.2)$ we see the base is true. \\
-
-	Suppose it is true for $n \in \mathbb{N}.$ \\
-
-	Let $k = n + 1$ so that:
+	By $(1.1)$ and $(1.2)$ we see the \emph{base case} is true. \\
+	\\
+	Now, suppose it is true for $n \in \mathbb{N}$ and let $k = n + 1$, then:
 	\begin{align*}
 		1 + z + \cdot\cdot\cdot + z^n + z^k &= \frac{z^{n + 1} - 1}{z - 1} + z^k \\
 		&= \frac{z^{n + 1} - 1}{z - 1} + \frac{z^k(z - 1)}{(z - 1)} \\
@@ -827,7 +841,6 @@ Note that:
 	Noting again that $k$ is the $n + 1$ case, we prove the statement holds $\forall n \in \mathbb{N}.$
 	\qed 
 
-
 	\item Using the preceding exercise, and taking real parts, prove:
 	\begin{align*}
 		1 + \cos\theta + \cos2\theta + \cdot\cdot\cdot + \cos n\theta = \frac{1}{2} + \frac{\sin[(n + \frac{1}{2})\theta]}{2\sin{\frac{\theta}{2}}}
@@ -838,7 +851,7 @@ Note that:
 	\\
 	Need help here. There's some kind of identity I'm missing to get each $\cos^n$ term to map respectively to each $\cos n.$ \\
 
-	The trick is de Moivre's Formula!
+	The trick is \emph{de Moivre's Formula}!
 	\begin{align*}
 		\left( \cos x + i \sin x \right)^n = \cos nx + i \sin nx \\
 	\end{align*}
@@ -849,7 +862,6 @@ Note that:
 	\end{align*}
 
 	This completes the mapping of terms on the left side. \\
-
 	Now, we need to show:
 	\begin{align*}
 		\frac{1}{2} + \frac{\sin (n + \frac{1}{2}\theta)}{2 \sin \frac{\theta}{2}} = \frac{z^{n + 1} - 1}{z - 1}

@@ -910,7 +910,8 @@ And clearly:
 	u(x, y) &= x^2 - y^2 \\
 	v(x, y) &= -2xy
 \end{align*}
-This basic example shows why each complex valued function can be represented as functions of $2$ \textit{real} variables.
+This concrete example hopefully clears the fog around the abstract symbols and 
+shows why each complex valued function can be represented as functions of $2$ \textit{real variables.} 
 
 
 \subsection{Power Function}
@@ -1148,17 +1149,31 @@ If a sequence has a limit, it converges. Else, it diverges.
 	What is $\lim\limits_{n \to \infty} \alpha^n ?$ Proof?
 
 	\textbf{Proof:} \\
-	$ \alpha = |z| < 1.$ Clearly each term is less than the next in this sequence and 
-	looks to go to $0$ as the limit so we try:
+	Likely just want an absolute convergence where it's shown each successive term is less than the next, and so 
+	the whole sequence converges.
+
+	$|\alpha| < 1$ iff $ |\alpha| = \frac{1}{|z|}.$ 
+
+	So then check $\lim\limits_{n \to \infty} |\alpha|^n$:
 	\begin{align*}
-		\left| \alpha_n - 0 \right| < \epsilon
+		\lim\limits_{n \to \infty} |\alpha|^n &= \lim\limits_{n \to \infty} \frac{1}{|z|^n} \\
 	\end{align*}
-	By the Archimedean principle we can choose $m \geq n$ so that  $a_m \leq a_n$ and:
+	This sequence has different behavior for $z < 1$ vs $z > 1$, but we must have $|\alpha| < 1$ therefore $z > 1$ only here.
+
 	\begin{align*}
-		\left| \alpha_m - 0 \right| \leq \left| \alpha_n - 0 \right| < \epsilon \\
-		\therefore \left| \alpha_m\right| < \epsilon
+		\lim\limits_{n \to \infty} |\alpha|^n &= \lim\limits_{n \to \infty} \frac{1}{|z|^n} \\
 	\end{align*}
-	And so the sequence converges to $0$ by definition. \qed
+
+	Since $z > 1$ and by the Archimedean principal we can always find $m > n$
+	then clearly $z^m < z^n$ and so this sequence is monotonic, it only decreases each new term.
+
+	Therefore let $\epsilon > 0$ and see by definition:
+	\begin{align*}
+		|\alpha - 0| < \epsilon^n \\
+		|\frac{1}{z} - 0| < \epsilon^n \\
+		\left|\frac{1}{z} - 0\right|^{-n} < \epsilon \\
+		\frac{1}{|z|^n} < \epsilon \\
+	\end{align*} \qed
 	\\
 	\subitem b. Let $\alpha$ be a complex number of absolute value $> 1.$ 
 	What is $\lim\limits_{n \to \infty} \alpha^n ?$ Proof?

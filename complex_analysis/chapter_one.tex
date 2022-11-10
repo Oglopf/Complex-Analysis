@@ -1149,8 +1149,7 @@ If a sequence has a limit, it converges. Else, it diverges.
 	What is $\lim\limits_{n \to \infty} \alpha^n ?$ Proof?
 
 	\textbf{Proof:} \\
-	Likely just want an absolute convergence where it's shown each successive term is less than the next, and so 
-	the whole sequence converges if its absolute value converges. Could also use a Cauchy Sequence though.
+	Just use a Cauchy Sequence.
 
 	$|\alpha| < 1$ iff $ |\alpha| = \frac{1}{|z|}.$ 
 
@@ -1170,14 +1169,12 @@ If a sequence has a limit, it converges. Else, it diverges.
 	\alpha^m < \alpha^n \iff \frac{1}{z^m} < \frac{1}{z^n}
 	\end{align*}
 	
-	Therefore this sequence is monotonic, it only decreases each new term.
+	Therefore this sequence is monotonic, it only decreases each new term, and the difference between $m, n$ terms is 
+	small but always $> 0$ which gives us a cauchy sequence.
 
-	So then let $\epsilon > 0$ and see by definition:
+	So then:
 	\begin{align*}
-		|\alpha - 0| < \epsilon^n \\
-		|\frac{1}{z} - 0| < \epsilon^n \\
-		\left|\frac{1}{z} - 0\right|^{-n} < \epsilon \\
-		\frac{1}{|z|^n} < \epsilon \\
+		|\alpha^n - \alpha^m| < \epsilon \\
 	\end{align*} \qed
 	\\
 	\subitem b. Let $\alpha$ be a complex number of absolute value $> 1.$ 

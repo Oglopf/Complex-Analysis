@@ -1150,7 +1150,7 @@ If a sequence has a limit, it converges. Else, it diverges.
 
 	\textbf{Proof:} \\
 	Likely just want an absolute convergence where it's shown each successive term is less than the next, and so 
-	the whole sequence converges if its absolute value converges.
+	the whole sequence converges if its absolute value converges. Could also use a Cauchy Sequence though.
 
 	$|\alpha| < 1$ iff $ |\alpha| = \frac{1}{|z|}.$ 
 
@@ -1165,9 +1165,14 @@ If a sequence has a limit, it converges. Else, it diverges.
 	\end{align*}
 
 	Since $z > 1$ and by the Archimedean principal we can always find $m > n$
-	then clearly $z^m < z^n$ and so this sequence is monotonic, it only decreases each new term.
+	then clearly: 
+	\begin{align*}
+	\alpha^m < \alpha^n \iff \frac{1}{z^m} < \frac{1}{z^n}
+	\end{align*}
+	
+	Therefore this sequence is monotonic, it only decreases each new term.
 
-	Therefore let $\epsilon > 0$ and see by definition:
+	So then let $\epsilon > 0$ and see by definition:
 	\begin{align*}
 		|\alpha - 0| < \epsilon^n \\
 		|\frac{1}{z} - 0| < \epsilon^n \\

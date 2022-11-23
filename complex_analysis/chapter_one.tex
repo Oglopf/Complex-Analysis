@@ -1239,6 +1239,31 @@ If a sequence has a limit, it converges. Else, it diverges.
 			
 	\textbf{Proof:} \\
 
+	Start by plugging in:
+	\begin{align*}
+		f(z) &= \lim_{n \to \infty} \frac{1}{1 + n^2 z} \\
+		f(0) &= \lim_{n \to \infty} \frac{1}{1 + n^2 0} \\
+		f(0) &= 1 
+	\end{align*}
+	Now consider all other cases:
+	\begin{align*}
+		f(+\infty) &= \lim_{n \to \infty} \frac{1}{1 + n^2 \infty} \\
+		f(+\infty) &= 0 \\
+		f(-\infty) &= \lim_{n \to -\infty} \frac{1}{1 + n^2 (-\infty)} \\ 
+		f(-\infty) &= 0 \\
+	\end{align*}
+
+	Then consider $b < 1 < c$:
+	\begin{align*}
+		f(c) &= \lim_{n \to \infty} \frac{1}{1 + n^2 c} \\
+		f(c) &= 0 \\
+		f(b) &= \lim_{n \to \infty} \frac{1}{1 + n^2 b} \\ 
+		f(b) &= 0 \\
+	\end{align*}
+
+	And so the function $f$ satisfies the definition and so can be called the characteristic function of the set $\{0\}$.
+	\qed
+
 	\item For $|z| \neq 1$ show that the following limit exists:
 	\[ f(z) = \lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right) \]
 
@@ -1246,17 +1271,92 @@ If a sequence has a limit, it converges. Else, it diverges.
 		
 	\textbf{Proof:} \\
 
+	Take the limits for the cases of $z$.\\ 
+	
+	First for $z > 1$:
+	\begin{align*}
+		f(z) &= \lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right) \\
+		&= \lim_{n \to \infty} \frac{z^n}{z^n} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
+		&= \lim_{n \to \infty} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
+		&= \lim_{n \to \infty} \left( \frac{- \frac{1}{z^n}}{\frac{1}{z^n}} \right) \\
+		&= \lim_{n \to \infty} \left( \frac{- z^n}{{z^n}} \right) \\
+		&= -1
+	\end{align*}
 
-	\item Let
-	\[ f(z) = \lim_{n \to \infty} \frac{z^n}{1 + z^n} \]
+	For $0 < z < 1$:
+	\begin{align*}
+		f(z) &= \lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right) \\
+		&= \lim_{n \to \infty} \frac{z^n}{z^n} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
+		&= \lim_{n \to \infty} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
+		&= \lim_{n \to \infty} \left( \frac{- \frac{1}{z^n}}{\frac{1}{z^n}} \right) \\
+		&= \lim_{n \to \infty} \left( \frac{- z^n}{{z^n}} \right) \\
+		&= -1
+	\end{align*}
+	For $z = 0$
+	\begin{align*}
+		f(z) &= \lim_{n \to \infty} \left( \frac{0 - 1}{0 + 1} \right) \\
+		&= -1
+	\end{align*}
+	For $ -1 < z < 0$:
+	\begin{align*}
+		f(z) &= \lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right) \\
+		&= \lim_{n \to \infty} \frac{z^n}{z^n} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
+		&= \lim_{n \to \infty} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
+		&= \lim_{n \to \infty} \left( \frac{- \frac{1}{z^n}}{\frac{1}{z^n}} \right) \\
+		&= -1
+	\end{align*}
+	And lastly $z < -1$:
+	\begin{align*}
+		f(z) &= \lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right) \\
+		&= \lim_{n \to \infty} \frac{z^n}{z^n} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
+		&= \lim_{n \to \infty} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
+		&= \lim_{n \to \infty} \left( \frac{- \frac{1}{z^n}}{\frac{1}{z^n}} \right) \\
+		&= \lim_{n \to \infty} \left( \frac{- z^n}{{z^n}} \right) \\
+		&= -1
+	\end{align*}
+
+	And so the limit exists for $|z| \not = 1.$ \\
+	
+	\emph{Can we make the function continuous?} Yes, by defining $f(z)$ as:
+	
+	\[	
+	f(z) =
+	\begin{cases}
+		\lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right) & \text{if } |z| \not = 1 \\
+		-1 & \text{if } |z| = 1
+	\end{cases} 
+	\]
+	\qed
+
+	\item Let \[ f(z) = \lim_{n \to \infty} \frac{z^n}{1 + z^n} \]
 	\begin{enumerate}
 		\item What is the domain of definition of $f,$ that is, for which complex numbers $z$ does the limit exist? \\
 		
-		\textbf{Proof:} \\
-	
-		\item Give explicitly the values of $f(z)$ for the various $z$ in the domain of $f.$
+		\textbf{Proof:} \\ 
+		The domain clearly exists for the cases of $|z| < 1$: 
+		\begin{align*}
+			f(z) &= \lim_{n \to \infty} \frac{z^n}{1 + z^n} \\
+			&= \frac{0}{1 + 0} \\
+			&= 0
+		\end{align*}
+		And then for $z > -1$:
+		\begin{align*}
+			f(z) &= \lim_{n \to \infty} \frac{z^n}{1 + z^n} \\
+			&= \frac{-\infty}{1 + -\infty} \\
+			&= 1
+		\end{align*}
 
-		\textbf{Proof:}
+		Now to consider $z = -1$. Here we have an issue of never settling on a sign which is a divergent sequence.
+		That is enough to show that a singularity exists at this point, 
+		which is to say the limit does not exist at $z = -1$.  \\
+
+		$\therefore$ The domain of definition is $(-\infty, -1) \cup (-1, \infty)$.
+		\qed
+	
+		\item Give explicitly the values of $f(z)$ for the various $z$ in the domain of $f.$ \\
+		
+		\textbf{Proof:} \\
+		See above problem. \qed
 	
 	\end{enumerate}
 
@@ -1330,11 +1430,16 @@ If a sequence has a limit, it converges. Else, it diverges.
 		&= \frac{1}{(1 - z)^2} - \frac{z^n}{(1 - z)(1 - z^{n + 1})} \\
 	\end{align*}
 
-	And so clearly for the case $|z| < 1$ and taking the $\lim n \to \infty$ the last term goes to $0$ and we are left with the desired result.
+	And so clearly for the case $|z| < 1$ and taking the $\lim n \to \infty$ the last term goes to $0$ and we are left 
+	with the desired result. \\
+
+	This finishes the first case of $z < 1$.\\
+
+	Now we need to consider the case $|z| > 1$ where we also have a factor of $\frac{1}{z}$ emerge.
 \end{enumerate}
 
 \subsection{Incomplete proofs}
-4, 5, 6
+6 second part
 
 \section{Complex Differentiability}
 \textit{(There are no exercises in this section.)}

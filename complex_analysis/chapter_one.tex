@@ -1435,11 +1435,26 @@ If a sequence has a limit, it converges. Else, it diverges.
 
 	This finishes the first case of $z < 1$.\\
 
-	Now we need to consider the case $|z| > 1$ where we also have a factor of $\frac{1}{z}$ emerge.
-\end{enumerate}
+	Now we need to consider the case $|z| > 1$ and continue on:
 
-\subsection{Incomplete proofs}
-6 second part
+		\begin{align*}
+		z_1 + z_2 + \cdots + z_n &= \frac{1}{(1 - z)^2} - \frac{z^n}{(1 - z)(1 - z^{n + 1})} \\
+		&= \frac{1}{(1 - z)^2} - \frac{z^n}{(1 - z)(1 - z)(z^n)} \\
+		&= \frac{1}{(1 - z)^2} - \frac{1}{(1 - z)(1 - z)} \\
+		&= \frac{1}{(1 - z)^2} - \frac{1}{(z^2 - z)} \\
+		&= \frac{1}{(1 - z)^2} - \frac{1}{z(z - 1)} \\
+		&= \frac{z(z - 1)}{z(z - 1)(1 - z)^2} - \frac{(1 - z)^2}{z(z - 1)(1 - z)^2} \\
+		&= \frac{z(z - 1) - (1 - z)^2}{z(z - 1)(1 - z)^2} \\
+		&= \frac{z^2 - z  - [(1 - z)(1 - 2)]}{z(z - 1)(1 - z)^2} \\
+		&= \frac{z^2 - z  - (1 - 2z + z^2)}{z(z - 1)(1 - z)^2} \\
+		&= \frac{z^2 - z  - 1 + 2z - z^2}{z(z - 1)(1 - z)^2} \\
+		&= \frac{z - 1}{z(z - 1)(1 - z)^2} \\
+		&= \frac{1}{z(1 - z)^2} \\
+	\end{align*}
+	Which finishes the proof.
+	\qed
+
+\end{enumerate}
 
 \section{Complex Differentiability}
 \textit{(There are no exercises in this section.)}

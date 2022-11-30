@@ -12,13 +12,13 @@ take as complex numbers.
   \[n \mapsto a_n \]
 \end{itemize}
 
-The whole big point is this: 
+Main points: 
   \begin{itemize}
-    \item if you wanna compose functions and maps, do it term by term with their series.
+    \item if you wanna compose functions and maps, do it term by term with their series expansions.
+    \item Often when doing all this you can even get a telescoping series and then arrive at a closed form of the expression. \\
   \end{itemize}
-Often when doing all this you can even get a telescoping series and then arrive at a closed form of the expression.
 
-For the below definitions refer to the formal expression:
+For the below definitions refer to the \textbf{formal expression of a power series:}
 \begin{align*}
   f(x) &= \sum_{n = 0}^{\infty} a_n T^n \\
   &= a_0 + a_1 T + a_2 T^2 + \cdots
@@ -88,10 +88,46 @@ This leads to the following Theorem:
   \begin{align*}
     f(-z) = f(z)
   \end{align*}
-  Conversely, if we assume $f(-z) = f(z)$ then $f$ is \textbf{even} simply by definition. A similar argument can be applied for the \textbf{odd} case.
+  Conversely, if we assume $f(-z) = f(z)$ then $f$ is \textbf{even} simply by definition. 
+  A similar argument can be applied for the \textbf{odd} case.
   \qed
-\end{enumerate}
 
+  \item Define the \textbf{Bernoulli numbers} $B_n$ by the power series:
+  \begin{align*}
+    \frac{z}{e^z - 1} = \sum_{n = 0}^{\infty}\frac{B_n}{n\,!}z^n
+  \end{align*}
+  Prove the recursion formula: \\
+
+  If:
+  \begin{align*}
+    \frac{B_0}{n \, ! \; 0!} + \frac{B_1}{(n - 1)! \; 1!} + \cdots + \frac{B_{n - 1}}{1! \; (n - 1)\,!} + = 
+    \begin{cases}
+      1 \;\;\; \text{   if } n = 1. \\
+      0 \;\;\; \text{   if } n > 1.
+    \end{cases}
+  \end{align*}
+  Then $B_0 = 1.$ \\
+  
+  Compute $B_1, B_2, B_3, B_4.$ \\ 
+  
+  Show that $B_n = 0$ if $n$ is odd and $n \not = 1.$
+  
+  \item Show that:
+  \begin{align*}
+    \frac{z}{2} \frac{e^{z/2} + e^{-z/2}}{e^{z/2} - e^{-z/2}} = \sum_{n = 0}^\infty \frac{B_n}{(2n)!}z^{2n} \;.
+  \end{align*}
+  Replace $z$ by $2\pi i z$ to show that:
+  \begin{align*}
+    \pi z \cot(\pi z) = \sum_{n = 0}^\infty (-1)^n \frac{(2\pi)^{2n}}{(2n)!} z^{2n} B_{2n} \;.
+  \end{align*}
+
+  \item Express the power series for $\tan z , \frac{z}{\sin z}, z \cot z ,$ in terms of \textbf{Bernoulli numbers}.
+  \item (\textbf{Difference Equation}) given complex numbers $a_0, a_1, u_1, u_2 \;$ define $a_n$ for $2 \leq n$ by:
+  \begin{align*}
+    a_n = u_1 a_{n - 1} +u_2 a_{n - 2} \;.
+  \end{align*}
+  If we have a factorization: \textbf{STOPPED}
+\end{enumerate}
 \section{Convergent Power Series}
 \section{Relations Between Formal and Convergent Series}
 \section{Analytic Functions}

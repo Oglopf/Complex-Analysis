@@ -281,6 +281,17 @@
 	\item Let $\alpha = a +ib$ and $z = x +iy.$ Let $c \in \mathbb{R} > 0.$ Transform the condition:
 	$$|z - \alpha| = c$$
 	into an equation involving only $x, y, a, b$ and $c$, and describe in a simple way what geometric figure is represented by this equation.
+
+	\textbf{Proof:} \\
+	The equation comes out as:
+	\begin{align*}
+		|z - \alpha| &= | x + iy - (a + ib) | \\
+		&= | (x - a) + i(y - b) | \\
+		&= c
+	\end{align*}
+	Which is a vector always moved from the origin of $\mathbb{C}$ by $\alpha$ and this vector forms a circular perimeter as we consider the values 
+	of $x, y$ and see that no matter what we select we must be on that circular perimeter a distance of $c$ from whatever origin we are at.
+	\qed
 	
 	\item Describe geometrically the sets of points $z$ satisfying the following conditions:
 	\begin{enumerate}
@@ -289,7 +300,8 @@
 		The perimeter of the circle that has a radius of $5$ and with an origin $|z - i + 3|$ from the origin of $\mathbb{C}.$
 		\item $|z - i + 3| > 5$ \\
 		\\
-		The complex plane outside a set that sits $|z -i + 3|$ from the origin of $\mathbb{C}$ with a radius of $5$ with no points \textit{on} the perimeter of the radius.
+		The complex plane outside a set that sits $|z -i + 3|$ from the origin of $\mathbb{C}$ with a radius of $5$ with 
+		no points \textit{on} the perimeter of the radius.
 		\item $|z - i + 3| \leq 5$ \\
 		\\
 		The disc of points in $\mathbb{C}$ centered at $|z - i + 3|$ with a radius of $5.$
@@ -801,9 +813,9 @@ Note that:
 			|r|e^{i \theta} &= r\cos(\theta) + ir\sin(\theta) \\
 		\end{align*}
 
-		This gives the maps we need between using $\all z \in \mathbb{C}$ and $0 \leq \theta \leq 2\pi$.
+		This gives the maps we need between using $\forall z \in \mathbb{C}$ and $0 \leq \theta \leq 2\pi$.
 
-		Notice that asking when $cos(z) = 0$ is precisely when $\cos(z) &= \frac{e^{iz} + e^{-iz}}{2} = 0$ as well.
+		Notice that asking when $cos(z) = 0$ is precisely when $\cos(z) = \frac{e^{iz} + e^{-iz}}{2} = 0$ as well.
 		
 	\end{enumerate}
 

@@ -2,8 +2,10 @@
 We've already been dancing around with these in some previous proofs, now let's really dig in. 
 \section{Formal Power Series}
 \begin{defn}[\textbf{Formal Power Series}]
-  Using a neutral letter $T$
+  Using a neutral letter $T$:
+
   \[\sum_{n = 0}^{\infty}a_n T^n = a_0 + a_1 T + a_2 T^2 + \cdots \]
+
 \end{defn}
 The important part of this definition are the \textit{coefficients} $a_0, a_1, a_2, ...$ which we 
 take as complex numbers.
@@ -19,10 +21,12 @@ Main points:
   \end{itemize}
 
 For the below definitions refer to the \textbf{formal expression of a power series:}
+
 \begin{align*}
-  f(x) &= \sum_{n = 0}^{\infty} a_n T^n 
+  f(x) &= \sum_{n = 0}^{\infty} a_n T^n \\
   &= a_0 + a_1 T + a_2 T^2 + \cdots
 \end{align*}
+
 \begin{defn}[\textbf{Constant Term}]
   The leading term of $f$ denoted $a_0$.
 \end{defn}
@@ -50,7 +54,9 @@ This leads to the following Theorem:
 \end{thm}
 
 \subsection{Proofs}
+
 \begin{enumerate}
+
   \item Give the terms of order $\leq 3$ in the power series:
   The trick for all of these is to just use their power series expansions or use ones we've found and stuff more $f$s into them 
   to get out more that we need.
@@ -76,7 +82,6 @@ This leads to the following Theorem:
   Verify that $f$ is even if and only if $f(-z) = f(z)$ and $f$ is odd if and only if $f(-z) = -f(z).$
 
   \textbf{Proof}:
-
   Use power series expansions. Proving the \textbf{even} case first, but the same type of argument will work for the odd.
 
   If $f$ is \textbf{even} then $n$ is odd, so:
@@ -94,7 +99,9 @@ This leads to the following Theorem:
   \begin{align*}
     f(-z) = f(z)
   \end{align*}
-  Conversely, if we assume $f(-z) = f(z)$ then $f$ is \textbf{even} simply by definition. 
+  Conversely, if we assume $f(-z) = f(z)$ then $f$ is \textbf{even} simply by definition, which completes the proof 
+  for the \textbf{even} case. 
+  
   A similar argument can be applied for the \textbf{odd} case.
   \qed
 

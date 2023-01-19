@@ -14,7 +14,7 @@
 \usepackage{geometry} % Body formatting.
 \usepackage{titlesec} % Chapter titles formatting.
 \usepackage[mathscr]{euscript} % For topology and scripted alphabet.
-\usepackage{parskip}
+\usepackage{parskip} % Format space between paragraphs and lines cleanly.
 %
 % docs around fancy headers and footers below found at:
 % https://mirrors.concertpass.com/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
@@ -49,9 +49,9 @@
 \geometry{left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
 % Theorem and Defn formatting.
-\newtheorem{thm}{Thm}[chapter] % Reset thm count by chapter and set var thm.
-\newtheorem{defn}{Defn}[chapter] % Reset defn count by chapter and set var defn.
-\newtheorem{prop}{Prop}[section]
+\newtheorem{thm}{T}[chapter] % Reset thm count by chapter and set var T.
+\newtheorem{defn}{D}[chapter] % Reset defn count by chapter and set var D.
+\newtheorem{prop}{P}[section] % Set propositions by section and set var P.
 \renewcommand\qedsymbol{$\blacksquare$} % Change proof completion symbol.
 
 % Chapter titles formatting.
@@ -66,16 +66,22 @@
 	[\vspace{0.5ex}\titlerule]
 	
 % TOC formatting.
-\hypersetup{
+\hypersetup {
 	colorlinks=true,
 	linkcolor=blue,
-	urlcolor=blue,}
+	urlcolor=blue,
+	}
+
+% prevent auto intendation with paragraphs.
 \setlength{\parindent}{0ex}
 
+% Front Title Page
 \begin{document}	
-	\author{Travis Ravert}
-	\title{Notes Over Serge Lang's Complex Analysis: \\ 4th Edition}
-	\date{June 20, 2022}
+	\author{By: Travis Ravert}
+	\title{
+		Notes on Serge Lang's Complex Analysis ($4^{ed}$)
+	}
+	\date{Began: June 20, 2022}
 	\frontmatter
 	\maketitle
 	\tableofcontents

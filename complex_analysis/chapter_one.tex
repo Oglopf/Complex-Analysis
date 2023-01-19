@@ -1,4 +1,5 @@
 \chapter{Complex Numbers and Functions}
+
 \underline{\textbf{Assume}}: $\{ {z}_{n} \}$ is a complex valued sequence with $n,m, N \in \mathbb{N}$.
 \section{Complex Numbers}
 \subsection{Definitions}
@@ -36,9 +37,10 @@
 \begin{enumerate}
 	\item Express the following complex numbers in the form $x + iy$, where $x, y$ are real numbers.
 	\begin{enumerate}
-		\item $\;\;(-1 + 3i)^{-1}$ \\
+		\item $\;\;(-1 + 3i)^{-1}$
 		
-		\textbf{Proof:}	\\
+		\textbf{Proof:}
+
 		Simply invert and separate, then use the conjugate/symmetry to rationalize the statement:
 		\begin{align*}
 		(-1 + 3i)^{-1} &= \frac{1}{(-1 + 3i)} \\
@@ -51,22 +53,21 @@
 		Which just means from the origin of $\mathbb{C}$ go left $1$ then down $3$ then shrink by $\frac{1}{10}$ and that's the $z$ you're at in $\mathbb{C}.$
 		\qed
 		
-		\item $\;\;(1 + i)(1 - i)$ \\
+		\item $\;\;(1 + i)(1 - i)$
 		
-		\textbf{Proof:} \\
+		\textbf{Proof:}
 		Distribute and collect:
 		\begin{align*}
-		(1 + i)(1 - i) &= 1 -i + i - i^2 \\
-		&= 1 - (-1) \\
-		&= 2 \\
-		\\
+			(1 + i)(1 - i) &= 1 -i + i - i^2 \\
+			&= 1 - (-1) \\
+			&= 2 \\
 		\therefore \; (1 + i)(1 - i) &= 2 + 0i
 		\end{align*}
 		\qed
 		
-		\item $(i + 1)(i - 2)(i + 3)$ \\
+		\item $(i + 1)(i - 2)(i + 3)$
 		
-		\textbf{Proof:} \\
+		\textbf{Proof:}
 		Distribute collect, distribute and collect again.
 		\begin{align*}
 		(i + 1)(i - 2)(i + 3) &= (i^2 -2i + i - 2)(i + 3) \\
@@ -80,53 +81,53 @@
 	
 	\item Express the following complex numbers in the form $x + iy$, where $x, y$ are real numbers.
 	\begin{enumerate}
-		\item $\;\;(1 + i)^{-1}$ \\
+		\item $\;\;(1 + i)^{-1}$
 		
-		\textbf{Proof:} \\
+		\textbf{Proof:}
 		More of the same, just use the conjugate to solve these like problem 1 above.
 		\begin{align*}
-		(1 + i)^{-1} &= \frac{1}{1 + i} \\
-		&= \frac{1}{1 + i} \frac{(1 - i)}{(1 - i)} \\
-		&= \frac{1 - i}{(1 + i)(1 - i)} \\
-		&= \frac{1 - i}{1 - i + i - i^2} \\
-		&= \frac{1 - i}{1 - (-1)} \\
-		&= \frac{1 - i}{2} \\
+			(1 + i)^{-1} &= \frac{1}{1 + i} \\
+			&= \frac{1}{1 + i} \frac{(1 - i)}{(1 - i)} \\
+			&= \frac{1 - i}{(1 + i)(1 - i)} \\
+			&= \frac{1 - i}{1 - i + i - i^2} \\
+			&= \frac{1 - i}{1 - (-1)} \\
+			&= \frac{1 - i}{2} \\
 		\therefore \; (1 + i)^{-1} &= \frac{1}{2} - \frac{i}{2}
 		\end{align*}
 		\qed
 	\end{enumerate}
 	
-	\item Let $\alpha$ be a complex number $\neq 0.$ What is the absolute value of $\alpha/\bar{\alpha}?$ What is $\bar{\bar{\alpha}}?$ \\
-	\\
-	\textbf{Proof:} \\
+	\item Let $\alpha$ be a complex number $\neq 0.$ What is the absolute value of $\alpha/\bar{\alpha}?$ What is $\bar{\bar{\alpha}}?$
+
+	\textbf{Proof:}
 	First note that: 
 	\begin{align*}
 	\alpha &= x + yi \\
 	\bar{\alpha} &= x - yi \\
 	\therefore \; \left| \frac{\alpha}{\bar{\alpha}} \right| &= \frac{x + yi}{x - yi} \\
 	\end{align*}
-	\\
+
 	Now some algebra:
 	\begin{align*}
-	\frac{x + yi}{x - yi} &= \frac{(x + yi)}{(x - yi)} \frac{(x + yi)}{(x + yi)} \\
-	&= \frac{x^2 + 2xyi +y^2 i^2}{x^2 - y^2 i^2} \\
-	&= \frac{x^2 + 2xyi +y^2 i^2}{x^2 + y^2} \\
-	&= \frac{x^2 + 2xyi - y^2}{x^2 + y^2 } \\
-	&= \frac{x^2 + 2xyi - y^2}{ \left | \bar{\alpha} \right |^2  } \\
-	&= \frac{(x + yi)(x - yi)}{ \left | \bar{\alpha} \right |^2  } \\
+		\frac{x + yi}{x - yi} &= \frac{(x + yi)}{(x - yi)} \frac{(x + yi)}{(x + yi)} \\
+		&= \frac{x^2 + 2xyi +y^2 i^2}{x^2 - y^2 i^2} \\
+		&= \frac{x^2 + 2xyi +y^2 i^2}{x^2 + y^2} \\
+		&= \frac{x^2 + 2xyi - y^2}{x^2 + y^2 } \\
+		&= \frac{x^2 + 2xyi - y^2}{ \left | \bar{\alpha} \right |^2  } \\
+		&= \frac{(x + yi)(x - yi)}{ \left | \bar{\alpha} \right |^2  } \\
 	\therefore \; \left| \frac{\alpha}{\bar{\alpha}} \right|  &= \frac{\alpha \cdot \bar{\alpha}}{ \left | \bar{\alpha} \right |^2  } \\
 	\end{align*}
 	\qed
-	\\
-	\subitem \textbf{Part 3b:} What is $\bar{\bar{\alpha}}?$ \\
+
+	\subitem \textbf{Part 3b:} What is $\bar{\bar{\alpha}}?$
 	
-	\textbf{Proof:} \\
+	\textbf{Proof:}
 	Note 
 	\begin{align*}
-	\alpha = x + yi \;\; & \Leftrightarrow \;\; \bar{\alpha} = x - yi. \\ 
-	\therefore \; \bar{\bar{\alpha}} &= \overline{x - yi}\\
+		\alpha = x + yi \;\; & \Leftrightarrow \;\; \bar{\alpha} = x - yi. \\ 
+		\therefore \; \bar{\bar{\alpha}} &= \overline{x - yi} \\
 	\end{align*}
-	\\
+
 	So now because the conjugate operation just changes the sign on the \textit{imaginary} part of $\alpha$ we have the straightforward result of:
 	\begin{align*}
 	\bar{\bar{\alpha}} &= \overline{x - yi} \\ 
@@ -141,9 +142,9 @@
 	and that:
 	$$ \overline{\alpha + \beta} = \bar{\alpha} + \bar{\beta}$$
 	
-	\textbf{Proof:} \\
-	First is easy since we just distribute out $\alpha\cdot\beta$ and gather reals and imaginary parts together and see it is the same result as if we had simply taken the conjugate of each component.\\
-	\\ 
+	\textbf{Proof:}
+	First is easy since we just distribute out $\alpha\cdot\beta$ and gather reals and imaginary parts together and see it is the same result as if we had simply taken the conjugate of each component.
+
 	Algebraically, with $\alpha_n, \beta_n, \rho \in \mathbb{R}$ :
 	\begin{align*}
 		\overline{\alpha \beta} &= \overline{(\alpha_1 + \alpha_2 i)(\beta_1 + \beta_2 i)} \\
@@ -168,25 +169,29 @@
 		\qed
 	\end{align*}
 	\\
-	Second is easier as we only convert the sign inside the complex numbers, and do nothing with the operation between the two complex numbers, only on the reals in the number. Again, basically just some algebra of converting to the real and imaginary parts and gathering terms. 
+	Second is easier as we only convert the sign inside the complex numbers, and do nothing with the operation between the two complex numbers, only on the reals in the number. 
+	
+	Again, basically just some algebra of converting to the real and imaginary parts and gathering terms. 
 	\qed
 	
-	\item Justify the assertion that the real part of a complex number is $\leq$ its absolute value. \\
+	\item Justify the assertion that the real part of a complex number is $\leq$ its absolute value.
 	
-	\textbf{Proof:} \\
-	The value can be equal to the absolute value if it happens to be positive, in which case it coincides with the absolute value. \\
-	\\
-	Or, it can be the symmetric partner if it is negative and therefore equal in magnitude but opposite in direction, therefore ordered as $\le$ the absolute value by definition of well-ordering in $\mathbb{R}$. Because the reals are symmetric like my god damned shoes! 
+	\textbf{Proof:}
+	The value can be equal to the absolute value if it happens to be positive, in which case it coincides with the absolute value.
+
+	Or, it can be the symmetric partner if it is negative and therefore equal in magnitude but opposite in direction, therefore ordered as $\le$ the absolute value by definition 
+	of well-ordering in $\mathbb{R}$. Because the reals are symmetric like shoes, the have a left-handedness and a right-handedness. 
 	\qed
 	
 	\item If $\alpha = a + ib$ with $a, b \in \mathbb{R}$ then $b$ is called the \textbf{imaginary part} of $\alpha$ and we write: 
-	$$\mathfrak{Im}(\alpha) = b.$$ \\
-	\\
+	$$\mathfrak{Im}(\alpha) = b.$$
+
 	\begin{enumerate}
 		\item Show that: 
-		$$\alpha - \bar{\alpha} = 2i \; \mathfrak{Im}(\alpha)$$ \\
 
-		\textbf{Proof:}\\
+		$$\alpha - \bar{\alpha} = 2i \; \mathfrak{Im}(\alpha)$$
+
+		\textbf{Proof:}
 		Just do the algebra:
 		\begin{align*}
 			\alpha - \bar{\alpha} &= (a + ib) - (a - ib) \\
@@ -197,18 +202,20 @@
 
 
 		\item Show that:
-		$$\mathfrak{Im}(\alpha) \leq \left | \mathfrak{Im}(\alpha) \right | \leq |\alpha|$$ \\
+		$$\mathfrak{Im}(\alpha) \leq \left | \mathfrak{Im}(\alpha) \right | \leq |\alpha|$$
 
-		\textbf{Proof:} \\
-		Again, with some algebra we see the answer by considering the case of the imaginary part being either positive or negative while the absolute value will always be positive and therefore will be equal to this value or greater than it if it is negative. \\
-		\\
-		Next, think of whether part of $\alpha$ along just the real part or that part plus another would always make it larger than or equal to? If they always have the same imaginary part, then adding a real only increases the size of $\alpha$ while leaving the imaginary part at its maximum value. I'm too lazy to type this out right now, maybe later. 
+		\textbf{Proof:}
+		Again, with some algebra we see the answer by considering the case of the imaginary part being either positive or negative while the absolute value will always be 
+		positive and therefore will be equal to this value or greater than it if it is negative.
+
+		Next, think of whether part of $\alpha$ along just the real part or that part plus another would always make it larger than or equal to? If they always have the 
+		same imaginary part, then adding a real only increases the size of $\alpha$ while leaving the imaginary part at its maximum value. I'm too lazy to type this out right now, maybe later. 
 		\qed
 	\end{enumerate}
 	
-	\item Find the real and imaginary parts of $(1 + i)^{100}.$ \\
+	\item Find the real and imaginary parts of $(1 + i)^{100}.$
 	
-	\textbf{Proof:} \\
+	\textbf{Proof:}
 	Working with a base of $(1 + i)$ we just find useful factors to work with:
 	\begin{align*}
 		(1 + i)^2 &= 2i \\
@@ -232,9 +239,9 @@
 
 	\item Prove that for any two complex numbers $z, w$ we have:
 	\begin{enumerate}
-		\item $|z| \leq |z - w| + |w|$ \\
+		\item $|z| \leq |z - w| + |w|$
 		
-		\textbf{Proof:} \\
+		\textbf{Proof:}
 		Consider the three cases we could have have:
 		\begin{align*}
 			w < 0 \\
@@ -263,16 +270,16 @@
 		\qed
 
 
-		\item $|z| - |w| \leq |z - w|$ \\
+		\item $|z| - |w| \leq |z - w|$
 		
-		\textbf{Proof:} \\
+		\textbf{Proof:}
 		By (a) above we just subtract $|w|$ off the right and left, and have a logically equivalent statement.
 		\qed
 
 
-		\item $|z| - |w| \leq |z + w|$ \\
+		\item $|z| - |w| \leq |z + w|$
 		
-		\textbf{Proof:} \\
+		\textbf{Proof:}
 		If the above were not true, then (b) would be false, but (b) is true, so then: 
 		\[|z| -|w| \leq |z + w| \]
 		\qed
@@ -282,7 +289,7 @@
 	$$|z - \alpha| = c$$
 	into an equation involving only $x, y, a, b$ and $c$, and describe in a simple way what geometric figure is represented by this equation.
 
-	\textbf{Proof:} \\
+	\textbf{Proof:}
 	The equation comes out as:
 	\begin{align*}
 		|z - \alpha| &= | x + iy - (a + ib) | \\
@@ -295,30 +302,32 @@
 	
 	\item Describe geometrically the sets of points $z$ satisfying the following conditions:
 	\begin{enumerate}
-		\item $|z - i + 3| = 5$ \\
-		\\
+		\item $|z - i + 3| = 5$
+
 		The perimeter of the circle that has a radius of $5$ and with an origin $|z - i + 3|$ from the origin of $\mathbb{C}.$
-		\item $|z - i + 3| > 5$ \\
-		\\
+		\item $|z - i + 3| > 5$
+
 		The complex plane outside a set that sits $|z -i + 3|$ from the origin of $\mathbb{C}$ with a radius of $5$ with 
 		no points \textit{on} the perimeter of the radius.
-		\item $|z - i + 3| \leq 5$ \\
-		\\
+
+		\item $|z - i + 3| \leq 5$
+
 		The disc of points in $\mathbb{C}$ centered at $|z - i + 3|$ with a radius of $5.$
-		\item $|z + 2i| \leq 1$ \\
-		\\
+
+		\item $|z + 2i| \leq 1$
+
 		The disc of radius $1$ that is centered at $z$ and moved vertically by $2i.$
-		\item $\mathfrak{Im}(z) > 0$ \\
-		\\
+		\item $\mathfrak{Im}(z) > 0$ 
+	
 		The set of points in $\mathbb{C}$ not including $0$ that have real parts $= 0$ and imaginary parts $>0$, so the $y$-axis.
-		\item $\mathfrak{Im}(z) \geq 0$ \\
-		\\
+		\item $\mathfrak{Im}(z) \geq 0$
+
 		The set of points along the positive axis of $\mathbb{C}$ including $0.$
-		\item $\mathfrak{Re}(z) > 0$ \\
-		\\
+		\item $\mathfrak{Re}(z) > 0$
+
 		The set of points along the positive axis of $\mathbb{R} \subset \mathbb{C}$ not including $0.$
-		\item $\mathfrak{Re}(z) \geq 0$ \\
-		\\
+		\item $\mathfrak{Re}(z) \geq 0$
+
 		The set of points along the positive axis of $\mathbb{R} \subset \mathbb{C}$ including $0.$
 	\end{enumerate}
 \end{enumerate}
@@ -326,8 +335,9 @@
 
 \section{Polar Form}
 \subsection{Definitions}
-Let $z = x +iy.$ \\
-\\
+
+Let $z = x +iy.$
+
 \begin{defn}[\textbf{Polar Coordinates}]
 	An ordered pair $(r, \theta)$ with $r = radius$ and $\theta$ rotating from the $x$-axis such that:
 	\begin{enumerate}
@@ -343,11 +353,11 @@ Let $z = x +iy.$ \\
 	\end{align*}
 \end{defn}
 Note that:
-\[x = r\cos{\theta}, \;\;\; y = r\sin{\theta}\]\\
+\[x = r\cos{\theta}, \;\;\; y = r\sin{\theta}\]
 \[\theta = \cos^{-1}{ \left( \frac{x}{r} \right)  }, \;\;\;\; \theta = \sin^{-1} \left( { \frac{y}{r} } \right) \]
 \subsection{Factors of Pi}
 \begin{defn}[\textbf{Factors of Pi}]
-	"If you don't know your factors of pi you don't know squat"
+	"If you don't know your factors of pi you don't know squat" - Big Rick Feynman
 	\begin{align*}
 		\forall k &\in \mathbb{N} \\
 		e^{2k\pi i} &= 1 \\
@@ -394,14 +404,14 @@ Note that:
 	\begin{enumerate}
 		
 		
-		\item $z = 1 + i$ \\
-		\\ 
+		\item $z = 1 + i$
+
 		Let's just change bases. Note that:
 		\begin{align*}
 			e^0 = e^{2i\pi} &= 1 \\
 			e^{\sfrac{i\pi}{2}} &= i\\
 		\end{align*} 
-		\\
+
 		Then note:
 		\begin{align*}
 			r = |z| &= \sqrt{x^2 + y^2} \\ 
@@ -413,24 +423,25 @@ Note that:
 		\end{align*}
 		\qed
 		
-		\item $1 + i\sqrt{2}$ \\
-		\\
+		\item $1 + i\sqrt{2}$
+
 		Note:
 		\begin{align*}
 			r = |z| &= \sqrt{1^2 + \sqrt{2}^2} \\
 			&= \sqrt{1 + 2} \\
 			\therefore \; r &= \sqrt{3}\\
 		\end{align*}
-		Previously we selected the factor of $\pi$ which gave us equal $x$ and $y$ pieces, but here something else is going on. \\
-		\\
-		We need to go right along the $x$-axis by $1$ then up the $y$-axis by $\sqrt{2}.$ \\
-		\\
-		Note that we can normalize these with $\frac{1}{r}$ or use the Euler formula relating cosine to $x$ and $r$ to start. \\
+
+		Previously we selected the factor of $\pi$ which gave us equal $x$ and $y$ pieces, but here something else is going on.
+	
+		We need to go right along the $x$-axis by $1$ then up the $y$-axis by $\sqrt{2}.$
+	
+		Note that we can normalize these with $\frac{1}{r}$ or use the Euler formula relating cosine to $x$ and $r$ to start.
 		
 		\begin{align*}
 			\frac{1}{\sqrt{3}}(1 + i\sqrt{2}) &= \frac{1}{\sqrt{3}} + \frac{i\sqrt{2}}{\sqrt{3}} \\
 		\end{align*}
-		\\
+	
 		Try the Euler method here instead:
 		\begin{align*}
 			1 + i\sqrt{2} = \sqrt{3}\cos\theta + i\sqrt{3}\sin\theta \\
@@ -442,22 +453,22 @@ Note that:
 		\end{align*}
 		
 
-		\item $-3$ \\
-		\\
+		\item $-3$
+	
 		Go left on the real line in the complex plane:
 		\[-3 = 3e^{i\pi} \]
 		\qed
 		
 
-		\item $4i$ \\
-		\\
+		\item $4i$
+	
 		Go up by $4i$ in the complex plane:
 		\[4i = 4e^{\sfrac{i\pi}{2}} \]
 		\qed
 		
 
-		\item $1 -i\sqrt{2}$ \\
-		\\
+		\item $1 -i\sqrt{2}$
+
 		Go right by $1$ and down by $\sqrt{2}$ in the complex plane:
 		\begin{align*}
 		r = |z| &= \sqrt{1^2 + \sqrt{2}^2} \\
@@ -471,22 +482,22 @@ Note that:
 		\qed
 		
 
-		\item $5i$ \\
-		\\
+		\item $5i$
+
 		Go up by $5i$ in the complex plane:
 		\[ 5i = 5e^{\sfrac{i\pi}{2}} \]
 		\qed
 		
 
-		\item $-7$ \\
-		\\
+		\item $-7$
+
 		Go left by $-7$ in the complex plane:
 		\[-7 = 7e^{i\pi} \]
 		\qed
 		 
 
-		\item $-1 - i$ \\
-		\\
+		\item $-1 - i$
+
 		Go left by $-1$ and down by $-1$ in the complex plane:
 		\begin{align*}
 		r = |z| &= \sqrt{1^2 + 1^2} \\
@@ -537,8 +548,8 @@ Note that:
 		\qed
 		
 
-		\item $3e^{\sfrac{-i\pi}{4}}$ \\
-		\\
+		\item $3e^{\sfrac{-i\pi}{4}}$
+
 		Here we just see that we are using $r = |z| = 3$ and moving \textit{downward} from the $x$-axis to start with rotation $\frac{\pi}{4}.$
 		\begin{align*}
 			\therefore \; 3e^{\sfrac{-i\pi}{4}} &= 3 \left( \frac{\sqrt{2}}{2} - i\frac{\sqrt{2}}{2} \right) \\
@@ -546,8 +557,8 @@ Note that:
 		\qed
 
 
-		\item $\pi e^{\sfrac{-i\pi}{3}}$ \\
-		\\
+		\item $\pi e^{\sfrac{-i\pi}{3}}$
+
 		Here we just have $ r = |z| = \pi$ and rotate \textit{down} again by factor of $\frac{\pi}{3}.$ \\
 
 		Looking at the Factors of Pi and moving down we get:
@@ -558,8 +569,8 @@ Note that:
 		\qed
 
 
-		\item $e^{\sfrac{2i\pi}{6}}$ \\
-		\\
+		\item $e^{\sfrac{2i\pi}{6}}$
+
 		Lets factor, get some basis and then rotate to what we want:
 		\begin{align*}
 			e^{\sfrac{2i\pi}{6}} &= e^{\sfrac{i\pi}{3}} \\
@@ -567,17 +578,16 @@ Note that:
 		\end{align*}
 
 
-		\item $e^{\sfrac{-i\pi}{2}}$ \\
-		\\
+		\item $e^{\sfrac{-i\pi}{2}}$
+
 		Simple, factor we know but just going in different $y$ direction.
 		\begin{align*}
 			e^{\sfrac{-i\pi}{2}} &= \left( \frac{\sqrt{2}}{2} - i\frac{\sqrt{2}}{2} \right)
 		\end{align*}
 		\qed
 
+		\item $e^{-i\pi}$
 
-		\item $e^{-i\pi}$ \\
-		\\
 		We know this already, just going in different $y$ direction.
 		\begin{align*}
 			e^{-i\pi} &= \left( -1 + 0i \right) \\
@@ -586,8 +596,8 @@ Note that:
 		\qed
 
 
-		\item $e^{\sfrac{-5i\pi}{4}}$ \\
-		\\
+		\item $e^{\sfrac{-5i\pi}{4}}$
+
 		Just break up the factors and use theorem 1.2 and 1.3.
 		\begin{align*}
 			e^{\sfrac{-5i\pi}{4}} &= e^{\sfrac{-i\pi}{4}} e^{\sfrac{-4i\pi}{4}} \\
@@ -599,17 +609,17 @@ Note that:
 	\end{enumerate}
 	
 
-	\item Let $\alpha$ be a complex number $\neq 0.$ Show there are two distinct complex numbers whose square is $\alpha.$ \\
+	\item Let $\alpha$ be a complex number $\neq 0.$ Show there are two distinct complex numbers whose square is $\alpha.$
 	
-	\textbf{Proof:} \\
+	\textbf{Proof:}
 	For any $z \in \mathbb{C}$ with $z = a + bi$ we have a symmetric partner such that: 
 	\begin{align*}
 		z &= (a + bi) \\
 		\bar{z} &= a - bi \\
 		\therefore \; z &\neq \bar{z} \\
 	\end{align*}
-	\\
-	So $z$ and $\bar{z}$ are distinct. \\
+
+	So $z$ and $\bar{z}$ are distinct.
 
 	Now take their square:
 	\begin{align*}
@@ -628,8 +638,9 @@ Note that:
 	\qed
 
 	\item Let $a + bi$ be a complex number. Find real numbers $x, y$ such that:
-	\[(x + iy)^2 = a + bi\] \\
-	expressing $x, y$ in terms of $a$ and $b.$ \\
+	\[(x + iy)^2 = a + bi\]
+
+	expressing $x, y$ in terms of $a$ and $b.$
 	
 	\textbf{Proof:} \\
 	Let $x, y \in \mathbb{R}$ then:
@@ -641,10 +652,10 @@ Note that:
 	\end{align*}
 	\qed
 
-	\item Plot all the complex numbers $z$ such that $z^n = 1$ for $ n = 2, 3, 4$ and $5.$ \\
-	\\
-	Just use $ e^{ \sfrac{2 \pi i}{n} } $ to cut the circle up so that you then just tile that slice $n$ times to get back to $1.$ \\
-	\\
+	\item Plot all the complex numbers $z$ such that $z^n = 1$ for $ n = 2, 3, 4$ and $5.$
+
+	Just use $ e^{ \sfrac{2 \pi i}{n} } $ to cut the circle up so that you then just tile that slice $n$ times to get back to $1.$
+
 	So then:
 	\begin{align*}
 		z_n &= e^{ \sfrac{2 \pi i}{n} } \\
@@ -656,7 +667,8 @@ Note that:
 		&= 1 \\
 		& = (1, 0) \\
 	\end{align*}
-	Which satisfies the fist condition. Now to give the plots for the remaining $z$'s.\\
+
+	Which satisfies the fist condition. Now to give the plots for the remaining $z$'s.
 
 	Suppose we start with $n = 2:$
 	\begin{align*}
@@ -670,13 +682,15 @@ Note that:
 		&= \left( \frac{1}{2}, \frac{\sqrt{3}}{2} \right) \\
 	\end{align*}
 
-	For $n = 4:$ \\
+	For $n = 4:$
+
 	\begin{align*}
 		z_4 &= e^{\sfrac{\pi i}{2}} \\
 		&= ( 0, 1 )
 	\end{align*}
 
-	For $n = 5:$ \\
+	For $n = 5:$
+
 	\begin{align*}
 		z_5 &= e^{\sfrac{2 \pi i}{5}} \\
 		&= \left( \cos( \sfrac{2\pi i}{5}), \; \sin(\sfrac{2\pi i}{5}) \right)
@@ -684,9 +698,9 @@ Note that:
 	\qed
 
 
-	\item Let $\alpha$ be a complex number $\neq 0.$ Let $n$ be a positive integer. Show that there are $n$ distinct complex numbers $z$ such that $z^n = \alpha.$ Write these complex numbers in polar form. \\
+	\item Let $\alpha$ be a complex number $\neq 0.$ Let $n$ be a positive integer. Show that there are $n$ distinct complex numbers $z$ such that $z^n = \alpha.$ Write these complex numbers in polar form.
 	
-	\textbf{Proof:} \\
+	\textbf{Proof:}
 	Suppose:
 	\begin{align*}
 		\alpha &\in \mathbb{C} \\
@@ -721,10 +735,11 @@ Note that:
 	\end{align*}
 	\qed
 	
-	\item Find the real and imaginary parts of $i^{\sfrac{1}{4}}$, taking the fourth root such that its angle lies in $[0, \sfrac{\pi}{2}].$ \\
+	\item Find the real and imaginary parts of $i^{\sfrac{1}{4}}$, taking the fourth root such that its angle lies in $[0, \sfrac{\pi}{2}].$
 
-	\textbf{Proof:} \\
-	Change of base and Euler's identity. \\
+	\textbf{Proof:}
+	Change of base and Euler's identity.
+
 	\begin{align*}
 		i &= e^{\sfrac{i\pi}{2}} \\
 	\end{align*}
@@ -744,25 +759,25 @@ Note that:
 
 	\item
 	\begin{enumerate}
-		\item Describe all complex numbers $z$ such that $e^z = 1.$ \\
+		\item Describe all complex numbers $z$ such that $e^z = 1.$
 		
-		\textbf{Proof:} \\
-		Because we have $e^{2\pi i k} = 1 \;\; \forall k \in \mathbb{N}$ we then see this will happen in the cases when $ z = 2 i \pi k$ \\
+		\textbf{Proof:}
+		Because we have $e^{2\pi i k} = 1 \;\; \forall k \in \mathbb{N}$ we then see this will happen in the cases when $ z = 2 i \pi k$
 		\qed
 
 
-		\item Let $w$ be a complex number. Let $\alpha$ be a complex number such that $e^{\alpha} = w.$ Describe all complex numbers $\alpha$ such that $e^\alpha = w.$ \\
+		\item Let $w$ be a complex number. Let $\alpha$ be a complex number such that $e^{\alpha} = w.$ Describe all complex numbers $\alpha$ such that $e^\alpha = w.$
 		
-		\textbf{Proof:} \\
-		This is true for any $z \in \mathbb{C}$ and $k \in \mathbb{N}$ such that $z = \alpha + 2i \pi k$ or else $e^{2\pi i} \neq 1,$ which is absurd. \\
+		\textbf{Proof:}
+		This is true for any $z \in \mathbb{C}$ and $k \in \mathbb{N}$ such that $z = \alpha + 2i \pi k$ or else $e^{2\pi i} \neq 1,$ which is absurd.
 		\qed
 	\end{enumerate} 
 
 
-	\item If $e^z = e^w$ show that there is an integer $k$ such that $z = w + 2\pi k i.$ \\
+	\item If $e^z = e^w$ show that there is an integer $k$ such that $z = w + 2\pi k i.$
 	
-	\textbf{Proof:} \\
-	Let $z, w \in \mathbb{C}$ with $z \neq w$ and $e^z = e^w.$ \\
+	\textbf{Proof:}
+	Let $z, w \in \mathbb{C}$ with $z \neq w$ and $e^z = e^w.$
 	
 	Using the results of problem 8.b above, we see this can only be true when $z = w + 2\pi i k$ which means $\exists k \in \mathbb{N}.$ \\
 	\qed
@@ -772,10 +787,11 @@ Note that:
 	\begin{enumerate}
 
 		\item If $\theta$ is real, show that:
-		\[\cos{\theta} = \frac{e^{i\theta} + e^{-i\theta}}{2} \;\;\;\ \text{and} \;\;\;\; \sin{\theta} = {\frac{e^{i\theta} - e^{-i\theta}}{2i}}\] \\
+		\[\cos{\theta} = \frac{e^{i\theta} + e^{-i\theta}}{2} \;\;\;\ \text{and} \;\;\;\; \sin{\theta} = {\frac{e^{i\theta} - e^{-i\theta}}{2i}}\]
 		
-		\textbf{Proof:} \\
-		Just expand the exponentials to the polar coordinates of $\sin\theta$ and $\cos\theta$ and then do the algebra. \\
+		\textbf{Proof:}
+		Just expand the exponentials to the polar coordinates of $\sin\theta$ and $\cos\theta$ and then do the algebra.
+
 		\begin{align*}
 			e^{i\theta} &= \cos\theta + i\sin\theta \\
 			e^{-i\theta} &= \cos\theta - i\sin\theta \\
@@ -786,14 +802,14 @@ Note that:
 			&= \cos\theta + \cos\theta \\
 			\therefore \; \cos\theta &=  \frac{e^{i\theta} + e^{-i\theta}}{2}
 		\end{align*}
-		We see a similar argument doing it for $\sin\theta$ and noting the sign change between the $e$ terms. \\
+		We see a similar argument doing it for $\sin\theta$ and noting the sign change between the $e$ terms.
 		\qed
 	
 
 		\item For arbitrary complex $z$, suppose we define $\cos{z}$ and $\sin{z}$ by replacing $\theta$ with $z$ in the above formula. 
-		Show that the only values of $z$ for which $\cos{z} = 0$ and $\sin{z} = 0$ are the usual real values from trigonometry. \\
+		Show that the only values of $z$ for which $\cos{z} = 0$ and $\sin{z} = 0$ are the usual real values from trigonometry.
 		
-		\textbf{Proof:} \\
+		\textbf{Proof:}
 		We need to use the one-to-one correspondence between the ordered pairs $z = (x, y)$ in the complex plane and $(r, \theta)$ in the real plane.\\
 
 		Notice first some maps:
@@ -824,8 +840,8 @@ Note that:
 		1 + z + \cdot\cdot\cdot + z^n = \frac{z^{n + 1} - 1}{z - 1} \\
 	\end{align*}
 
-	\textbf{Proof:} \\
-	Strategy: Just add the $z^{n + 1}$ term to both sides and notice that you end up back to the original statement on the right. \\
+	\textbf{Proof:}
+	Strategy: Just add the $z^{n + 1}$ term to both sides and notice that you end up back to the original statement on the right.
 
 	\emph{Base case:} let $n = 1$:
 	\begin{align*}
@@ -840,7 +856,7 @@ Note that:
 		\sum_{n = 1}^{1} (1 + z^n) &= 1 + z
 	\end{align}
 
-	By $(1.1)$ and $(1.2)$ we see the \emph{base case} is true. \\
+	By $(1.1)$ and $(1.2)$ we see the \emph{base case} is true.
 	\\
 	Now, suppose it is true for $n \in \mathbb{N}$ and let $k = n + 1$, then:
 	\begin{align*}
@@ -861,10 +877,10 @@ Note that:
 	\begin{align*}
 		1 + \cos\theta + \cos2\theta + \cdot\cdot\cdot + \cos n\theta = \frac{1}{2} + \frac{\sin[(n + \frac{1}{2})\theta]}{2\sin{\frac{\theta}{2}}}
 	\end{align*}
-	For $0 < \theta < 2\pi.$ \\
 
-	\textbf{Proof:} \\
-	\\
+	For $0 < \theta < 2\pi.$
+
+	\textbf{Proof:}
 	Need help here. There's some kind of identity I'm missing to get each $\cos^n$ term to map respectively to each $\cos n.$ \\
 
 	The trick is \emph{de Moivre's Formula}!
@@ -947,7 +963,7 @@ The set of complex numbers, denoted $\overline{D}$, such that all elements in th
 \begin{defn}[\textbf{Closed Disc}]
 	\[\overline{D} = \{z \in \mathbb{C} \;\;|\;\; \forall z \leq 1 \} \]
 \end{defn}
-Note that if $z \in \overline{D}$ then $z^n \in \overline{D}$. Therefore $z \mapsto z^n$ maps $\overline{D}$ into itself. \\
+Note that if $z \in \overline{D}$ then $z^n \in \overline{D}$. Therefore $z \mapsto z^n$ maps $\overline{D}$ into itself.
 
 Let $S$ be the \textbf{sector} of $z = re^{i\theta}$ such that $0 \leq \theta \leq \frac{2\pi}{n}.$ 
 \begin{itemize}
@@ -959,13 +975,12 @@ The function of a real variable $r$:
 \[r \mapsto r^n \]
 maps the unit interval $[0, 1]$ onto itself:
 \[[0, 1] \to [0, 1] \]
-\\
-\\
+
 The function of $\theta$:
 \[\theta \mapsto n\theta \]
 maps the interval $[0, \frac{2\pi}{n}]$ to the circumference of a circle $[0, 2\pi]$:
 \[ [0, \frac{2\pi}{n}] \to [0, 2\pi] \]
-\\
+
 In this way, we see that the function $f(z) = z^n$ maps the sector $S$ onto the full disc of all numbers $w$ where:
 \[w = te^{i\varphi} \]
 \[0 \leq t \leq 1\]
@@ -991,23 +1006,24 @@ Which has the $n$th power given as:
 \[ (\zeta^k)^n = ( e^{\sfrac{2\pi ik}{n}} )^n = e^{2\pi ik} = 1 \]
 The points $w_k$ are just the product of $e^{\frac{i\theta}{n}}$ with all the $n$-th roots of unity:
 \[w_k = e^{\sfrac{i\theta}{n}}\zeta^k\]
-\\
-One of the \textbf{major results of the theory of complex variables} is to reduce the study of certain functions, including most of the common functions we know like exponentials, logarithms, sine, cosine; to power series, which can be approximated by polynomials.\\
+
+One of the \textbf{major results of the theory of complex variables} is to reduce the study of certain functions, including most of the 
+common functions we know like exponentials, logarithms, sine, cosine; to power series, which can be approximated by polynomials.
 
 Thus the power function is in some sense the unique basic function out of which the others are constructed.
 
 
 \subsection{Proofs}
 \begin{enumerate}
-	\item Let $f(z) = \sfrac{1}{z}.$ Describe what $f$ does to the inside and ouside of the unit circle, and also, what it does to points on the uit circle. This map is called \textbf{inversion} through the unit circle. \\
+	\item Let $f(z) = \sfrac{1}{z}.$ Describe what $f$ does to the inside and ouside of the unit circle, and also, what it does to points on the uit circle. This map is called \textbf{inversion} through the unit circle.
 	
-	\textbf{Proof:} \\
+	\textbf{Proof:}
 	Take the points $|z| < 1$ and move them to outside the unit disc.
 	\begin{align*}
 		&z < 1 \\
 		&z \mapsto \frac{1}{z} > 1
 	\end{align*}
-	\\
+
 	Then, Take the points outside the unit circle $|z| > 1$ and put them in the unit circle:
 	\begin{align*}
 		&z > 1 \\
@@ -1017,9 +1033,10 @@ Thus the power function is in some sense the unique basic function out of which 
 
 
 	\item Let $f(z) = \sfrac{1}{\bar{z}}.$ Describe $f$ in the same manner as Exercise 1. 
-	This map is called \textbf{reflection} through the unit circele. \\
+
+	This map is called \textbf{reflection} through the unit circele.
 	
-	\textbf{Proof:} \\
+	\textbf{Proof:}
 	Take a point outside the unit circle, $|z| > 1$, reflect it across the line of symmetry to $\bar{z}$ and then map it to the same quadrant inside the unit circle:
 	\begin{align*}
 		z \mapsto \sfrac{1}{\bar{z}} \\
@@ -1032,19 +1049,20 @@ Thus the power function is in some sense the unique basic function out of which 
 	\item Let $f(z) = e^{2\pi iz}.$ Describe the image under $f$ of the set consisting of the points $x + iy$ with:
 	\[ \frac{-1}{2} \leq x \leq \frac{1}{2} \]
 	and
-	\[ y \geq B := \{ z = x + iy \;\;|\;\; y > 0 \} \] \\
+	\[ y \geq B := \{ z = x + iy \;\;|\;\; y > 0 \} \]
 
-	\textbf{Proof:} \\
+	\textbf{Proof:}
 
 	\item Let $f(z) = e^z.$ Describe th image under $f$ of the following sets:
+	
 	\begin{enumerate}
-		\item The set of $z = x + iy$ such that $x \leq 1$ and $0 \leq y \leq \pi.$ \\
+		\item The set of $z = x + iy$ such that $x \leq 1$ and $0 \leq y \leq \pi.$
 		
-		\textbf{Proof:} \\
+		\textbf{Proof:}
 
-		\item The set of $z = x + iy$ such that $0 \leq y \leq \pi$ and no condition on $x.$ \\
+		\item The set of $z = x + iy$ such that $0 \leq y \leq \pi$ and no condition on $x.$
 		
-		\textbf{Proof:} \\
+		\textbf{Proof:}
 
 	\end{enumerate}
 	
@@ -1164,7 +1182,7 @@ If a sequence has a limit, it converges. Else, it diverges.
 	\subitem a. Let $\alpha$ be a complex number of absolute value $< 1.$ 
 	What is $\lim\limits_{n \to \infty} \alpha^n ?$ Proof?
 
-	\textbf{Proof:} \\
+	\textbf{Proof:}
 	Just use a Cauchy Sequence.
 
 	$|\alpha| < 1$ iff $ |\alpha| = \frac{1}{|z|}.$ 
@@ -1192,11 +1210,11 @@ If a sequence has a limit, it converges. Else, it diverges.
 	\begin{align*}
 		|\alpha^n - \alpha^m| < \epsilon \\
 	\end{align*} \qed
-	\\
+
 	\subitem b. Let $\alpha$ be a complex number of absolute value $> 1.$ 
 	What is $\lim\limits_{n \to \infty} \alpha^n ?$ Proof?
 
-	\textbf{Proof:} \\
+	\textbf{Proof:}
 	$ \alpha = |z| > 1$ and $\alpha_n = |z|^n.$ 
 	Looking at the \textit{limit of the sequence} we see it increasing arbitrarily, and so each 
 	term is larger than the previous which means we can't ever satisfy our definition of a limit 
@@ -1208,8 +1226,8 @@ If a sequence has a limit, it converges. Else, it diverges.
 	If $|z| < 1,$ show that
 	\[ \lim_{n \to \infty} (1 + z + \cdots + z^n ) = \frac{1}{1 - z} \] \\
 		
-	\textbf{Proof:} \\
-	Now we need to look at the \textit{limit of a sequence of partial sums} and test convergence. \\
+	\textbf{Proof:}
+	Now we need to look at the \textit{limit of a sequence of partial sums} and test convergence.
 
 	\begin{align*}
 		S_1 &= 1 \\
@@ -1238,7 +1256,8 @@ If a sequence has a limit, it converges. Else, it diverges.
 	\begin{align*}
 		\lim_{n \to \infty} S_n &= \lim_{n \to \infty} \frac{z^{n +1} - 1}{z - 1} \\
 	\end{align*}
-	And clearly this sequence diverges if $|z| > 1$ since the numerator grows unbounded over a fixed denominator. \\
+
+	And clearly this sequence diverges if $|z| > 1$ since the numerator grows unbounded over a fixed denominator.
 
 	Now consider if $|z| < 1$ and 
 	\begin{align*}
@@ -1251,17 +1270,19 @@ If a sequence has a limit, it converges. Else, it diverges.
 
 	\item Let $f$ be the function defined by
 	\[ f(z) = \lim_{n \to \infty} \frac{1}{1 + n^2 z} \]
-	Show that $f$ is the characteristic function of the set $\{0\},$ that is, $f(0) = 1,$ and $f(z) = 0$ if $z \neq 0.$ \\
-			
-	\textbf{Proof:} \\
 
+	Show that $f$ is the characteristic function of the set $\{0\},$ that is, $f(0) = 1,$ and $f(z) = 0$ if $z \neq 0.$
+			
+	\textbf{Proof:}
 	Start by plugging in:
 	\begin{align*}
 		f(z) &= \lim_{n \to \infty} \frac{1}{1 + n^2 z} \\
 		f(0) &= \lim_{n \to \infty} \frac{1}{1 + n^2 0} \\
 		f(0) &= 1 
 	\end{align*}
+
 	Now consider all other cases:
+
 	\begin{align*}
 		f(+\infty) &= \lim_{n \to \infty} \frac{1}{1 + n^2 \infty} \\
 		f(+\infty) &= 0 \\
@@ -1270,6 +1291,7 @@ If a sequence has a limit, it converges. Else, it diverges.
 	\end{align*}
 
 	Then consider $b < 1 < c$:
+
 	\begin{align*}
 		f(c) &= \lim_{n \to \infty} \frac{1}{1 + n^2 c} \\
 		f(c) &= 0 \\
@@ -1283,11 +1305,10 @@ If a sequence has a limit, it converges. Else, it diverges.
 	\item For $|z| \neq 1$ show that the following limit exists:
 	\[ f(z) = \lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right) \]
 
-	Is it possible to define $f(z)$ when $|z| = 1$ in such a way to make $f$ continuous? \\
+	Is it possible to define $f(z)$ when $|z| = 1$ in such a way to make $f$ continuous?
 		
-	\textbf{Proof:} \\
-
-	Take the limits for the cases of $z$.\\ 
+	\textbf{Proof:}
+	Take the limits for the cases of $z$.
 	
 	First for $z > 1$:
 	\begin{align*}
@@ -1331,7 +1352,7 @@ If a sequence has a limit, it converges. Else, it diverges.
 		&= -1
 	\end{align*}
 
-	And so the limit exists for $|z| \not = 1.$ \\
+	And so the limit exists for $|z| \not = 1.$
 	
 	\emph{Can we make the function continuous?} Yes, by defining $f(z)$ as:
 	
@@ -1346,9 +1367,9 @@ If a sequence has a limit, it converges. Else, it diverges.
 
 	\item Let \[ f(z) = \lim_{n \to \infty} \frac{z^n}{1 + z^n} \]
 	\begin{enumerate}
-		\item What is the domain of definition of $f,$ that is, for which complex numbers $z$ does the limit exist? \\
+		\item What is the domain of definition of $f,$ that is, for which complex numbers $z$ does the limit exist?
 		
-		\textbf{Proof:} \\ 
+		\textbf{Proof:}
 		The domain clearly exists for the cases of $|z| < 1$: 
 		\begin{align*}
 			f(z) &= \lim_{n \to \infty} \frac{z^n}{1 + z^n} \\
@@ -1364,14 +1385,14 @@ If a sequence has a limit, it converges. Else, it diverges.
 
 		Now to consider $z = -1$. Here we have an issue of never settling on a sign which is a divergent sequence.
 		That is enough to show that a singularity exists at this point, 
-		which is to say the limit does not exist at $z = -1$.  \\
+		which is to say the limit does not exist at $z = -1$.
 
 		$\therefore$ The domain of definition is $(-\infty, -1) \cup (-1, \infty)$.
 		\qed
 	
-		\item Give explicitly the values of $f(z)$ for the various $z$ in the domain of $f.$ \\
+		\item Give explicitly the values of $f(z)$ for the various $z$ in the domain of $f.$
 		
-		\textbf{Proof:} \\
+		\textbf{Proof:}
 		See above problem. \qed
 	
 	\end{enumerate}
@@ -1447,9 +1468,9 @@ If a sequence has a limit, it converges. Else, it diverges.
 	\end{align*}
 
 	And so clearly for the case $|z| < 1$ and taking the $\lim n \to \infty$ the last term goes to $0$ and we are left 
-	with the desired result. \\
+	with the desired result.
 
-	This finishes the first case of $z < 1$.\\
+	This finishes the first case of $z < 1$.
 
 	Now we need to consider the case $|z| > 1$ and continue on:
 
@@ -1538,7 +1559,7 @@ In this section:
 
 At a fixed $z$: 
 \begin{itemize}
-	\item let $f'(z) = a + bi.$ \\
+	\item let $f'(z) = a + bi.$
 	\item let $w = h + ik \,\,\,\, h, k \in \mathbb{R}$
 	\item Suppose:
 	\begin{align*}

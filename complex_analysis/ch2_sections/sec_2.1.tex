@@ -1,0 +1,56 @@
+\chapter{Power Series}
+We've already been dancing around with these in some previous proofs, now let's really dig in. 
+\section{Formal Power Series}
+\begin{defn}[\textbf{Formal Power Series}]
+  Using a neutral letter $T$:
+
+  \[\sum_{n = 0}^{\infty}a_n T^n = a_0 + a_1 T + a_2 T^2 + \cdots \]
+
+\end{defn}
+The important part of this definition are the \textit{coefficients} $a_0, a_1, a_2, ...$ which we 
+take as complex numbers.
+\begin{itemize}
+  \item You could think of this as \textit{a map from the integers} $ \geq 0 $ \textit{to the complex numbers.}
+  \[n \mapsto a_n \]
+\end{itemize}
+
+Main points: 
+  \begin{itemize}
+    \item if you wanna compose functions and maps, do it term by term with their series expansions.
+    \item Often when doing all this you can even get a telescoping series and then arrive at a closed form of the expression. 
+  \end{itemize}
+
+For the below definitions refer to the \textbf{formal expression of a power series:}
+
+\begin{align*}
+  f(x) &= \sum_{n = 0}^{\infty} a_n T^n \\
+  &= a_0 + a_1 T + a_2 T^2 + \cdots
+\end{align*}
+
+\begin{defn}[\textbf{Constant Term}]
+  The leading term of $f$ denoted $a_0$.
+\end{defn}
+
+\begin{defn}[\textbf{Order} $r$ \textbf{of} $f$]
+  $r$ is the smallest integer $n$ such that $a_n \not = 0$
+  \[r = \text{ord}\; f\]
+\end{defn}
+
+\begin{thm}
+  Any power series has order $0$ if and only if it starts with \textit{constant term} $\not = 0.$
+\end{thm}
+
+\begin{thm}
+  \text{ord}\; fg = \text{ord}\; f + \text{ord}\; g
+\end{thm}
+
+\begin{defn}[\textbf{Inverse}]
+  Let $g = \sum b_n T^n$
+  \[gf = 1\]
+\end{defn}
+This leads to the following Theorem:
+\begin{thm}
+  If f has a non-zero constant term, then f has an inverse as a power series.
+\end{thm}
+
+\subsection{Proofs}

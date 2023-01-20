@@ -1,0 +1,505 @@
+\subsection{Proofs}
+\begin{enumerate}
+
+
+	\item Put the following complex numbers in polar form.
+	\begin{enumerate}
+		
+		
+		\item $z = 1 + i$
+
+		Change base. Note that:
+		\begin{align*}
+			e^0 = e^{2i\pi} &= 1 \\
+			e^{\sfrac{i\pi}{2}} &= i\\
+		\end{align*} 
+
+		Then note:
+		\begin{align*}
+			r = |z| &= \sqrt{x^2 + y^2} \\ 
+			&= \sqrt{1 + 1} \\ 
+			\therefore \; r &= \sqrt{2} \\
+			\\
+			\therefore \; 1 + i &= \sqrt{2} e^{2i\pi} e^{(\sfrac{i\pi}{2})} \\
+			&= \sqrt{2}e^{\sfrac{i\pi}{2}}
+		\end{align*}
+		\qed
+		
+		\item $1 + i\sqrt{2}$
+
+		Note:
+		\begin{align*}
+			r = |z| &= \sqrt{1^2 + \sqrt{2}^2} \\
+			&= \sqrt{1 + 2} \\
+			\therefore \; r &= \sqrt{3}\\
+		\end{align*}
+
+		Previously we selected the factor of $\pi$ which gave us equal $x$ and $y$ pieces, but here something else is going on.
+	
+		We need to go right along the $x$-axis by $1$ then up the $y$-axis by $\sqrt{2}.$
+	
+		Note that we can normalize these with $\frac{1}{r}$ or use the Euler formula relating cosine to $x$ and $r$ to start.
+		
+		\begin{align*}
+			\frac{1}{\sqrt{3}}(1 + i\sqrt{2}) &= \frac{1}{\sqrt{3}} + \frac{i\sqrt{2}}{\sqrt{3}} \\
+		\end{align*}
+	
+		Try the Euler method here instead:
+		\begin{align*}
+			1 + i\sqrt{2} = \sqrt{3}\cos\theta + i\sqrt{3}\sin\theta \\
+		\end{align*}
+		Then
+		\begin{align*}
+			\frac{x}{r} = \frac{1}{\sqrt{3}} &= \cos\theta \\
+			\frac{y}{r} = \frac{\sqrt{2}}{\sqrt{3}} &= \sin\theta \\
+		\end{align*}
+		
+		\item $-3$
+	
+		Go left on the real line in the complex plane:
+		\[-3 = 3e^{i\pi} \]
+		\qed
+		
+		\item $4i$
+	
+		Go up by $4i$ in the complex plane:
+		\[4i = 4e^{\sfrac{i\pi}{2}} \]
+		\qed
+		
+		\item $1 -i\sqrt{2}$
+
+		Go right by $1$ and down by $\sqrt{2}$ in the complex plane:
+		\begin{align*}
+		r = |z| &= \sqrt{1^2 + \sqrt{2}^2} \\
+		&= \sqrt{1 + 2} \\
+		\therefore \; r &= \sqrt{3}\\
+		\end{align*}
+		And then:
+		\[ \theta = \cos^{-1}{\frac{1}{\sqrt{3}}} \]
+		So finally:
+		\[ 1 -i\sqrt{2} = \sqrt{3}e^{i\pi\cdot \cos^{-1}{\frac{1}{\sqrt{3}}} } \]
+		\qed
+		
+
+		\item $5i$
+
+		Go up by $5i$ in the complex plane:
+		\[ 5i = 5e^{\sfrac{i\pi}{2}} \]
+		\qed
+		
+		\item $-7$
+
+		Go left by $-7$ in the complex plane:
+		\[-7 = 7e^{i\pi} \]
+		\qed
+		 
+		\item $-1 - i$
+
+		Go left by $-1$ and down by $-1$ in the complex plane:
+		\begin{align*}
+		r = |z| &= \sqrt{1^2 + 1^2} \\
+		&= \sqrt{1 + 1} \\
+		\therefore \; r &= \sqrt{2}\\
+		\end{align*}
+		So then:
+		\[ -1 - i = \sqrt{2}e^{\sfrac{5i\pi}{4}} \]
+		\qed
+	\end{enumerate}
+	
+	\item Put the following complex numbers in the ordinary form $x + iy.$
+	\begin{enumerate}
+
+		\item $e^{3i\pi}$ \\
+		Simple, use Theorems 1.2 and 1.3 and change base!
+		\begin{align*}
+			e^{3i\pi} &= e^{i(2\pi + \pi)} \\
+			&= e^{i2\pi}e^{i\pi} \\
+			\therefore \; e^{3i\pi} &= (1)(-1) = -1
+		\end{align*}
+		\qed
+
+		\item $e^{\sfrac{2\pi i}{3}}$ \\
+		Use Theorem 1.3 and notice:
+		\begin{align*}
+			e^{\sfrac{2\pi i}{3}} &= e^{\sfrac{\pi i}{3}}e^{\sfrac{\pi i}{3}}
+		\end{align*} 
+
+		Now check the Factors of Pi for $e^{\sfrac{\pi i}{3}}$ to see that we have:
+
+		\begin{align*}
+			e^{\sfrac{\pi i}{3}} &= \left( \frac{1}{2} + \frac{i\sqrt{3}}{2} \right)
+		\end{align*}
+		Then we have:
+		\begin{align*}
+			e^{\sfrac{2\pi i}{3}} &= e^{(\sfrac{\pi i}{3} \; + \; \sfrac{\pi i}{3} )} \\
+			&= e^{\sfrac{\pi i}{3}} e^{\sfrac{\pi i}{3}} \\
+			e^{\sfrac{2\pi i}{3}} &= \left( \frac{1}{2} + \frac{i\sqrt{3}}{2} \right) \left( \frac{1}{2} + \frac{i\sqrt{3}}{2} \right) \\
+			&= \frac{1}{2} \frac{1}{2} + \frac{1}{2} \frac{i \sqrt{3}}{2} + \frac{1}{2} \frac{i \sqrt{3}}{2} + \frac{i \sqrt{3}}{2} \frac{i \sqrt{3}}{2} \\
+			&= \frac{1}{4} +\frac{i \sqrt{3}}{4} + \frac{i \sqrt{3}}{4} - \frac{3}{4} \\
+			&= \frac{1}{4} + \frac{2i \sqrt{3}}{4} - \frac{3}{4} \\
+			\therefore \; e^{\sfrac{2\pi i}{3}} &=  - \frac{1}{2} + \frac{i \sqrt{3}}{2} \\
+		\end{align*}
+		\qed
+		
+		\item $3e^{\sfrac{-i\pi}{4}}$
+
+		Here we just see that we are using $r = |z| = 3$ and moving \textit{downward} from the $x$-axis to start with rotation $\frac{\pi}{4}.$
+		\begin{align*}
+			\therefore \; 3e^{\sfrac{-i\pi}{4}} &= 3 \left( \frac{\sqrt{2}}{2} - i\frac{\sqrt{2}}{2} \right) \\
+		\end{align*}
+		\qed
+
+
+		\item $\pi e^{\sfrac{-i\pi}{3}}$
+
+		Here we just have $ r = |z| = \pi$ and rotate \textit{down} again by factor of $\frac{\pi}{3}.$
+
+		Looking at the Factors of Pi and moving down we get:
+		\begin{align*}
+			e^{\sfrac{i\pi}{3}} &= \left( \frac{1}{2} + i\frac{\sqrt{3}}{2} \right) \\
+			\therefore \; \pi e^{\sfrac{-i\pi}{3}} &= \pi \left( \frac{1}{2} - i\frac{\sqrt{3}}{2} \right) \\
+		\end{align*}
+		\qed
+
+
+		\item $e^{\sfrac{2i\pi}{6}}$
+
+		Lets factor, get some basis and then rotate to what we want:
+		\begin{align*}
+			e^{\sfrac{2i\pi}{6}} &= e^{\sfrac{i\pi}{3}} \\
+			\therefore \; e^{\sfrac{2i\pi}{6}} &= \left( \frac{1}{2} + i\frac{\sqrt{3}}{2} \right) \\  
+		\end{align*}
+
+
+		\item $e^{\sfrac{-i\pi}{2}}$
+
+		Simple, factor we know but just going in different $y$ direction.
+		\begin{align*}
+			e^{\sfrac{-i\pi}{2}} &= \left( \frac{\sqrt{2}}{2} - i\frac{\sqrt{2}}{2} \right)
+		\end{align*}
+		\qed
+
+		\item $e^{-i\pi}$
+
+		We know this already, just going in different $y$ direction.
+		\begin{align*}
+			e^{-i\pi} &= \left( -1 + 0i \right) \\
+			&= -1
+		\end{align*}
+		\qed
+
+		\item $e^{\sfrac{-5i\pi}{4}}$
+
+		Just break up the factors and use theorem 1.2 and 1.3.
+		\begin{align*}
+			e^{\sfrac{-5i\pi}{4}} &= e^{\sfrac{-i\pi}{4}} e^{\sfrac{-4i\pi}{4}} \\
+			&= \left( \frac{\sqrt{2}}{2} - i\frac{\sqrt{2}}{2} \right) e^{-i\pi} \\
+			&= \left( \frac{\sqrt{2}}{2} - i\frac{\sqrt{2}}{2} \right) (-1) \\
+			\therefore \; e^{\sfrac{-5i\pi}{4}} &= \left( -\frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2} \right) \\
+		\end{align*}
+		\qed 
+	\end{enumerate}
+
+	\item Let $\alpha$ be a complex number $\neq 0.$ Show there are two distinct complex numbers whose square is $\alpha.$
+	
+	\textbf{Proof:}
+	For any $z \in \mathbb{C}$ with $z = a + bi$ we have a symmetric partner such that: 
+	\begin{align*}
+		z &= (a + bi) \\
+		\bar{z} &= a - bi \\
+		\therefore \; z &\neq \bar{z} \\
+	\end{align*}
+
+	So $z$ and $\bar{z}$ are distinct.
+
+	Now take their square:
+	\begin{align*}
+		z \bar{z} &= (a + bi)(a - bi) \\
+		&= a^2 -abi +abi -i^2 b^2 \\
+		&= a^2 + b^2 \in \mathbb{C} \\
+		&= \zeta \in \mathbb{C} \\
+		&\neq 0
+	\end{align*}
+	Which demonstrates $\forall z \neq 0$ and $\forall z \in \mathbb{C}$ we get:
+	\begin{align*}
+		z & \neq \bar{z} \\
+		z \bar{z} &= \zeta \in \mathbb{C} \\
+		&\neq 0
+	\end{align*}
+	\qed
+
+	\item Let $a + bi$ be a complex number. Find real numbers $x, y$ such that:
+	\[(x + iy)^2 = a + bi\]
+
+	expressing $x, y$ in terms of $a$ and $b.$
+	
+	\textbf{Proof:} \\
+	Let $x, y \in \mathbb{R}$ then:
+	\begin{align*}
+		(x + iy)(x + iy) &= x^2 +2xyi + i^2 y^2 \\
+		&= (x^2 - y^2) + 2xyi \\
+		&= a + bi \\
+		\therefore \; (x + iy)^2 &= a + bi \;\; \forall x, y \in \mathbb{R}
+	\end{align*}
+	\qed
+
+	\item Plot all the complex numbers $z$ such that $z^n = 1$ for $ n = 2, 3, 4$ and $5.$
+
+	Just use $ e^{ \sfrac{2 \pi i}{n} } $ to cut the circle up so that you then just tile that slice $n$ times to get back to $1.$
+
+	So then:
+	\begin{align*}
+		z_n &= e^{ \sfrac{2 \pi i}{n} } \\
+	\end{align*}
+	Which would then give:
+	\begin{align*}
+		(z_n)^n &= ( e^{ \sfrac{2 \pi i}{n} } )^n \\
+		&= e^{2 \pi i } \\
+		&= 1 \\
+		& = (1, 0) \\
+	\end{align*}
+
+	Which satisfies the fist condition. Now to give the plots for the remaining $z$'s.
+
+	Suppose we start with $n = 2:$
+	\begin{align*}
+		z_2 &= e^{ \pi i}  \\
+		&= (-1, 0) \\
+	\end{align*}
+
+	Now with $n = 3:$
+	\begin{align*}
+		z_3 &= e^{\sfrac{2 \pi i}{3}} \\
+		&= \left( \frac{1}{2}, \frac{\sqrt{3}}{2} \right) \\
+	\end{align*}
+
+	For $n = 4:$
+
+	\begin{align*}
+		z_4 &= e^{\sfrac{\pi i}{2}} \\
+		&= ( 0, 1 )
+	\end{align*}
+
+	For $n = 5:$
+
+	\begin{align*}
+		z_5 &= e^{\sfrac{2 \pi i}{5}} \\
+		&= \left( \cos( \sfrac{2\pi i}{5}), \; \sin(\sfrac{2\pi i}{5}) \right)
+	\end{align*}
+	\qed
+
+	\item Let $\alpha$ be a complex number $\neq 0.$ Let $n$ be a positive integer. Show that there 
+	are $n$ distinct complex numbers $z$ such that $z^n = \alpha.$ Write these complex numbers in polar form.
+	
+	\textbf{Proof:}
+	Suppose:
+	\begin{align*}
+		\alpha &\in \mathbb{C} \\
+		\alpha &= \alpha_1 + \alpha_2 i \\ 
+		&= |\alpha|e^{i\theta} \\
+		&= r e^{i\theta} \\
+		&\neq 0
+	\end{align*}
+	Now let:
+	\begin{align*}
+		z_n &\in \mathbb{C} \\
+		z_n &= r^{\sfrac{1}{n}}e^{\sfrac{i\theta}{n}} \\
+		z_n &\neq 0
+	\end{align*}
+	And note for some other $m \in \mathbb{N}$ with $m \neq n:$
+	\begin{align*}
+		z_m &\neq z_n \\
+		(z_m)^m &= (r^{\sfrac{1}{m}}e^{\sfrac{i\pi}{m}})^m \\
+		&= re^{i\theta}
+	\end{align*}
+	Then we have $\forall n, m \in \mathbb{N}$ with $m \neq n:$
+	\begin{align*}
+		z_m &\neq z_n \\
+		(z_n)^n &= r^{(\sfrac{1}{n})^n} e^{(\sfrac{i\theta}{n})^n} \\
+		(z_m)^m &= r^{(\sfrac{1}{n})^m} e^{(\sfrac{i\theta}{m})^m} \\
+		&= re^{i\theta} \\
+		&= \alpha
+	\end{align*}
+	And so we have $n \in \mathbb{N}$ distinct complexe numbers such that:
+	\begin{align*}
+		z^n &= \alpha
+	\end{align*}
+	\qed
+	
+	\item Find the real and imaginary parts of $i^{\sfrac{1}{4}}$, taking the fourth root such that its angle lies in $[0, \sfrac{\pi}{2}].$
+
+	\textbf{Proof:}
+	Change of base and Euler's identity.
+
+	\begin{align*}
+		i &= e^{\sfrac{i\pi}{2}} \\
+	\end{align*}
+	So then:
+	\begin{align*}
+		i^{\sfrac{1}{4}} &= e^{(\sfrac{i \pi}{2})^{\sfrac{1}{4}}} \\
+		&= e^{(\sfrac{i \pi}{8})}
+	\end{align*}
+	Which then just means $\theta = \sfrac{\pi}{8}$ and we can get the real and imaginary parts with:
+	\begin{align*}
+		x = &\cos{(\sfrac{\pi}{8})} \;\; \text{and} \;\; y = \sin{(\sfrac{\pi}{8})} \\
+		\\
+		\therefore \; i^{\sfrac{1}{4}} &= \cos{(\sfrac{\pi}{8})} + i\sin{(\sfrac{\pi}{8})}
+	\end{align*}
+	\qed
+	
+
+	\item
+	\begin{enumerate}
+		\item Describe all complex numbers $z$ such that $e^z = 1.$
+		
+		\textbf{Proof:}
+		Because we have $e^{2\pi i k} = 1 \;\; \forall k \in \mathbb{N}$ we then see this will happen in the cases when $ z = 2 i \pi k$
+		\qed
+
+
+		\item Let $w$ be a complex number. Let $\alpha$ be a complex number such that $e^{\alpha} = w.$ Describe all complex numbers $\alpha$ such that $e^\alpha = w.$
+		
+		\textbf{Proof:}
+		This is true for any $z \in \mathbb{C}$ and $k \in \mathbb{N}$ such that $z = \alpha + 2i \pi k$ or else $e^{2\pi i} \neq 1,$ which is absurd.
+		\qed
+	\end{enumerate} 
+
+	\item If $e^z = e^w$ show that there is an integer $k$ such that $z = w + 2\pi k i.$
+	
+	\textbf{Proof:}
+	Let $z, w \in \mathbb{C}$ with $z \neq w$ and $e^z = e^w.$
+	
+	Using the results of problem 8.b above, we see this can only be true when $z = w + 2\pi i k$ which means $\exists k \in \mathbb{N}.$ \\
+	\qed
+	
+	\item 
+	\begin{enumerate}
+
+		\item If $\theta$ is real, show that:
+		\[\cos{\theta} = \frac{e^{i\theta} + e^{-i\theta}}{2} \;\;\;\ \text{and} \;\;\;\; \sin{\theta} = {\frac{e^{i\theta} - e^{-i\theta}}{2i}}\]
+		
+		\textbf{Proof:}
+		Just expand the exponentials to the polar coordinates of $\sin\theta$ and $\cos\theta$ and then do the algebra.
+
+		\begin{align*}
+			e^{i\theta} &= \cos\theta + i\sin\theta \\
+			e^{-i\theta} &= \cos\theta - i\sin\theta \\
+		\end{align*}
+		Then we have:
+		\begin{align*}
+			e^{i\theta} + e^{-i\theta} &= \cos\theta + i\sin\theta + \cos\theta - i\sin\theta \\
+			&= \cos\theta + \cos\theta \\
+			\therefore \; \cos\theta &=  \frac{e^{i\theta} + e^{-i\theta}}{2}
+		\end{align*}
+		We see a similar argument doing it for $\sin\theta$ and noting the sign change between the $e$ terms.
+		\qed
+	
+		\item For arbitrary complex $z$, suppose we define $\cos{z}$ and $\sin{z}$ by replacing $\theta$ with $z$ in the above formula. 
+		Show that the only values of $z$ for which $\cos{z} = 0$ and $\sin{z} = 0$ are the usual real values from trigonometry.
+		
+		\textbf{Proof:}
+		We need to use the one-to-one correspondence between the ordered pairs $z = (x, y)$ in the complex plane and $(r, \theta)$ in the real plane.
+
+		Notice first some maps:
+		\begin{align*}
+			|z| &= \sqrt[]{x^2 + y^2} \\
+			&= r \\
+			z &= (x, y) = x + iy \\
+			&= (r, \theta) = re^{i \theta} \\
+			\cos(\theta) &= \frac{x}{r} \\
+			\cos(z) &= \frac{x}{|z|} \\
+			\cos(\theta) &= \frac{e^{i\theta} + e^{-i\theta}}{2} \\
+			\cos(z) &= \frac{e^{iz} + e^{-iz}}{2} \\
+			\sin(\theta) &= \frac{y}{r} \\
+			\sin(z) &= \frac{y}{|z|} \\
+			\sin(\theta) &= {\frac{e^{i\theta} - e^{-i\theta}}{2i}} \\
+			\sin(z) &= {\frac{e^{iz} - e^{-iz}}{2i}} \\
+			|r|e^{i \theta} &= r\cos(\theta) + ir\sin(\theta) \\
+		\end{align*}
+
+		This gives the maps we need between using $\forall z \in \mathbb{C}$ and $0 \leq \theta \leq 2\pi$.
+
+		Notice that asking when $cos(z) = 0$ is precisely when $\cos(z) = \frac{e^{iz} + e^{-iz}}{2} = 0$ as well.
+		
+	\end{enumerate}
+
+	\item Prove that for any complex number $z \neq 1$ we have
+	\begin{align*}
+		1 + z + \cdot\cdot\cdot + z^n = \frac{z^{n + 1} - 1}{z - 1} \\
+	\end{align*}
+
+	\textbf{Proof:}
+	Strategy: Just add the $z^{n + 1}$ term to both sides and notice that you end up back to the original statement on the right.
+
+	\emph{Base case:} let $n = 1$:
+	\begin{align*}
+		\frac{z^{1 + 1} - 1}{z -1} &= \frac{z^2 - 1}{z - 1} \\
+		&= \frac{(z + 1)(z - 1)}{z - 1} \\
+	\end{align*}
+	\begin{align}
+		\therefore \; \frac{z^{1 + 1} - 1}{z -1} = z + 1
+	\end{align}
+	And the result is true for the sum as well:
+	\begin{align}
+		\sum_{n = 1}^{1} (1 + z^n) &= 1 + z
+	\end{align}
+
+	By $(1.1)$ and $(1.2)$ we see the \emph{base case} is true.
+	\\
+	Now, suppose it is true for $n \in \mathbb{N}$ and let $k = n + 1$, then:
+	\begin{align*}
+		1 + z + \cdot\cdot\cdot + z^n + z^k &= \frac{z^{n + 1} - 1}{z - 1} + z^k \\
+		&= \frac{z^{n + 1} - 1}{z - 1} + \frac{z^k(z - 1)}{(z - 1)} \\
+		&= \frac{z^{n + 1} - 1}{z - 1} + \frac{z^{k + 1} - z^k}{(z - 1)} \\
+		&= \frac{z^{n + 1} - 1 + z^{k + 1} - z^k}{z - 1} \\ 
+	\end{align*}
+	Note that $z^{n + 1} = z^k$ and we have:
+	\begin{align*}
+		1 + z + \cdot\cdot\cdot + z^n + z^k &= \frac{ - 1 + z^{k + 1}}{z - 1} \\
+		&= \frac{z^{k + 1} - 1}{z - 1} \\
+	\end{align*}
+	Noting again that $k$ is the $n + 1$ case, we prove the statement holds $\forall n \in \mathbb{N}.$
+	\qed 
+
+	\item Using the preceding exercise, and taking real parts, prove:
+	\begin{align*}
+		1 + \cos\theta + \cos2\theta + \cdot\cdot\cdot + \cos n\theta = \frac{1}{2} + \frac{\sin[(n + \frac{1}{2})\theta]}{2\sin{\frac{\theta}{2}}}
+	\end{align*}
+
+	For $0 < \theta < 2\pi.$
+
+	\textbf{Proof:}
+	Need help here. There's some kind of identity I'm missing to get each $\cos^n$ term to map respectively to each $\cos n.$
+
+	The trick is \emph{de Moivre's Formula}!
+	\begin{align*}
+		\left( \cos x + i \sin x \right)^n = \cos nx + i \sin nx \\
+	\end{align*}
+
+	And since we only use the real part we have $\sin nx = 0$ and so:
+	\begin{align*}
+		\left( \cos x \right)^n = \cos nx \\
+	\end{align*}
+
+	This completes the mapping of terms on the left side.
+
+	Now, we need to show:
+	\begin{align*}
+		\frac{1}{2} + \frac{\sin (n + \frac{1}{2}\theta)}{2 \sin \frac{\theta}{2}} = \frac{z^{n + 1} - 1}{z - 1}
+	\end{align*}
+
+	\item Let $z, w$ be two complex numbers such that $\bar{z}w \neq 1.$ Prove that
+	\begin{align*}
+		\left| \frac{z - w}{1 - \bar{z}w} \right| < 1 \;\;\;\;\;\; \text{if} \;\; |z| < 1 \;\; \text{and} \;\; |w| < 1, \\
+		\left| \frac{z - w}{1 - \bar{z}w} \right| = 1 \;\;\;\;\;\; \text{if} \;\; |z| = 1 \;\; \text{and} \;\; |w| = 1, \\
+	\end{align*}
+	
+	\textbf{Proof:}
+	Not sure.
+
+\end{enumerate}
+
+\subsection{Incomplete Proofs}
+\begin{itemize}
+	\item 10.b, 12, 13
+\end{itemize}

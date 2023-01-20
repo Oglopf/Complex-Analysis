@@ -1,0 +1,75 @@
+\section{Convergent Power Series}
+Let ${ \{ z_n \} }$ be a \emph{sequence of complex numbers}.
+
+Consider the series:
+\begin{align*}
+  \sum_{n = 1}^{\infty} z_n
+\end{align*}
+
+\begin{defn}[\textbf{Partial Sum of a Sequence of Complex Numbers}]
+  \begin{align*}
+    s_n = \sum_{k = 1}^{n} z_k = z_1 + z_2 + \cdots z_n
+  \end{align*}
+\end{defn}
+
+\begin{defn}[\textbf{Convergent Series}]
+  The series $s_n$ converges if there is some $w \in \mathbb{C}$ such that the following limit exists:
+  \begin{align*}
+    \lim_{n \to \infty}s_n = w
+  \end{align*}
+\end{defn}
+
+In which case we say that $w$ is equal to the \emph{sum of the series.}
+
+Formally:
+
+\begin{defn}[\textbf{Sum of the Series}]
+  \begin{align*}
+    w = \sum_{n = 1}^{\infty} z_n
+  \end{align*}
+\end{defn}
+
+Now consider series of functions and deal with questions of \emph{uniformity.}
+
+Suppose that $S$ is a set and $f$ a bounded function on $S$.
+
+\begin{defn}[\textbf{Sup norm}]
+  Let sup be the least upper bound, then:
+  \begin{align*}
+    \| f \|_S = \| f \| = \sup_{z \in S} | f(z) | \\
+  \end{align*}
+\end{defn}
+
+Now, let $\{ f_n \}$ with $n \in \mathbb{N}$ be a \emph{sequence of functions} on $S$.
+
+\begin{defn}[\textbf{Uniform Convergence}]
+  The sequence $ \{ f_n \}$ converges uniformly on $S$ if there exists a 
+  function $f$ on $S$ satisfying the following properties.
+
+  Given $\epsilon$, there exists $N$ such that if $n \geq N$ then:
+
+  \begin{align*}
+    \| f_n - f \| < \epsilon \\
+  \end{align*}
+\end{defn}
+
+\begin{defn}[\textbf{Cauchy Sequence}]
+  We call $\{f_n\}$ Cauchy if given $\epsilon$ there exists $N$ such that if $m, n \geq N$ then:
+  \begin{align*}
+    \| f_n - f_m \| < \epsilon
+  \end{align*}
+\end{defn}
+
+It is important to note that if a sequence $\{f_n\}$ of functions is Cauchy, then it converges 
+uniformly. You should be able to prove this to yourself (think about what you get if you're cauchy, hint: it 
+is small!)
+
+Now, keeping in mind we are working wit sequences of functions at this point, we define:
+
+\begin{defn}[\textbf{Partial Sum of a Sequence of Complex Functions}]
+  \begin{align*}
+    s_n = \sum_{k = 1}^{n} f_k = f_1 + f_2 + \cdots f_n
+  \end{align*}
+\end{defn}
+
+This above series converges \emph{uniformly} if the sequence of partial sums $\{s_n\}$ converges uniformly.

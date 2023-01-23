@@ -48,8 +48,8 @@
 \contentsline {section}{\numberline {3.4}Anothe Description of the Integral Along a Path}{38}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}proofs}{38}{subsection.3.4.1}%
 \contentsline {section}{\numberline {3.5}The Homotopy Form of Cauchy's Theorem}{38}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}proofs}{38}{subsection.3.5.1}%
-\contentsline {section}{\numberline {3.6}Existence of Global Primitives. Definition of the Logarithm}{38}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}proofs}{38}{subsection.3.6.1}%
-\contentsline {section}{\numberline {3.7}The Local Cauchy Formula}{38}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}proofs}{38}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.5.1}proofs}{39}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}Existence of Global Primitives. Definition of the Logarithm}{39}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}proofs}{39}{subsection.3.6.1}%
+\contentsline {section}{\numberline {3.7}The Local Cauchy Formula}{39}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}proofs}{39}{subsection.3.7.1}%

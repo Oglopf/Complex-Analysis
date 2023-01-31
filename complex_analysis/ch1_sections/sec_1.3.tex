@@ -1,5 +1,5 @@
 \section{Complex Valued Functions}
-We write the association of the \textbf{value} $f(z)$ to $z$ by the special arrow:
+Denote the association of the \textbf{value} $f(z)$ to $z$ as:
 \[z \mapsto f(z) \]
 
 \begin{defn}[\textbf{Complex Valued Function}]
@@ -44,7 +44,7 @@ Write $z$ in polar coordinates using $|z| = r \in \mathbb{R}$ and $\theta \in [0
 \end{defn}
 
 
-\subsection{Closed Disc}
+\subsection{Closed/Open Disc}
 \begin{defn}[\textbf{Set of the Closed Disc} $\overline{D}$]
 	\begin{align*}
 		\overline{D} = &\{z \in \mathbb{C} \;\;|\;\; \forall z \leq 1 \} \\
@@ -55,12 +55,12 @@ Write $z$ in polar coordinates using $|z| = r \in \mathbb{R}$ and $\theta \in [0
 
 The \textbf{Open Disc} changes $z < 1.$
 
-\subsection{Unit Disc and Roots of Unity}
+\subsection{Unit Disc / Roots of Unity}
 
 \textbf{Intent:} Break the unit circle up into $n$ sectors/tiles/slices.
 
-\textbf{Motivation:} Allows mapping solutions to polynomials that represent complex numbers, or functions 
-that are analytic, to roots of unity over $[0, 2\pi].$
+\textbf{Motivation:} Allows mapping solutions for polynomials, which themselves represent complex numbers or 
+analytic functions, to roots of unity over $[0, 2\pi].$
 
 \begin{defn}[\textbf{Sector of Unit Circle}]
 	\begin{align*}
@@ -90,7 +90,7 @@ Combining above the function $f(z) = z^n$ maps the sector $S$ onto the full disc
 Things to note:
 \begin{itemize}
 	\item The power function tiles the unit disc $D_1$ by sector $S$ a total of $n$ times. 
-	\item Thus we see $z \mapsto z^n$ wraps the disc $n$ times around.
+	\item So $z \mapsto z^n$ wraps the disc $n$ times around.
 \end{itemize}
 
 Diagram of this tiling for a few factors of $\pi$ with $\theta = 0, \pi/6, \pi/4, \pi/3, \pi/2$:
@@ -106,7 +106,7 @@ Diagram of this tiling for a few factors of $\pi$ with $\theta = 0, \pi/6, \pi/4
 
 This gives $4$ seperate choices of tile to then multiply by $n$ to cover the unit disc.
 
-To express every complex number $w^n = z$ we end up with the following generalization:
+To express every complex number $w^n = z$ one ends up with the following generalization:
 \begin{defn}[\textbf{Root of Unity}]
 	\[\zeta^k = e^{\sfrac{2\pi ik}{n}}\]
 \end{defn}
@@ -116,7 +116,7 @@ The points $w_k$ are just the product of $e^{\frac{i\theta}{n}}$ with all the $n
 \[w_k = e^{\sfrac{i\theta}{n}}\zeta^k\]
 
 One of the \textbf{major results of the theory of complex variables} is to reduce the study of certain functions, including most of the 
-common functions we know like exponentials, logarithms, sine, cosine; to power series, which can be approximated by polynomials.
+common functions like exponentials, logarithms, sine, cosine; to power series, which can be approximated by polynomials.
 
 Thus the power function is in some sense the unique basic function out of which the others are constructed.
 \newpage

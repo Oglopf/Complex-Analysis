@@ -72,66 +72,79 @@
     Show that $B_n = 0$ if $n$ is odd and $n \not = 1.$
 
     \textbf{Proof}:
-    The given power series representation of the Bernoulli numbers is called the 
-    generating function of Bernoulli numbers.
-
-    To prove the recursion formula, you can use the power series differentiation rule of products
-    which states that:
+    First, transform the given function into a geometric series, then expand the series to find the coefficients
+    $a_n$ for the terms, which will correspond to $a_n n! = B_n$ in the recursion formula. 
 
     \begin{align*}
-      \frac{d}{dz}[f(z)g(z)] = f(z)\frac{dg(z)}{dz}+ g(z)\frac{df(z)}{dz} \\
+      \frac{z}{e^z - 1} &= \frac{z}{-1 + e^z} \\
+      &= \frac{z}{-1 + \left(1 + z + \frac{z^2}{2!} + \cdots + \frac{z^n}{n!} \right)} \\
+      &= \frac{z}{\left(z + \frac{z^2}{2!} + \cdots + \frac{z^n}{n!} \right)} \\
+      &= \frac{1}{\left(1 + \frac{z}{2!} + \cdots + \frac{z^{n - 1}}{n!} \right)} \\
+      &= \frac{1}{1 - \left( - \frac{z}{2!} + \cdots + \frac{z^{n - 1}}{n!} \right)} \\
+      &= 1 + \left( - \frac{z}{2!} + \cdots + \frac{z^{n - 1}}{n!} \right) + \left( - \frac{z}{2!} + 
+      \cdots + \frac{z^{n - 1}}{n!} \right)^2 + \cdots + \text{higher terms} \\
+    \end{align*}
+    
+    Now use the terms above to solve for the needed coefficients. 
+    
+    Then:
+
+    \begin{align*}
+      a_0 = 1 \\
+    \end{align*} 
+    
+    There is only one term with base $z$ which is $\frac{-1}{2!}$. So:
+
+    \begin{align*}
+      a_1 = -1/2 \\
     \end{align*}
 
-    \begin{enumerate}
+    For $a_2$ check the $z^2$ base's coefficients.
 
-      \item Differentiate the equation with respect to $z$:
-      \[\frac{1}{e^z - 1} - \frac{ze^z}{(e^z - 1)^2} = \sum_{n = 1}^{\infty}\frac{B_n}{(n-1)!}z^{n-1}\]
+    Distribute out the squared term to get the $z^2$ based coefficients:
 
-      \item Multiply the equation by $z^n$.
-      
-      \begin{align*}
-        \frac{z^n}{e^z - 1} - \frac{z z^n}{(e^z - 1)^2}e^z &= \sum_{n = 1}^{\infty}\frac{B_n}{(n-1)!}z^{n-1} z^n \\
-        \frac{z^n}{e^z - 1} - \frac{z^{n + 1} e^z}{(e^z - 1)^2} &= \sum_{n = 1}^{\infty}\frac{B_n}{(n-1)!}z^{2n-1} \\
-      \end{align*}
+    \begin{align*}
+      \left( - \frac{z}{2!} + \cdots + \frac{z^{n - 1}}{n!} \right)^2 &= \left( - \frac{z}{2!} + \cdots + \frac{z^{n - 1}}{n!} \right)
+      \left( - \frac{z}{2!} + \cdots + \frac{z^{n - 1}}{n!} \right)  \\
+    \end{align*}
 
-      \item Integrate the equation with respect to $z$ from $0$ to $z$:
-      \begin{align*}
-        \int_{0}^{z} \left( \frac{z^n}{e^z - 1} - \frac{z^{n + 1} e^z}{(e^z - 1)^2} \right) dz &= \int_{0}^{z} \left( \sum_{n = 1}^{\infty}\frac{B_n}{(n-1)!}z^{2n-1} \right) dz \\
-      \end{align*}
+    Distribute out and notice how we need nothing above $z^2$ and can stop once we have all its terms:
 
-      \item Recall the $e^z$ power series representation:
+    \begin{align*}
+      \left( - \frac{z}{2!} + \cdots + \frac{z^{n - 1}}{n!} \right)^2 &= \left( - \frac{z}{2!} + \cdots + \frac{z^{n - 1}}{n!} \right)
+      \left( - \frac{z}{2!} + \cdots + \frac{z^{n - 1}}{n!} \right)  \\
+      &= \left( - \frac{z^2}{2!2!} + \text{(terms > $z^2$)} \right) \\
+    \end{align*}
+
+    Combining the matching based terms results in:
     
-      \[e^z = 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \cdots\]
+    \begin{align*}
+      a_2 &= \frac{-1}{6} + \frac{1}{4} \\
+      &= \frac{1}{12} \\
+    \end{align*}
 
-      \item  Using this expansion and the assumption that the integral of a power series is the power series of the 
-      integral, you can simplify the left side of the equation obtained in step (c) to:
+    Keeping this up results in the first four coefficients coming out to:
 
-      \begin{align*}
-        \int_{0}^{z} \left( \frac{z^n}{e^z - 1} - \frac{z^{n + 1} e^z}{(e^z - 1)^2} \right) dz &= \int_{0}^{z} \left( \sum_{n = 1}^{\infty}\frac{B_n}{(n-1)!}z^{2n-1} \right) dz \\
-      \end{align*}
+    \begin{align*}
+      a_0 &= 1 \\
+      a_1 &= \frac{-1}{2} \\
+      a_2 &= \frac{1}{12}  \\
+      a_3 & = \frac{-1}{24} + \frac{1}{12} + \frac{1}{12} - \frac{1}{8} \\
+      &= 0 \\
+    \end{align*}
 
-      \item Now use the binomial formula:
+    Now using the relationship given the first four Bernoulli Numbers $B_n$ come out to:
 
-      \begin{align*}
-        (a + b)^n = \sum_{i = 0}^{n} {n \choose i} a^{n-i} b^i \\
-      \end{align*}
-      
-      The property that the $B_n$ are defined 
-      by the power series:
-      \begin{align*}
-        \frac{z}{e^z-1} = \sum_{n=0}^\infty \frac{B_n}{n!}z^n \\
-      \end{align*}
+    \begin{align*}
+      B_n &= a_n \cdot n! \\
+      B_0 &= 1 \cdot 0! \\
+      B_1 &= \frac{-1}{2} \cdot 1! \\
+      B_2 &= \frac{1}{12} \cdot 2! \\
+      &= \frac{1}{6} \\
+      B_3 &= 0 \cdot 3! \\
+      &= 0 \\
+    \end{align*}
 
-      And:
-      \begin{align*}
-        \frac{d}{dz} e^z &= e^z \\
-        \frac{d}{dz} z^n &= nz^{n-1} \\
-      \end{align*}
-
-      To tie this all together with those integrations and the binomials in the denominators possibly. 
-
-    \end{enumerate}
-    
     \item Show that:
   
     \begin{align*}

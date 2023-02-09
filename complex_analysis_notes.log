@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.1.18)  31 JAN 2023 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.1.18)  8 FEB 2023 22:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -670,13 +670,7 @@ Chapter 2.
 
 
 
-] [40]) (./complex_analysis/ch2_exercises/exs_2.1.tex [41] [42]
-
-Package amsmath Warning: Foreign command \atopwithdelims;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 117.
-
-[43]) (./complex_analysis/ch2_sections/sec_2.2.tex [44] [45]) (./complex_analysis/ch2_exercises/exs_2.2.tex [46]) (./complex_analysis/ch2_sections/sec_2.3.tex) (./complex_analysis/ch2_exercises/exs_2.3.tex) (./complex_analysis/ch2_sections/sec_2.4.tex) (./complex_analysis/ch2_exercises/exs_2.4.tex) (./complex_analysis/ch2_sections/sec_2.5.tex) (./complex_analysis/ch2_exercises/exs_2.5.tex) (./complex_analysis/ch2_sections/sec_2.6.tex) (./complex_analysis/ch2_exercises/exs_2.6.tex) (./complex_analysis/ch2_sections/sec_2.7.tex) (./complex_analysis/ch2_exercises/exs_2.7.tex)) [47]
+] [40]) (./complex_analysis/ch2_exercises/exs_2.1.tex [41] [42] [43] [44]) (./complex_analysis/ch2_sections/sec_2.2.tex [45] [46]) (./complex_analysis/ch2_exercises/exs_2.2.tex [47]) (./complex_analysis/ch2_sections/sec_2.3.tex) (./complex_analysis/ch2_exercises/exs_2.3.tex) (./complex_analysis/ch2_sections/sec_2.4.tex) (./complex_analysis/ch2_exercises/exs_2.4.tex) (./complex_analysis/ch2_sections/sec_2.5.tex) (./complex_analysis/ch2_exercises/exs_2.5.tex) (./complex_analysis/ch2_sections/sec_2.6.tex) (./complex_analysis/ch2_exercises/exs_2.6.tex) (./complex_analysis/ch2_sections/sec_2.7.tex) (./complex_analysis/ch2_exercises/exs_2.7.tex)) [48]
 \openout2 = `./complex_analysis/chapter_three.aux'.
 
  (./complex_analysis/chapter_three.tex
@@ -684,12 +678,12 @@ Chapter 3.
 (./complex_analysis/ch3_sections/sec_3.1.tex) (./complex_analysis/ch3_exercises/exs_3.1.tex) (./complex_analysis/ch3_sections/sec_3.2.tex) (./complex_analysis/ch3_exercises/exs_3.2.tex) (./complex_analysis/ch3_sections/sec_3.3.tex) (./complex_analysis/ch3_exercises/exs_3.3.tex) (./complex_analysis/ch3_sections/sec_3.4.tex) (./complex_analysis/ch3_exercises/exs_3.4.tex) (./complex_analysis/ch3_sections/sec_3.5.tex) (./complex_analysis/ch3_exercises/exs_3.5.tex) (./complex_analysis/ch3_sections/sec_3.6.tex) (./complex_analysis/ch3_exercises/exs_3.6.tex) (./complex_analysis/ch3_sections/sec_3.7.tex) (./complex_analysis/ch3_exercises/exs_3.7.tex))
 Underfull \vbox (badness 1371) has occurred while \output is active []
 
- [48
+ [49
 
 
 
 
-] [49] (./complex_analysis_notes.aux (./complex_analysis/chapter_one.aux) (./complex_analysis/chapter_two.aux) (./complex_analysis/chapter_three.aux))
+] [50] (./complex_analysis_notes.aux (./complex_analysis/chapter_one.aux) (./complex_analysis/chapter_two.aux) (./complex_analysis/chapter_three.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25pt have occurred.
@@ -698,18 +692,18 @@ Package rerunfilecheck Info: File `complex_analysis_notes.out' has not changed.
 (rerunfilecheck)             Checksum: 8C80CECE0DF6C1981C35B129FE9DCB6E;8782.
  ) 
 Here is how much of TeX's memory you used:
- 22867 strings out of 478287
- 427698 string characters out of 5849289
- 703433 words of memory out of 5000000
+ 22862 strings out of 478287
+ 427659 string characters out of 5849289
+ 703431 words of memory out of 5000000
  40223 multiletter control sequences out of 15000+600000
  530896 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,20n,89p,1255b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on complex_analysis_notes.pdf (53 pages, 329534 bytes).
+Output written on complex_analysis_notes.pdf (54 pages, 330571 bytes).
 PDF statistics:
- 835 PDF objects out of 1000 (max. 8388607)
- 732 compressed objects within 8 object streams
- 266 named destinations out of 1000 (max. 500000)
+ 832 PDF objects out of 1000 (max. 8388607)
+ 728 compressed objects within 8 object streams
+ 261 named destinations out of 1000 (max. 500000)
  461 words of extra memory for PDF output out of 10000 (max. 10000000)
 

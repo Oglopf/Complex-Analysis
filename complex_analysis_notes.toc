@@ -28,29 +28,34 @@
 \contentsline {section}{\numberline {2.1}Formal Power Series}{39}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Proofs}{41}{subsection.2.1.1}%
 \contentsline {section}{\numberline {2.2}Convergent Power Series}{45}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Proofs}{47}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Relations Between Formal and Convergent Series}{48}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Proofs}{48}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Analytic Functions}{48}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Proofs}{48}{subsection.2.4.1}%
-\contentsline {section}{\numberline {2.5}Differentiation of Power Series}{48}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Proofs}{48}{subsection.2.5.1}%
-\contentsline {section}{\numberline {2.6}The Inverse and Open Mapping Theorems}{48}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Proofs}{48}{subsection.2.6.1}%
-\contentsline {section}{\numberline {2.7}The Local Maximum Modulus Principle}{48}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Proofs}{48}{subsection.2.7.1}%
-\contentsline {chapter}{\numberline {3}Cauchy's Theorem, First Part}{49}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Holomorphic Functions on Connected Sets}{49}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}proofs}{49}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Integrals Over Paths}{49}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}proofs}{49}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Local Primitive for a Holomorphic Function}{49}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}proofs}{49}{subsection.3.3.1}%
-\contentsline {section}{\numberline {3.4}Anothe Description of the Integral Along a Path}{49}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}proofs}{49}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5}The Homotopy Form of Cauchy's Theorem}{49}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}proofs}{50}{subsection.3.5.1}%
-\contentsline {section}{\numberline {3.6}Existence of Global Primitives. Definition of the Logarithm}{50}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}proofs}{50}{subsection.3.6.1}%
-\contentsline {section}{\numberline {3.7}The Local Cauchy Formula}{50}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}proofs}{50}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {2.2.1}Sequences and Series of Complex Numbers}{45}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Convergence of Complex Numbers}{45}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Sequences of Functions}{45}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Uniform Convergence of Complex Functions}{46}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Series of Functions}{46}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Proofs}{48}{subsection.2.2.6}%
+\contentsline {section}{\numberline {2.3}Relations Between Formal and Convergent Series}{49}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Proofs}{49}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Analytic Functions}{49}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Proofs}{49}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Differentiation of Power Series}{49}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Proofs}{49}{subsection.2.5.1}%
+\contentsline {section}{\numberline {2.6}The Inverse and Open Mapping Theorems}{49}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Proofs}{49}{subsection.2.6.1}%
+\contentsline {section}{\numberline {2.7}The Local Maximum Modulus Principle}{49}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Proofs}{49}{subsection.2.7.1}%
+\contentsline {chapter}{\numberline {3}Cauchy's Theorem, First Part}{50}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Holomorphic Functions on Connected Sets}{50}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}proofs}{50}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Integrals Over Paths}{50}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}proofs}{50}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Local Primitive for a Holomorphic Function}{50}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}proofs}{50}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Anothe Description of the Integral Along a Path}{50}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}proofs}{50}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}The Homotopy Form of Cauchy's Theorem}{50}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}proofs}{51}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}Existence of Global Primitives. Definition of the Logarithm}{51}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}proofs}{51}{subsection.3.6.1}%
+\contentsline {section}{\numberline {3.7}The Local Cauchy Formula}{51}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}proofs}{51}{subsection.3.7.1}%

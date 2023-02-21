@@ -1,17 +1,26 @@
 \section{Convergent Power Series}
-Let ${ \{ z_n \} }$ be a \emph{sequence of complex numbers}.
 
-Consider the series:
-\begin{align*}
-  \sum_{n = 1}^{\infty} z_n
-\end{align*}
+\subsection{Sequences and Series of Complex Numbers}
 
-\begin{defn}[\textbf{Partial Sum of a Sequence of Complex Numbers}]
+\begin{defn}[\textbf{Sequence}]
+  \begin{align*}
+    { \{ z_n \} } \;\; or \;\; z_n
+  \end{align*}
+\end{defn}
+
+\begin{defn}[\textbf{Series}]
+  \begin{align*}
+    \sum_{n = 1}^{\infty} z_n
+  \end{align*}
+\end{defn}
+
+\begin{defn}[\textbf{Partial Sum}]
   \begin{align*}
     s_n = \sum_{k = 1}^{n} z_k = z_1 + z_2 + \cdots z_n
   \end{align*}
 \end{defn}
 
+\subsection{Convergence of Complex Numbers}
 \begin{defn}[\textbf{Convergent Series}]
   The series $s_n$ converges if there is some $w \in \mathbb{C}$ such that the following limit exists:
   \begin{align*}
@@ -21,17 +30,28 @@ Consider the series:
 
 In which case we say that $w$ is equal to the \emph{sum of the series.}
 
-Formally:
-
 \begin{defn}[\textbf{Sum of the Series}]
+  Formally:
   \begin{align*}
     w = \sum_{n = 1}^{\infty} z_n
   \end{align*}
 \end{defn}
 
-Now consider series of functions and deal with questions of \emph{uniformity.}
+Now consider \emph{} and deal with questions of \emph{uniformity.}
 
-Suppose that $S$ is a set and $f$ a bounded function on $S$.
+\subsection{Sequences of Functions}
+Suppose:
+\begin{itemize}
+  \item $S \subseteq \mathbb{C}$
+  \item $f$ is a \emph{bounded function} on $S$
+  \item $n \in \mathbb{N}$
+\end{itemize}
+
+\begin{defn}[\textbf{Sequence}]
+  \begin{align*}
+    \{ f_n \} \; or \; f_n 
+  \end{align*}
+\end{defn}
 
 \begin{defn}[\textbf{Sup norm}]
   Let sup be the least upper bound, then:
@@ -40,10 +60,10 @@ Suppose that $S$ is a set and $f$ a bounded function on $S$.
   \end{align*}
 \end{defn}
 
-Now, let $\{ f_n \}$ with $n \in \mathbb{N}$ be a \emph{sequence of functions} on $S$.
+\subsection{Uniform Convergence of Complex Functions}
 
 \begin{defn}[\textbf{Uniform Convergence}]
-  The sequence $ \{ f_n \}$ converges uniformly on $S$ if there exists a 
+  The sequence $ f_n $ converges uniformly on $S$ if there exists a 
   function $f$ on $S$ satisfying the following properties.
 
   Given $\epsilon$, there exists $N$ such that if $n \geq N$ then:
@@ -54,31 +74,124 @@ Now, let $\{ f_n \}$ with $n \in \mathbb{N}$ be a \emph{sequence of functions} o
 \end{defn}
 
 \begin{defn}[\textbf{Cauchy Sequence}]
-  We call $\{f_n\}$ Cauchy if given $\epsilon$ there exists $N$ such that if $m, n \geq N$ then:
+  We call $f_n$ Cauchy if given $\epsilon$ there exists $N$ such that if $m, n \geq N$ then:
   \begin{align*}
     \| f_n - f_m \| < \epsilon
   \end{align*}
 \end{defn}
 
-It is important to note that \textit{if a sequence} $\{f_n\}$ \textit{of functions is Cauchy, 
-then it converges uniformly.}  (think about what you get if you're cauchy, hint: it 
-is very small!)
+\begin{thm}
+  If a sequence $f_n$ of functions on $S$ is Cauchy, then $f_n$ converges uniformly.
+\end{thm}
 
-Now, keeping in mind we are working with \textit{sequences of functions} (sof) at this point, we define:
+\begin{thm}
+  If the functions $f_n$ in the theorem are bounded, then the limiting function $f$ is bounded.
+\end{thm}
 
-\begin{defn}[\textbf{Partial Sum of a Sequence of Complex Functions}]
+\subsection{Series of Functions}
+
+\begin{defn}[\textbf{Partial Sum}]
   \begin{align*}
     s_n = \sum_{k = 1}^{n} f_k = f_1 + f_2 + \cdots f_n
   \end{align*}
 \end{defn}
 
-This above series converges \emph{uniformly} if the sequence of partial sums $\{s_n\}$ converges uniformly.
+\begin{defn}[\textbf{Uniform Convergence of Series}]
+  The series $\sum_{k = 1}^{n} f_k$ converges uniformly if the sequence of partial 
+  sums $s_n$ converges uniformly.
+\end{defn}
 
-\begin{defn}[\textbf{Absolute Convergence of sof}]
+\begin{defn}[\textbf{Absolute Convergence of Series}]
   A series $\sum f_n$ converges absolutely if $\forall z \in S$ the following series converges:
   \begin{align*}
     \sum | f_n (z) |
   \end{align*}
 \end{defn}
+
+\begin{thm}[\textbf{Comparison Test}]
+  Let $c_n$ be a sequence of real numbers $\geq 0$ and assume that
+  \begin{align*}
+    \sum c_n
+  \end{align*}
+  converges. Let $f_n$ be a sequence of functions on S such that 
+  $||f_n|| \leq c_n$ for all n. Then $\sum f_n$ converges uniformly and absolutely.
+\end{thm}
+
+\subsubsection*{Power Series}
+
+Now consider the functions $f_n$ in the form
+\begin{align*}
+  a_n \in \mathbb{C} \;\; n \in \mathbb{N} \\
+  \\
+  f_n (z) = a_n z^n \\ 
+\end{align*}
+
+\begin{thm}[\textbf{Absolute Convergence}]
+  Let $a_n$ be a sequence of complex numbers, and let $r$ be a number $> 0$ such that the series 
+  \begin{align*}
+    \sum | a_n | r^n
+  \end{align*}
+  converges. Then for $|z| \leq r$ the series $\sum a_n z^n$ converges absolutely and uniformly. 
+\end{thm}
+
+\begin{thm}[\textbf{Existence of the Radius of Convergence}]
+  Let $\sum a_n z^n$ be a power series. If it does not converge absolutely for all $z$, then 
+  there exists a number $r$ such that the series converges absolutely for $|z| < r$ and does not 
+  converge for $|z| > r.$
+\end{thm}
+
+\begin{defn}[\textbf{Radius of Convergence} $r$]
+  The number $r \not = |z|$ such that  $\sum a_n z^n$ converges for $|z| < r.$
+  \begin{itemize}
+    \item If the power series converges for all $z$ then the radius of convergence is infinity.
+    \item If the radius of convergence is $r = 0$ then the series converges absolutely only for $z = 0.$
+    \item The radius of convergence can be determined by the coefficients.
+  \end{itemize}
+\end{defn}
+
+\begin{defn}[\textbf{Convergent Power Series}]
+  Any power series that has a non-zero radius of convergence.
+\end{defn}
+
+\begin{defn}[\textbf{Power Series Converging on a Disk} $D$]
+  If $D$ is a disk centered at the origin contained in the disk $\mathbb{D}(0, r)$, where $r$ is the 
+  radius of convergence for some power series g, then g converges on $D.$ 
+\end{defn}
+
+\begin{defn}[\textbf{Point of Accumulation}]
+  Given a sequence $t_n$ of real numbers, the number $t$ is the point of accumulation of $t_n$ if 
+  given $\epsilon,$ there exist infinitely many indices $n$ such that
+  \begin{align*}
+    |t_n - t| < \epsilon
+  \end{align*}
+\end{defn}
+So, infinitely many points of the sequence lie in a given interval centered at $t.$ The Weierstrass-Balzano
+theorem proves that, \emph{in the reals}, every bounded sequence has a point of accumulation. There can 
+be many points of accumulation as well.
+
+\textbf{Assume}
+\begin{itemize}
+  \item $t_n$ is \emph{bounded}
+  \item Let $S$ be the set of \emph{points of accumulation}
+\end{itemize}
+
+\begin{defn}[\textbf{Limit Superior}: lim sup $t_n$]
+  The least upper bound of $S.$
+\end{defn}
+
+Let $\lambda \in S$ be this least upper bound, then one writes: $\lambda = $ lim sup $t_n =$
+least upper bound of $S.$
+
+Notice that $\lambda$ has the following properties:
+\begin{thm}[\textbf{Epsilon Around Lamda}]
+  Given $\epsilon,$ there exist only finitely many $n$ such that
+  \begin{align*}
+    t_n \geq \lambda + \epsilon
+  \end{align*}
+  There exist infinitely many $n$ such that
+  \begin{align*}
+    t_n \geq \lambda - \epsilon
+  \end{align*}
+\end{thm}
 
 \newpage

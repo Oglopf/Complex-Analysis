@@ -7,4 +7,21 @@ If $f$ converges absolutely for some complex number $z$, then we have the value 
 
 And so the big theorem here is that if $f$ and $g$ converge on the disc, then so do their sum and products.
 
-There are no definitions in this section.
+\begin{defn}[\bfseries Logarithm Series of Real x]
+    For real values of $x$ we have:
+    \begin{align*}
+        f(x)         & = \log (1 + x)                                   \\
+        \log (1 + x) & = \sum_{n=1}^{\infty} (-1)^{n - 1} \frac{x^n}{n}
+    \end{align*}
+\end{defn}
+
+And this then results in the logarithm for a complex number by:
+\begin{defn}[\bfseries Logarithm Series of Complex z]
+    Let $|z - 1| < 1$ and define $\log z$ as:
+    \begin{align*}
+        \log z                 & = f(z - 1)                                               \\
+        f(z - 1)               & = \log(1 + (z - 1))                                      \\
+        \\
+        \therefore \;\; \log z & = \sum_{n=1}^{\infty} (-1)^{n - 1} \frac{({z - 1})^n}{n}
+    \end{align*}
+\end{defn}

@@ -1,3 +1,31 @@
 \section{Analytic Functions}
 
+Let $f$ be a function defined in some neighborhood of a point $z_0$.
 
+\begin{defn}[\bfseries Analytic function]
+    $f$ is analytic at $z_0$ if there is a power series of the form:
+    \begin{align*}
+        \sum_{n = 0}^{\infty} a_n (z - z_0)^n \\
+    \end{align*}
+    and some $r > 0$ such that the series converges absolutely for $|z - z_0| < r.$
+
+    And, for $z$ that satisfy the above one has:
+    \begin{align*}
+        f(z) & = \sum_{n = 0}^{\infty} a_n (z - z_0)^n \\
+    \end{align*}
+\end{defn}
+
+One says that $f$ is analytic on $U$ if $f$ is analytic at every point of $U.$
+
+One could also say $f$ \bfseries has a power series expansion at $z_0.$
+
+Use these identities:
+$f$ is holomorphic:
+$\int_{\gamma} f(z) dz = 0$
+
+$\int_{\gamma} \frac{1}{z} dz = 2\pi i $
+
+But notice:
+$\int_{\gamma} \frac{1}{z^2} dz = 0 $
+
+$\varphi \mapsto f \circ \varphi \circ f^{-1}$

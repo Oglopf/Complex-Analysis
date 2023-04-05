@@ -1,317 +1,281 @@
 \subsection{Proofs}
 \begin{enumerate}
-	\item 
-	\subitem a. Let $\alpha$ be a complex number of absolute value $< 1.$ 
-	What is $\lim\limits_{n \to \infty} \alpha^n ?$ Proof?
+	\item
+	      \subitem a. Let $\alpha$ be a complex number of absolute value $< 1.$
+	      What is $\lim\limits_{n \to \infty} \alpha^n ?$ Proof?
 
-	\textbf{Proof:}
-	Just use a Cauchy Sequence.
+	      \textbf{Proof:}
+	      Just use a Cauchy Sequence.
 
-	$|\alpha| < 1$ iff $ |\alpha| = \frac{1}{|z|}.$ 
+	      $|\alpha| < 1$ iff $ |\alpha| = \frac{1}{|z|}.$
 
-	So then check $\lim\limits_{n \to \infty} |\alpha|^n$:
-	\begin{align*}
-		\lim\limits_{n \to \infty} |\alpha|^n &= \lim\limits_{n \to \infty} \frac{1}{|z|^n} \\
-	\end{align*}
-	This sequence has different behavior for $z < 1$ vs $z > 1$, but we must have $|\alpha| < 1$ therefore $z > 1$ only here.
+	      So then check $\lim\limits_{n \to \infty} |\alpha|^n$:
+	      \begin{align*}
+		      \lim\limits_{n \to \infty} |\alpha|^n & = \lim\limits_{n \to \infty} \frac{1}{|z|^n} \\
+	      \end{align*}
+	      This sequence has different behavior for $z < 1$ vs $z > 1$, but we must have $|\alpha| < 1$ therefore $z > 1$ only here.
 
-	\begin{align*}
-		\lim\limits_{n \to \infty} |\alpha|^n &= \lim\limits_{n \to \infty} \frac{1}{|z|^n} \\
-	\end{align*}
+	      \begin{align*}
+		      \lim\limits_{n \to \infty} |\alpha|^n & = \lim\limits_{n \to \infty} \frac{1}{|z|^n} \\
+	      \end{align*}
 
-	Since $z > 1$ and by the Archimedean principal we can always find $m > n$
-	then clearly: 
-	\begin{align*}
-	\alpha^m < \alpha^n \iff \frac{1}{z^m} < \frac{1}{z^n}
-	\end{align*}
-	
-	Therefore this sequence is monotonic, it only decreases each new term, and the difference between $m, n$ terms is 
-	small but always $> 0$ which gives us a cauchy sequence.
+	      Since $z > 1$ and by the Archimedean principal we can always find $m > n$
+	      then clearly:
+	      \begin{align*}
+		      \alpha^m < \alpha^n \iff \frac{1}{z^m} < \frac{1}{z^n}
+	      \end{align*}
 
-	So then:
-	\begin{align*}
-		|\alpha^n - \alpha^m| < \epsilon \\
-	\end{align*} \qed
+	      Therefore this sequence is monotonic, it only decreases each new term, and the difference between $m, n$ terms is
+	      small but always $> 0$ which gives us a cauchy sequence.
 
-	\subitem b. Let $\alpha$ be a complex number of absolute value $> 1.$ 
-	What is $\lim\limits_{n \to \infty} \alpha^n ?$ Proof?
+	      So then:
+	      \begin{align*}
+		      |\alpha^n - \alpha^m| < \epsilon \\
+	      \end{align*} \qed
 
-	\textbf{Proof:}
-	$ \alpha = |z| > 1$ and $\alpha_n = |z|^n.$ 
-	Looking at the \textit{limit of the sequence} we see it increasing arbitrarily, and so each 
-	term is larger than the previous which means we can't ever satisfy our definition of a limit 
-	since we \textit{can} choose some $m, n$ that would have some arbitrarily large difference between 
-	them $> \epsilon.$ \qed
-	
+	      \subitem b. Let $\alpha$ be a complex number of absolute value $> 1.$
+	      What is $\lim\limits_{n \to \infty} \alpha^n ?$ Proof?
+
+	      \textbf{Proof:}
+	      $ \alpha = |z| > 1$ and $\alpha_n = |z|^n.$
+	      Looking at the \textit{limit of the sequence} we see it increasing arbitrarily, and so each
+	      term is larger than the previous which means we can't ever satisfy our definition of a limit
+	      since we \textit{can} choose some $m, n$ that would have some arbitrarily large difference between
+	      them $> \epsilon.$ \qed
+
 	\item Show that for any complex number $z \neq 1,$ we have
-	\[ 1 + z + \cdots + z^n = \frac{z^{n + 1} - 1}{z - 1}\]
-	If $|z| < 1,$ show that
-	\[ \lim_{n \to \infty} (1 + z + \cdots + z^n ) = \frac{1}{1 - z} \] \\
-		
-	\textbf{Proof:}
-	Now we need to look at the \textit{limit of a sequence of partial sums} and test convergence.
+	      \[ 1 + z + \cdots + z^n = \frac{z^{n + 1} - 1}{z - 1}\]
+	      If $|z| < 1,$ show that
+	      \[ \lim_{n \to \infty} (1 + z + \cdots + z^n ) = \frac{1}{1 - z} \] \\
 
-	\begin{align*}
-		S_1 &= 1 \\
-		S_2 &= 1 + z \\
-		S_3 &= 1 + z + z^2 \\
-		\vdots &= \vdots \\
-		S_n &= 1 + z + z^2 + \cdots + z^n
-	\end{align*}
-	Now play with the algebra and multiply both sides by $z$ for shits and giggles
-	\begin{align*}
-		zS_n &= z + z^2 + \cdots + z^{n +1} \\
-		zS_n - S_n &= z + z^2 + \cdots + z^{n +1} - S_n \\
-		S_n(z - 1) &= z + z^2 + \cdots + z^{n +1} - S_n \\
-	\end{align*}
-	The telescoping series starts to look more obvious
-	\begin{align*}
-		S_n(z - 1) &= z + z^2 + \cdots + z^{n +1} - (1 + z + z^2 + \cdots + z^n) \\
-	\end{align*}
-	Matching up the pairs we see the result we need
-	\begin{align*}
-		S_n(z - 1) &= z + z^2 + \cdots + z^{n +1} - 1 - z - z^2 - \cdots - z^n) \\
-		S_n(z - 1) &= z^{n +1} - 1 + z - z + z^2 - z^2 + z^3 - z^3 + \cdots + z^n - z^n) \\
-		\therefore S_n &= \frac{z^{n +1} - 1}{z - 1} \\
-	\end{align*}
-	And now we do as we said, \textit{take the limit of a sequence of partial sums}
-	\begin{align*}
-		\lim_{n \to \infty} S_n &= \lim_{n \to \infty} \frac{z^{n +1} - 1}{z - 1} \\
-	\end{align*}
+	      \textbf{Proof:}
+	      Now we need to look at the \textit{limit of a sequence of partial sums} and test convergence.
 
-	And clearly this sequence diverges if $|z| > 1$ since the numerator grows unbounded over a fixed denominator.
+	      \begin{align*}
+		      S_1    & = 1                          \\
+		      S_2    & = 1 + z                      \\
+		      S_3    & = 1 + z + z^2                \\
+		      \vdots & = \vdots                     \\
+		      S_n    & = 1 + z + z^2 + \cdots + z^n
+	      \end{align*}
+	      Now play with the algebra and multiply both sides by $z$ for shits and giggles
+	      \begin{align*}
+		      zS_n       & = z + z^2 + \cdots + z^{n +1}       \\
+		      zS_n - S_n & = z + z^2 + \cdots + z^{n +1} - S_n \\
+		      S_n(z - 1) & = z + z^2 + \cdots + z^{n +1} - S_n \\
+	      \end{align*}
+	      The telescoping series starts to look more obvious
+	      \begin{align*}
+		      S_n(z - 1) & = z + z^2 + \cdots + z^{n +1} - (1 + z + z^2 + \cdots + z^n) \\
+	      \end{align*}
+	      Matching up the pairs we see the result we need
+	      \begin{align*}
+		      S_n(z - 1)     & = z + z^2 + \cdots + z^{n +1} - 1 - z - z^2 - \cdots - z^n)          \\
+		      S_n(z - 1)     & = z^{n +1} - 1 + z - z + z^2 - z^2 + z^3 - z^3 + \cdots + z^n - z^n) \\
+		      \therefore S_n & = \frac{z^{n +1} - 1}{z - 1}                                         \\
+	      \end{align*}
+	      And now we do as we said, \textit{take the limit of a sequence of partial sums}
+	      \begin{align*}
+		      \lim_{n \to \infty} S_n & = \lim_{n \to \infty} \frac{z^{n +1} - 1}{z - 1} \\
+	      \end{align*}
 
-	Now consider if $|z| < 1$ and 
-	\begin{align*}
-		\lim_{n \to \infty} S_n &= \lim_{n \to \infty} \frac{z^{n +1} - 1}{z - 1} \\
-		&=  \frac{- 1}{z - 1} \\
-		&=  \frac{1}{1 - z} \\
-		\therefore \lim_{n \to \infty} (1 + z + \cdots + z^n ) &= \frac{1}{1 - z}
-	\end{align*}
-	\qed
+	      And clearly this sequence diverges if $|z| > 1$ since the numerator grows unbounded over a fixed denominator.
+
+	      Now consider if $|z| < 1$ and
+	      \begin{align*}
+		      \lim_{n \to \infty} S_n                                & = \lim_{n \to \infty} \frac{z^{n +1} - 1}{z - 1} \\
+		                                                             & =  \frac{- 1}{z - 1}                             \\
+		                                                             & =  \frac{1}{1 - z}                               \\
+		      \therefore \lim_{n \to \infty} (1 + z + \cdots + z^n ) & = \frac{1}{1 - z}
+	      \end{align*}
+	      \qed
 
 	\item Let $f$ be the function defined by
-	\[ f(z) = \lim_{n \to \infty} \frac{1}{1 + n^2 z} \]
+	      \[ f(z) = \lim_{n \to \infty} \frac{1}{1 + n^2 z} \]
 
-	Show that $f$ is the characteristic function of the set $\{0\},$ that is, $f(0) = 1,$ and $f(z) = 0$ if $z \neq 0.$
-			
-	\textbf{Proof:}
-	Start by plugging in:
-	\begin{align*}
-		f(z) &= \lim_{n \to \infty} \frac{1}{1 + n^2 z} \\
-		f(0) &= \lim_{n \to \infty} \frac{1}{1 + n^2 0} \\
-		f(0) &= 1 
-	\end{align*}
+	      Show that $f$ is the characteristic function of the set $\{0\},$ that is, $f(0) = 1,$ and $f(z) = 0$ if $z \neq 0.$
 
-	Now consider all other cases:
+	      \textbf{Proof:}
+	      Start by plugging in:
+	      \begin{align*}
+		      f(z) & = \lim_{n \to \infty} \frac{1}{1 + n^2 z} \\
+		      f(0) & = \lim_{n \to \infty} \frac{1}{1 + n^2 0} \\
+		      f(0) & = 1
+	      \end{align*}
 
-	\begin{align*}
-		f(+\infty) &= \lim_{n \to \infty} \frac{1}{1 + n^2 \infty} \\
-		f(+\infty) &= 0 \\
-		f(-\infty) &= \lim_{n \to -\infty} \frac{1}{1 + n^2 (-\infty)} \\ 
-		f(-\infty) &= 0 \\
-	\end{align*}
+	      Now consider all other cases:
 
-	Then consider $b < 1 < c$:
+	      \begin{align*}
+		      f(+\infty) & = \lim_{n \to \infty} \frac{1}{1 + n^2 \infty}     \\
+		      f(+\infty) & = 0                                                \\
+		      f(-\infty) & = \lim_{n \to -\infty} \frac{1}{1 + n^2 (-\infty)} \\
+		      f(-\infty) & = 0                                                \\
+	      \end{align*}
 
-	\begin{align*}
-		f(c) &= \lim_{n \to \infty} \frac{1}{1 + n^2 c} \\
-		f(c) &= 0 \\
-		f(b) &= \lim_{n \to \infty} \frac{1}{1 + n^2 b} \\ 
-		f(b) &= 0 \\
-	\end{align*}
+	      Then consider $b < 1 < c$:
 
-	And so the function $f$ satisfies the definition and so can be called the characteristic function of the set $\{0\}$.
-	\qed
+	      \begin{align*}
+		      f(c) & = \lim_{n \to \infty} \frac{1}{1 + n^2 c} \\
+		      f(c) & = 0                                       \\
+		      f(b) & = \lim_{n \to \infty} \frac{1}{1 + n^2 b} \\
+		      f(b) & = 0                                       \\
+	      \end{align*}
+
+	      And so the function $f$ satisfies the definition and so can be called the characteristic function of the set $\{0\}$.
+	      \qed
 
 	\item For $|z| \neq 1$ show that the following limit exists:
-	\[ f(z) = \lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right) \]
+	      \[ f(z) = \lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right) \]
 
-	Is it possible to define $f(z)$ when $|z| = 1$ in such a way to make $f$ continuous?
-		
-	\textbf{Proof:}
-	Take the limits for the cases of $z$.
-	
-	First for $z > 1$:
-	\begin{align*}
-		f(z) &= \lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right) \\
-		&= \lim_{n \to \infty} \frac{z^n}{z^n} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
-		&= \lim_{n \to \infty} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
-		&= \lim_{n \to \infty} \left( \frac{- \frac{1}{z^n}}{\frac{1}{z^n}} \right) \\
-		&= \lim_{n \to \infty} \left( \frac{- z^n}{{z^n}} \right) \\
-		&= -1
-	\end{align*}
+	      Is it possible to define $f(z)$ when $|z| = 1$ in such a way to make $f$ continuous?
 
-	For $0 < z < 1$:
-	\begin{align*}
-		f(z) &= \lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right) \\
-		&= \lim_{n \to \infty} \frac{z^n}{z^n} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
-		&= \lim_{n \to \infty} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
-		&= \lim_{n \to \infty} \left( \frac{- \frac{1}{z^n}}{\frac{1}{z^n}} \right) \\
-		&= \lim_{n \to \infty} \left( \frac{- z^n}{{z^n}} \right) \\
-		&= -1
-	\end{align*}
-	For $z = 0$
-	\begin{align*}
-		f(z) &= \lim_{n \to \infty} \left( \frac{0 - 1}{0 + 1} \right) \\
-		&= -1
-	\end{align*}
-	For $ -1 < z < 0$:
-	\begin{align*}
-		f(z) &= \lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right) \\
-		&= \lim_{n \to \infty} \frac{z^n}{z^n} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
-		&= \lim_{n \to \infty} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
-		&= \lim_{n \to \infty} \left( \frac{- \frac{1}{z^n}}{\frac{1}{z^n}} \right) \\
-		&= -1
-	\end{align*}
-	And lastly $z < -1$:
-	\begin{align*}
-		f(z) &= \lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right) \\
-		&= \lim_{n \to \infty} \frac{z^n}{z^n} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
-		&= \lim_{n \to \infty} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
-		&= \lim_{n \to \infty} \left( \frac{- \frac{1}{z^n}}{\frac{1}{z^n}} \right) \\
-		&= \lim_{n \to \infty} \left( \frac{- z^n}{{z^n}} \right) \\
-		&= -1
-	\end{align*}
+	      \textbf{Proof:}
+	      Take the limits for the cases of $z$.
 
-	And so the limit exists for $|z| \not = 1.$
-	
-	\emph{Can we make the function continuous?} Yes, by defining $f(z)$ as:
-	
-	\[	
-	f(z) =
-	\begin{cases}
-		\lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right) & \text{if } |z| \not = 1 \\
-		-1 & \text{if } |z| = 1
-	\end{cases} 
-	\]
-	\qed
+	      First for $z > 1$:
+	      \begin{align*}
+		      f(z) & = \lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right)                                     \\
+		           & = \lim_{n \to \infty} \frac{z^n}{z^n} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
+		           & = \lim_{n \to \infty} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right)                 \\
+		           & = \left( \frac{1 - 0}{1 + 0} \right)                                                             \\
+		           & = 1
+	      \end{align*}
+
+	      For $z < 1$:
+	      \begin{align*}
+		      f(z) & = \lim_{n \to \infty} \left( \frac{z^n - 1}{z^n + 1} \right)                                     \\
+		           & = \lim_{n \to \infty} \frac{z^n}{z^n} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right) \\
+		           & = \lim_{n \to \infty} \left( \frac{1 - \frac{1}{z^n}}{1 + \frac{1}{z^n}} \right)                 \\
+		           & = \lim_{n \to \infty} \left( \frac{- \frac{1}{z^n}}{\frac{1}{z^n}} \right)                       \\
+		           & = \lim_{n \to \infty} \left( \frac{- z^n}{{z^n}} \right)                                         \\
+		           & = -1
+	      \end{align*}
+
+	      And so the limit exists for $|z| \not = 1.$
+
+	      \emph{Can we make the function continuous?} No, because we cannot define a value there to satisfy the definition of continuity. The limit at
+	      $|z| = 1$ oscillates between $-1$ and $1$, so the limit does not exist at the point because if it did, the limit at that point would be unique.
+
+	      \qed
 
 	\item Let \[ f(z) = \lim_{n \to \infty} \frac{z^n}{1 + z^n} \]
-	\begin{enumerate}
-		\item What is the domain of definition of $f,$ that is, for which complex numbers $z$ does the limit exist?
-		
-		\textbf{Proof:}
-		The domain clearly exists for the cases of $|z| < 1$: 
-		\begin{align*}
-			f(z) &= \lim_{n \to \infty} \frac{z^n}{1 + z^n} \\
-			&= \frac{0}{1 + 0} \\
-			&= 0
-		\end{align*}
-		And then for $z > -1$:
-		\begin{align*}
-			f(z) &= \lim_{n \to \infty} \frac{z^n}{1 + z^n} \\
-			&= \frac{-\infty}{1 + -\infty} \\
-			&= 1
-		\end{align*}
+	      \begin{enumerate}
+		      \item What is the domain of definition of $f,$ that is, for which complex numbers $z$ does the limit exist?
 
-		Now to consider $z = -1$. Here we have an issue of never settling on a sign which is a divergent sequence.
-		That is enough to show that a singularity exists at this point, 
-		which is to say the limit does not exist at $z = -1$.
+		            \textbf{Proof:}
+		            The domain clearly exists for the cases of $|z| < 1$:
+		            \begin{align*}
+			            f(z) & = \lim_{n \to \infty} \frac{z^n}{1 + z^n} \\
+			                 & = \frac{0}{1 + 0}                         \\
+			                 & = 0
+		            \end{align*}
+		            And then for $z > -1$:
+		            \begin{align*}
+			            f(z) & = \lim_{n \to \infty} \frac{z^n}{1 + z^n} \\
+			                 & = \frac{-\infty}{1 + -\infty}             \\
+			                 & = 1
+		            \end{align*}
 
-		$\therefore$ The domain of definition is $(-\infty, -1) \cup (-1, \infty)$.
-		\qed
-	
-		\item Give explicitly the values of $f(z)$ for the various $z$ in the domain of $f.$
-		
-		\textbf{Proof:}
-		See above problem. \qed
-	
-	\end{enumerate}
+		            Now to consider $z = -1$. Here we have an issue of never settling on a sign which is a divergent sequence.
+		            That is enough to show that a singularity exists at this point,
+		            which is to say the limit does not exist at $z = -1$.
+
+		            $\therefore$ The domain of definition is $(-\infty, -1) \cup (-1, \infty)$.
+		            \qed
+
+		      \item Give explicitly the values of $f(z)$ for the various $z$ in the domain of $f.$
+
+		            \textbf{Proof:}
+		            See above problem. \qed
+
+	      \end{enumerate}
 
 	\item Show that the series
-	\[ \sum_{n = 1}^{\infty} \frac{z^{n - 1}}{(1 - z^n )(1 - z^{n + 1})} \]
-	Converges to
-	\[ \frac{1}{(1 - z)^2 } \;\;\; |z| < 1 \]
-	and
-	\[\frac{1}{z(1 - z)^2 } \;\;\; |z| > 1\]
+	      \[ \sum_{n = 1}^{\infty} \frac{z^{n - 1}}{(1 - z^n )(1 - z^{n + 1})} \]
+	      Converges to
+	      \[ \frac{1}{(1 - z)^2 } \;\;\; |z| < 1 \]
+	      and
+	      \[\frac{1}{z(1 - z)^2 } \;\;\; |z| > 1\]
 
-	Prove that the convergence is uniform for $|z| \leq c < 1$ in the first case, and $|z| \geq b > 1$ in the second case. 
+	      Prove that the convergence is uniform for $|z| \leq c < 1$ in the first case, and $|z| \geq b > 1$ in the second case.
 
-	[\textit{Hint:} multiply and divide each term by $1 - z,$ and do a partial fraction decomposition, getting a telescoping effect. ]
+		      [\textit{Hint:} multiply and divide each term by $1 - z,$ and do a partial fraction decomposition, getting a telescoping effect. ]
 
-	\textbf{Proof:}
-	
-	For this problem, just follow along with Lang's suggestion and watch the telescope emerge. Let's look at the $n$th term for $z$ and see 
-	if there's something there.
+	      \textbf{Proof:}
 
-	\begin{align*}
-		z_n &= \frac{z^{n - 1}}{(1 - z^{n})(1 - z^{n + 1})} \\
-		z_n \cdot \frac{(1 - z)}{(1 - z)} &= \frac{z^{n - 1}}{(1 - z^{n})(1 - z^{n + 1})} \\
-		z_n (1 - z) &= (1 - z) \cdot \frac{z^{n - 1}}{(1 - z^{n})(1 - z^{n + 1})} \\
-		z_n (1 - z) &=  \frac{(1 - z)z^{n - 1}}{(1 - z^{n})(1 - z^{n + 1})} \\
-		z_n (1 - z) &=  \frac{z^{n - 1} - z^n}{(1 - z^{n})(1 - z^{n + 1})} \\
-	\end{align*}
+	      For this problem, just follow along with Lang's suggestion and watch the telescope emerge. Let's look at the $n$th term for $z$ and see
+	      if there's something there.
 
-	Now use a \textbf{partial fraction decomposotion} here:
+	      \begin{align*}
+		      z_n                               & = \frac{z^{n - 1}}{(1 - z^{n})(1 - z^{n + 1})}               \\
+		      z_n \cdot \frac{(1 - z)}{(1 - z)} & = \frac{z^{n - 1}}{(1 - z^{n})(1 - z^{n + 1})}               \\
+		      z_n (1 - z)                       & = (1 - z) \cdot \frac{z^{n - 1}}{(1 - z^{n})(1 - z^{n + 1})} \\
+		      z_n (1 - z)                       & =  \frac{(1 - z)z^{n - 1}}{(1 - z^{n})(1 - z^{n + 1})}       \\
+		      z_n (1 - z)                       & =  \frac{z^{n - 1} - z^n}{(1 - z^{n})(1 - z^{n + 1})}        \\
+	      \end{align*}
 
-	\begin{align*}
-		\frac{z^{n - 1} - z^n}{(1 - z^{n})(1 - z^{n + 1})} &=  \frac{z^{n - 1}}{(1 - z^{n})} - \frac{z^n}{(1 - z^{n + 1})} \\
-	\end{align*}
+	      Now use \textbf{partial fraction decomposition}
 
-	So then
+	      \begin{align*}
+		      \frac{z^{n - 1} - z^n}{(1 - z^{n})(1 - z^{n + 1})} & =  \frac{z^{n - 1}}{(1 - z^{n})} - \frac{z^n}{(1 - z^{n + 1})} \\
+	      \end{align*}
 
-	\begin{align*}
-		z_n (1 - z) &=  \frac{z^{n - 1}}{(1 - z^{n})} - \frac{z^n}{(1 - z^{n + 1})} \\
-		\therefore \;\;\; z_n &=  \frac{1}{(1 - z)} \left( \frac{z^{n - 1}}{1 - z^{n}} - \frac{z^n}{1 - z^{n + 1}} \right) \\
-	\end{align*}
+	      Then
 
-	And then we see the terms create telescoping terms between them using this new expression
+	      \begin{align*}
+		      z_n (1 - z)           & =  \frac{z^{n - 1}}{(1 - z^{n})} - \frac{z^n}{(1 - z^{n + 1})}                              \\
+		      \therefore \;\;\; z_n & =  \frac{1}{(1 - z)} \left( \frac{z^{n - 1}}{1 - z^{n}} - \frac{z^n}{1 - z^{n + 1}} \right) \\
+	      \end{align*}
 
-	\begin{align*}
-		z_1 &= \frac{1}{(1 - z)} \left( \frac{z^{1 - 1}}{1 - z^{1}} - \frac{z^1}{1 - z^{1 + 1}} \right) \\
-		&= \frac{1}{(1 - z)} \left( \frac{1}{1 - z} - \frac{z}{1 - z^{2}} \right) \\
-		&= \frac{1}{(1 - z)^2} - \frac{z}{(1 - z)(1 - z^{2})} \\
-	\end{align*}
+	      Now compute $z_1$ and $z_2$ with this new expression for $z_n$
 
-	And then note
+	      \begin{align*}
+		      z_1 & = \frac{1}{(1 - z)} \left( \frac{z^{1 - 1}}{1 - z^{1}} - \frac{z^1}{1 - z^{1 + 1}} \right) \\
+		          & = \frac{1}{(1 - z)} \left( \frac{1}{1 - z} - \frac{z}{1 - z^{2}} \right)                   \\
+		          & = \frac{1}{(1 - z)^2} - \frac{z}{(1 - z)(1 - z^{2})}                                       \\
+		      \\
+		      z_2 & = \frac{1}{(1 - z)} \left( \frac{z^{2 - 1}}{1 - z^{2}} - \frac{z^2}{1 - z^{2 + 1}} \right) \\
+		          & = \frac{1}{(1 - z)} \left( \frac{z}{1 - z^2} - \frac{z^2}{1 - z^{3}} \right)               \\
+		          & = \frac{z}{(1 - z)(1 - z)^2} - \frac{z}{(1 - z)(1 - z^{2})}                                \\
+	      \end{align*}
 
-	\begin{align*}
-		z_2 &= \frac{1}{(1 - z)} \left( \frac{z^{2 - 1}}{1 - z^{2}} - \frac{z^2}{1 - z^{2 + 1}} \right) \\
-		&= \frac{1}{(1 - z)} \left( \frac{z}{1 - z^2} - \frac{z^2}{1 - z^{3}} \right) \\
-		&= \frac{z}{(1 - z)(1 - z)^2} - \frac{z}{(1 - z)(1 - z^{2})} \\
-	\end{align*}
+	      Now sum these and notice the telescoping pattern emerging between them
 
-	And so 
+	      \begin{align*}
+		      z_1 + z_2 & = \frac{1}{(1 - z)^2} - \frac{z}{(1 - z)(1 - z^{2})} + \frac{z}{(1 - z)(1 - z)^2} - \frac{z}{(1 - z)(1 - z^{2})} \\
+		      z_1 + z_2 & = \frac{1}{(1 - z)^2} - \frac{z}{(1 - z)(1 - z^{2})}                                                             \\
+	      \end{align*}
 
-	\begin{align*}
-		z_1 + z_2 &= \frac{1}{(1 - z)^2} - \frac{z}{(1 - z)(1 - z^{2})} + \frac{z}{(1 - z)(1 - z)^2} - \frac{z}{(1 - z)(1 - z^{2})} \\
-		z_1 + z_2 &= \frac{1}{(1 - z)^2} - \frac{z}{(1 - z)(1 - z^{2})} \\
-	\end{align*}
+	      The terms will match up and we are left with
 
-	And so now we see how the terms will match up and we are left with
+	      \begin{align*}
+		      z_1 + z_2 + \cdots + z_n & = \frac{1}{(1 - z)^2}                                                                                     \\
+		                               & - \frac{z}{(1 - z)(1 - z^{2})} + \frac{z}{(1 - z)(1 - z)^2}                                               \\
+		                               & - \frac{z^2}{(1 - z)(1 - z^{2})} + \frac{z^2}{(1 - z)(1 - z^{2})} + \cdots                                \\
+		                               & - \frac{z^n-1}{(1 - z)(1 - z^{n})} +\frac{z^n-1}{(1 - z)(1 - z^{n})} - \frac{z^n}{(1 - z)(1 - z^{n + 1})} \\
+		                               & = \frac{1}{(1 - z)^2} - \frac{z^n}{(1 - z)(1 - z^{n + 1})}                                                \\
+	      \end{align*}
 
-	\begin{align*}
-		z_1 + z_2 + \cdots + z_n &= \frac{1}{(1 - z)^2} \\
-		&- \frac{z}{(1 - z)(1 - z^{2})} + \frac{z}{(1 - z)(1 - z)^2} \\
-		&- \frac{z^2}{(1 - z)(1 - z^{2})} + \frac{z^2}{(1 - z)(1 - z^{2})} + \cdots \\
-		&- \frac{z^n-1}{(1 - z)(1 - z^{n})} +\frac{z^n-1}{(1 - z)(1 - z^{n})} - \frac{z^n}{(1 - z)(1 - z^{n + 1})} \\
-		&= \frac{1}{(1 - z)^2} - \frac{z^n}{(1 - z)(1 - z^{n + 1})} \\
-	\end{align*}
+	      Clearly for $|z| < 1$ and taking the $\lim n \to \infty$ the last term goes to $0$ and we are left
+	      with the desired result. \textit{This concludes the case for $|z| < 1$.}
 
-	And so clearly for the case $|z| < 1$ and taking the $\lim n \to \infty$ the last term goes to $0$ and we are left 
-	with the desired result.
+	      Now consider the case for $|z| > 1$
 
-	This finishes the first case of $z < 1$.
-
-	Now we need to consider the case $|z| > 1$ and continue on:
-
-		\begin{align*}
-		z_1 + z_2 + \cdots + z_n &= \frac{1}{(1 - z)^2} - \frac{z^n}{(1 - z)(1 - z^{n + 1})} \\
-		&= \frac{1}{(1 - z)^2} - \frac{z^n}{(1 - z)(1 - z)(z^n)} \\
-		&= \frac{1}{(1 - z)^2} - \frac{1}{(1 - z)(1 - z)} \\
-		&= \frac{1}{(1 - z)^2} - \frac{1}{(z^2 - z)} \\
-		&= \frac{1}{(1 - z)^2} - \frac{1}{z(z - 1)} \\
-		&= \frac{z(z - 1)}{z(z - 1)(1 - z)^2} - \frac{(1 - z)^2}{z(z - 1)(1 - z)^2} \\
-		&= \frac{z(z - 1) - (1 - z)^2}{z(z - 1)(1 - z)^2} \\
-		&= \frac{z^2 - z  - [(1 - z)(1 - 2)]}{z(z - 1)(1 - z)^2} \\
-		&= \frac{z^2 - z  - (1 - 2z + z^2)}{z(z - 1)(1 - z)^2} \\
-		&= \frac{z^2 - z  - 1 + 2z - z^2}{z(z - 1)(1 - z)^2} \\
-		&= \frac{z - 1}{z(z - 1)(1 - z)^2} \\
-		&= \frac{1}{z(1 - z)^2} \\
-	\end{align*}
-	Which finishes the proof.
-	\qed
+	      \begin{align*}
+		      z_1 + z_2 + \cdots + z_n & = \frac{1}{(1 - z)^2} - \frac{z^n}{(1 - z)(1 - z^{n + 1})}                 \\
+		                               & = \frac{1}{(1 - z)^2} - \frac{z^n}{(1 - z)(1 - z)(z^n)}                    \\
+		                               & = \frac{1}{(1 - z)^2} - \frac{1}{(1 - z)(1 - z)}                           \\
+		                               & = \frac{1}{(1 - z)^2} - \frac{1}{(z^2 - z)}                                \\
+		                               & = \frac{1}{(1 - z)^2} - \frac{1}{z(z - 1)}                                 \\
+		                               & = \frac{z(z - 1)}{z(z - 1)(1 - z)^2} - \frac{(1 - z)^2}{z(z - 1)(1 - z)^2} \\
+		                               & = \frac{z(z - 1) - (1 - z)^2}{z(z - 1)(1 - z)^2}                           \\
+		                               & = \frac{z^2 - z  - [(1 - z)(1 - 2)]}{z(z - 1)(1 - z)^2}                    \\
+		                               & = \frac{z^2 - z  - (1 - 2z + z^2)}{z(z - 1)(1 - z)^2}                      \\
+		                               & = \frac{z^2 - z  - 1 + 2z - z^2}{z(z - 1)(1 - z)^2}                        \\
+		                               & = \frac{z - 1}{z(z - 1)(1 - z)^2}                                          \\
+		                               & = \frac{1}{z(1 - z)^2}                                                     \\
+	      \end{align*}
+	      \qed
 
 \end{enumerate}
 \newpage

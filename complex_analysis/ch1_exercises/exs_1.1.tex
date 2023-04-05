@@ -1,300 +1,332 @@
 \subsection{Proofs}
 \begin{enumerate}
 	\item Express the following complex numbers in the form $x + iy$, where $x, y$ are real numbers.
-	\begin{enumerate}
-		\item $\;\;(-1 + 3i)^{-1}$
-		
-		\textbf{Proof:}
+	      \begin{enumerate}
+		      \item $\;\;(-1 + 3i)^{-1}$
 
-		Simply invert and separate, then use the conjugate/symmetry to rationalize the statement:
-		\begin{align*}
-		(-1 + 3i)^{-1} &= \frac{1}{(-1 + 3i)} \\
-		\frac{1}{(-1 + 3i)} &= \frac{1}{(-1 + 3i)}\frac{(-1 - 3i)}{(-1 - 3i)} \\
-		&= \frac{-1 - 3i}{1 + 3i - 3i + 9} \\
-		&= \frac{-1 - 3i}{10} \\
-		\\
-		\therefore \; (-1 + 3i)^{-1} &= -\frac{1}{10} - \frac{3i}{10}
-		\end{align*}
-		Which just means from the origin of $\mathbb{C}$ go left $1$ then down $3$ then shrink by $\frac{1}{10}$ and that's the $z$ you're at in $\mathbb{C}.$
-		\qed
-		
-		\item $\;\;(1 + i)(1 - i)$
-		
-		\textbf{Proof:}
-		Distribute and collect:
-		\begin{align*}
-			(1 + i)(1 - i) &= 1 -i + i - i^2 \\
-			&= 1 - (-1) \\
-			&= 2 \\
-		\therefore \; (1 + i)(1 - i) &= 2 + 0i
-		\end{align*}
-		\qed
-		
-		\item $(i + 1)(i - 2)(i + 3)$
-		
-		\textbf{Proof:}
-		Distribute collect, distribute and collect again.
-		\begin{align*}
-		(i + 1)(i - 2)(i + 3) &= (i^2 -2i + i - 2)(i + 3) \\
-		&= (-i - 3)(i + 3) \\
-		&= (1 - 3i - 3i - 9) \\
-		\\
-		\therefore \; (i + 1)(i - 2)(i + 3) &= -8 - 6i
-		\end{align*}
-		\qed
-	\end{enumerate}
-	
+		            \textbf{Proof:}
+
+		            Simply invert and separate, then use the conjugate/symmetry to rationalize the statement:
+		            \begin{align*}
+			            (-1 + 3i)^{-1} & = \frac{1}{(-1 + 3i)}                            \\
+			            \frac{1}{(-1 + 3i)}
+			                           & = \frac{1}{(-1 + 3i)}\frac{(-1 - 3i)}{(-1 - 3i)} \\
+			                           & = \frac{-1 - 3i}{1 + 3i - 3i + 9}                \\
+			                           & = \frac{-1 - 3i}{10}                             \\
+			            \\
+			            \therefore \; (-1 + 3i)^{-1}
+			                           & = -\frac{1}{10} - \frac{3i}{10}
+		            \end{align*}
+		            Which just means from the origin of $\mathbb{C}$ go left $1$ then down $3$ then shrink
+		            by $\frac{1}{10}$ and that's the $z$ you're at in $\mathbb{C}.$
+		            \qed
+
+		      \item $\;\;(1 + i)(1 - i)$
+
+		            \textbf{Proof:}
+		            Distribute and collect:
+		            \begin{align*}
+			            (1 + i)(1 - i) & = 1 -i + i - i^2 \\
+			                           & = 1 - (-1)       \\
+			                           & = 2              \\
+			            \therefore \; (1 + i)(1 - i)
+			                           & = 2 + 0i
+		            \end{align*}
+		            \qed
+
+		      \item $(i + 1)(i - 2)(i + 3)$
+
+		            \textbf{Proof:}
+		            Distribute collect, distribute and collect again.
+		            \begin{align*}
+			            (i + 1)(i - 2)(i + 3) & = (i^2 -2i + i - 2)(i + 3) \\
+			                                  & = (-i - 3)(i + 3)          \\
+			                                  & = (1 - 3i - 3i - 9)        \\
+			            \\
+			            \therefore \; (i + 1)(i - 2)(i + 3)
+			                                  & = -8 - 6i
+		            \end{align*}
+		            \qed
+	      \end{enumerate}
+
 	\item Express the following complex numbers in the form $x + iy$, where $x, y$ are real numbers.
-	\begin{enumerate}
-		\item $\;\;(1 + i)^{-1}$
-		
-		\textbf{Proof:}
-		More of the same, just use the conjugate to solve these like problem 1 above.
-		\begin{align*}
-			(1 + i)^{-1} &= \frac{1}{1 + i} \\
-			&= \frac{1}{1 + i} \frac{(1 - i)}{(1 - i)} \\
-			&= \frac{1 - i}{(1 + i)(1 - i)} \\
-			&= \frac{1 - i}{1 - i + i - i^2} \\
-			&= \frac{1 - i}{1 - (-1)} \\
-			&= \frac{1 - i}{2} \\
-		\therefore \; (1 + i)^{-1} &= \frac{1}{2} - \frac{i}{2}
-		\end{align*}
-		\qed
-	\end{enumerate}
-	
-	\item Let $\alpha$ be a complex number $\neq 0.$ What is the absolute value of $\alpha/\bar{\alpha}?$ What is $\bar{\bar{\alpha}}?$
+	      \begin{enumerate}
+		      \item $\;\;(1 + i)^{-1}$
 
-	\textbf{Proof:}
-	First note that: 
-	\begin{align*}
-	\alpha &= x + yi \\
-	\bar{\alpha} &= x - yi \\
-	\therefore \; \left| \frac{\alpha}{\bar{\alpha}} \right| &= \frac{x + yi}{x - yi} \\
-	\end{align*}
+		            \textbf{Proof:}
+		            More of the same, just use the conjugate to solve these like problem 1 above.
+		            \begin{align*}
+			            (1 + i)^{-1} & = \frac{1}{1 + i}                         \\
+			                         & = \frac{1}{1 + i} \frac{(1 - i)}{(1 - i)} \\
+			                         & = \frac{1 - i}{(1 + i)(1 - i)}            \\
+			                         & = \frac{1 - i}{1 - i + i - i^2}           \\
+			                         & = \frac{1 - i}{1 - (-1)}                  \\
+			                         & = \frac{1 - i}{2}                         \\
+			            \therefore \; (1 + i)^{-1}
+			                         & = \frac{1}{2} - \frac{i}{2}
+		            \end{align*}
+		            \qed
+	      \end{enumerate}
 
-	Now some algebra:
-	\begin{align*}
-		\frac{x + yi}{x - yi} &= \frac{(x + yi)}{(x - yi)} \frac{(x + yi)}{(x + yi)} \\
-		&= \frac{x^2 + 2xyi +y^2 i^2}{x^2 - y^2 i^2} \\
-		&= \frac{x^2 + 2xyi +y^2 i^2}{x^2 + y^2} \\
-		&= \frac{x^2 + 2xyi - y^2}{x^2 + y^2 } \\
-		&= \frac{x^2 + 2xyi - y^2}{ \left | \bar{\alpha} \right |^2  } \\
-		&= \frac{(x + yi)(x - yi)}{ \left | \bar{\alpha} \right |^2  } \\
-	\therefore \; \left| \frac{\alpha}{\bar{\alpha}} \right|  &= \frac{\alpha \cdot \bar{\alpha}}{ \left | \bar{\alpha} \right |^2  } \\
-	\end{align*}
-	\qed
+	\item Let $\alpha$ be a complex number $\neq 0.$ What is the absolute value
+	      of $\alpha/\bar{\alpha}?$ What is $\bar{\bar{\alpha}}?$
 
-	\subitem \textbf{Part 3b:} What is $\bar{\bar{\alpha}}?$
-	
-	\textbf{Proof:}
-	Note 
-	\begin{align*}
-		\alpha = x + yi \;\; & \Leftrightarrow \;\; \bar{\alpha} = x - yi. \\ 
-		\therefore \; \bar{\bar{\alpha}} &= \overline{x - yi} \\
-	\end{align*}
+	      \textbf{Proof:}
+	      First note that:
+	      \begin{align*}
+		      \alpha       & = x + yi                \\
+		      \bar{\alpha} & = x - yi                \\
+		      \therefore \; \left| \frac{\alpha}{\bar{\alpha}} \right|
+		                   & = \frac{x + yi}{x - yi} \\
+	      \end{align*}
 
-	So now because the conjugate operation just changes the sign on the \textit{imaginary} part of $\alpha$ we have the straightforward result of:
-	\begin{align*}
-	\bar{\bar{\alpha}} &= \overline{x - yi} \\ 
-	&= x + yi \\
-	\therefore \; \bar{\bar{\alpha}} &= \alpha
-	\end{align*}
-	\qed
+	      Now some algebra:
+	      \begin{align*}
+		      \frac{x + yi}{x - yi} & = \frac{(x + yi)}{(x - yi)} \frac{(x + yi)}{(x + yi)}                  \\
+		                            & = \frac{x^2 + 2xyi +y^2 i^2}{x^2 - y^2 i^2}                            \\
+		                            & = \frac{x^2 + 2xyi +y^2 i^2}{x^2 + y^2}                                \\
+		                            & = \frac{x^2 + 2xyi - y^2}{x^2 + y^2 }                                  \\
+		                            & = \frac{x^2 + 2xyi - y^2}{ \left | \bar{\alpha} \right |^2  }          \\
+		                            & = \frac{(x + yi)(x - yi)}{ \left | \bar{\alpha} \right |^2  }          \\
+		      \therefore \; \left| \frac{\alpha}{\bar{\alpha}} \right|
+		                            & = \frac{\alpha \cdot \bar{\alpha}}{ \left | \bar{\alpha} \right |^2  } \\
+	      \end{align*}
+	      \qed
 
-	
-	\item Let $\alpha, \beta$ be two complex numbers. Show that: 
-	$$\overline{\alpha \beta} = \bar{\alpha}\bar{\beta}$$ 
-	and that:
-	$$ \overline{\alpha + \beta} = \bar{\alpha} + \bar{\beta}$$
-	
-	\textbf{Proof:}
-	First is easy since we just distribute out $\alpha\cdot\beta$ and gather reals and imaginary parts together and see it is the same result as if we had simply taken the conjugate of each component.
+	      \subitem \textbf{Part 3b:} What is $\bar{\bar{\alpha}}?$
 
-	Algebraically, with $\alpha_n, \beta_n, \rho \in \mathbb{R}$ :
-	\begin{align*}
-		\overline{\alpha \beta} &= \overline{(\alpha_1 + \alpha_2 i)(\beta_1 + \beta_2 i)} \\
-		&= \overline{(\alpha_1\beta_1  + \alpha_1\beta_2 i + \beta_1 \alpha_2 i + \alpha_2 \beta_2 i^2)} \\
-		&= \overline{(\alpha_1\beta_1  + i(\alpha_1\beta_2 + \beta_1 \alpha_2) + \alpha_2 \beta_2 i^2)} \\
-		&= \overline{(\alpha_1\beta_1 + \alpha_2 \beta_2 i^2 + i(\alpha_1\beta_2 + \beta_1 \alpha_2))} \\
-		&= \overline{(\alpha_1\beta_1 - \alpha_2 \beta_2 + i(\alpha_1\beta_2 + \beta_1 \alpha_2))} \\
-		&= \overline{\rho_1  + i\rho_2} \\
-		\overline{\alpha \beta} &= \rho_1  - i\rho_2 \\
-	\end{align*}
-	Now we go the other way:
-	\begin{align*}
-		\bar{\alpha}\bar{\beta} &= \overline{(\alpha_1 + \alpha_2 i)} \cdot \overline{(\beta_1 + \beta_2 i)} \\
-		&= (\alpha_1 - \alpha_2 i) \cdot (\beta_1 - \beta_2 i) \\
-		&= (\alpha_1\beta_1 - \alpha_1\beta_2i -\alpha_2\beta_1 i + \alpha_2\beta_2 i^2 ) \\
-		&= (\alpha_1\beta_1 - \alpha_1\beta_2i -\alpha_2\beta_1 i - \alpha_2\beta_2 ) \\
-		&= (\alpha_1\beta_1 - \alpha_2\beta_2 - \alpha_1\beta_2i -\alpha_2\beta_1 i ) \\
-		&= (\alpha_1\beta_1 - \alpha_2\beta_2 - i(\alpha_1\beta_2 + \alpha_2\beta_1) ) \\
-		\bar{\alpha}\bar{\beta} &= \rho_1 - i\rho_2 \\
-		\\
-		\therefore \;  \overline{\alpha\beta} &= \bar{\alpha}\bar{\beta}
-		\qed
-	\end{align*}
-	\\
-	Second is easier as we only convert the sign inside the complex numbers, and do nothing with the operation between the two complex numbers, only on the reals in the number. 
-	
-	Again, basically just some algebra of converting to the real and imaginary parts and gathering terms. 
-	\qed
-	
+	      \textbf{Proof:}
+	      Note
+	      \begin{align*}
+		      \alpha = x + yi \;\;             & \Leftrightarrow \;\; \bar{\alpha} = x - yi. \\
+		      \therefore \; \bar{\bar{\alpha}} & = \overline{x - yi}                         \\
+	      \end{align*}
+
+	      So now because the conjugate operation just changes the sign on the \textit{imaginary} part of $\alpha$ we have
+	      the straightforward result of:
+	      \begin{align*}
+		      \bar{\bar{\alpha}}               & = \overline{x - yi} \\
+		                                       & = x + yi            \\
+		      \therefore \; \bar{\bar{\alpha}} & = \alpha
+	      \end{align*}
+	      \qed
+
+
+	\item Let $\alpha, \beta$ be two complex numbers. Show that:
+	      $$\overline{\alpha \beta} = \bar{\alpha}\bar{\beta}$$
+	      and that:
+	      $$ \overline{\alpha + \beta} = \bar{\alpha} + \bar{\beta}$$
+
+	      \textbf{Proof:}
+	      First is easy since we just distribute out $\alpha\cdot\beta$ and gather reals and imaginary
+	      parts together and see it is the same result as if we had simply taken the conjugate of each component.
+
+	      Algebraically, with $\alpha_n, \beta_n, \rho \in \mathbb{R}$ :
+	      \begin{align*}
+		      \overline{\alpha \beta}
+		       & = \overline{(\alpha_1 + \alpha_2 i)(\beta_1 + \beta_2 i)}                                       \\
+		       & = \overline{(\alpha_1\beta_1  + \alpha_1\beta_2 i + \beta_1 \alpha_2 i + \alpha_2 \beta_2 i^2)} \\
+		       & = \overline{(\alpha_1\beta_1  + i(\alpha_1\beta_2 + \beta_1 \alpha_2) + \alpha_2 \beta_2 i^2)}  \\
+		       & = \overline{(\alpha_1\beta_1 + \alpha_2 \beta_2 i^2 + i(\alpha_1\beta_2 + \beta_1 \alpha_2))}   \\
+		       & = \overline{(\alpha_1\beta_1 - \alpha_2 \beta_2 + i(\alpha_1\beta_2 + \beta_1 \alpha_2))}       \\
+		       & = \overline{\rho_1  + i\rho_2}                                                                  \\
+		      \overline{\alpha \beta}
+		       & = \rho_1  - i\rho_2                                                                             \\
+	      \end{align*}
+	      Now we go the other way:
+	      \begin{align*}
+		      \bar{\alpha}\bar{\beta}
+		       & = \overline{(\alpha_1 + \alpha_2 i)} \cdot \overline{(\beta_1 + \beta_2 i)}      \\
+		       & = (\alpha_1 - \alpha_2 i) \cdot (\beta_1 - \beta_2 i)                            \\
+		       & = (\alpha_1\beta_1 - \alpha_1\beta_2i -\alpha_2\beta_1 i + \alpha_2\beta_2 i^2 ) \\
+		       & = (\alpha_1\beta_1 - \alpha_1\beta_2i -\alpha_2\beta_1 i - \alpha_2\beta_2 )     \\
+		       & = (\alpha_1\beta_1 - \alpha_2\beta_2 - \alpha_1\beta_2i -\alpha_2\beta_1 i )     \\
+		       & = (\alpha_1\beta_1 - \alpha_2\beta_2 - i(\alpha_1\beta_2 + \alpha_2\beta_1) )    \\
+		      \bar{\alpha}\bar{\beta}
+		       & = \rho_1 - i\rho_2                                                               \\
+		      \\
+		      \therefore \;  \overline{\alpha\beta}
+		       & = \bar{\alpha}\bar{\beta}
+		      \qed
+	      \end{align*}
+	      \\
+	      Second is easier as we only convert the sign inside the complex numbers, and do nothing with the operation
+	      between the two complex numbers, only on the reals in the number.
+
+	      Again, basically just some algebra of converting to the real and imaginary parts and gathering terms.
+	      \qed
+
 	\item Justify the assertion that the real part of a complex number is $\leq$ its absolute value.
-	
-	\textbf{Proof:}
-	The value can be equal to the absolute value if it happens to be positive, in which case it coincides with the absolute value.
 
-	Or, it can be the symmetric partner if it is negative and therefore equal in magnitude but opposite in direction, therefore ordered as $\le$ the absolute value by definition 
-	of well-ordering in $\mathbb{R}$. Because the reals are symmetric like shoes, the have a left-handedness and a right-handedness. 
-	\qed
-	
-	\item If $\alpha = a + ib$ with $a, b \in \mathbb{R}$ then $b$ is called the \textbf{imaginary part} of $\alpha$ and we write: 
-	$$\mathfrak{Im}(\alpha) = b.$$
+	      \textbf{Proof:}
+	      The value can be equal to the absolute value if it happens to be positive, in which case it coincides with
+	      the absolute value.
 
-	\begin{enumerate}
-		\item Show that: 
+	      Or, it can be the symmetric partner if it is negative and therefore equal in magnitude but opposite in direction,
+	      therefore ordered as $\le$ the absolute value by definition of well-ordering in $\mathbb{R}$. Because the reals
+	      are symmetric like shoes, the have a left-handedness and a right-handedness.
+	      \qed
 
-		$$\alpha - \bar{\alpha} = 2i \; \mathfrak{Im}(\alpha)$$
+	\item If $\alpha = a + ib$ with $a, b \in \mathbb{R}$ then $b$ is called the \textbf{imaginary part} of $\alpha$
+	      and we write:
+	      $$\mathfrak{Im}(\alpha) = b.$$
 
-		\textbf{Proof:}
-		Just do the algebra:
-		\begin{align*}
-			\alpha - \bar{\alpha} &= (a + ib) - (a - ib) \\
-			&= 2ib \\
-			\therefore \; \alpha - \bar{\alpha} &= 2i \; \mathfrak{Im}(\alpha)
-		\end{align*}
-		\qed
+	      \begin{enumerate}
+		      \item Show that:
+
+		            $$\alpha - \bar{\alpha} = 2i \; \mathfrak{Im}(\alpha)$$
+
+		            \textbf{Proof:}
+		            Just do the algebra:
+		            \begin{align*}
+			            \alpha - \bar{\alpha}               & = (a + ib) - (a - ib)         \\
+			                                                & = 2ib                         \\
+			            \therefore \; \alpha - \bar{\alpha} & = 2i \; \mathfrak{Im}(\alpha)
+		            \end{align*}
+		            \qed
 
 
-		\item Show that:
-		$$\mathfrak{Im}(\alpha) \leq \left | \mathfrak{Im}(\alpha) \right | \leq |\alpha|$$
+		      \item Show that:
+		            $$\mathfrak{Im}(\alpha) \leq \left | \mathfrak{Im}(\alpha) \right | \leq |\alpha|$$
 
-		\textbf{Proof:}
-		Again, with some algebra we see the answer by considering the case of the imaginary part being either positive or negative while the absolute value will always be 
-		positive and therefore will be equal to this value or greater than it if it is negative.
+		            \textbf{Proof:}
+		            Again, with some algebra we see the answer by considering the case of the imaginary
+		            part being either positive or negative while the absolute value will always be
+		            positive and therefore will be equal to this value or greater than it if it is negative.
 
-		Next, think of whether part of $\alpha$ along just the real part or that part plus another would always make it larger than or equal to? If they always have the 
-		same imaginary part, then adding a real only increases the size of $\alpha$ while leaving the imaginary part at its maximum value. I'm too lazy to type this out right now, maybe later. 
-		\qed
-	\end{enumerate}
-	
+		            Next, think of whether part of $\alpha$ along just the real part or that part plus
+		            another would always make it larger than or equal to? If they always have the same
+		            imaginary part, then adding a real only increases the size of $\alpha$ while leaving
+		            the imaginary part at its maximum value. I'm too lazy to type this out right now, maybe later.
+		            \qed
+	      \end{enumerate}
+
 	\item Find the real and imaginary parts of $(1 + i)^{100}.$
-	
-	\textbf{Proof:}
-	Working with a base of $(1 + i)$ we just find useful factors to work with:
-	\begin{align*}
-		(1 + i)^2 &= 2i \\
-		(1 + i)^4 &= 2i^2 \\
-		&= -4 \\
-		(1 + i)^{10} &= (1 + i)^4(1 + i)^4(1 + i)^2 \\
-		&= (-4)(-4)(2i) \\
-		&= 32i
-	\end{align*}
-	Now just plug and play:
-	\begin{align*}
-		(1 + i)^{100} &= ((1 + i)^{10})^{10} \\
-		&= (32i)^{10} \\
-		&= i^{10}32^{10} \\
-		&= -(32)^{10} \\
-		\\
-		\therefore \; (1 + i)^{100} &= -(32)^{10} +0i
-	\end{align*}
-	\qed
+
+	      \textbf{Proof:}
+	      Working with a base of $(1 + i)$ we just find useful factors to work with:
+	      \begin{align*}
+		      (1 + i)^2    & = 2i                          \\
+		      (1 + i)^4    & = 2i^2                        \\
+		                   & = -4                          \\
+		      (1 + i)^{10} & = (1 + i)^4(1 + i)^4(1 + i)^2 \\
+		                   & = (-4)(-4)(2i)                \\
+		                   & = 32i
+	      \end{align*}
+	      Now just plug and play:
+	      \begin{align*}
+		      (1 + i)^{100}               & = ((1 + i)^{10})^{10} \\
+		                                  & = (32i)^{10}          \\
+		                                  & = i^{10}32^{10}       \\
+		                                  & = -(32)^{10}          \\
+		      \\
+		      \therefore \; (1 + i)^{100} & = -(32)^{10} +0i
+	      \end{align*}
+	      \qed
 
 
 	\item Prove that for any two complex numbers $z, w$ we have:
-	\begin{enumerate}
-		\item $|z| \leq |z - w| + |w|$
-		
-		\textbf{Proof:}
-		Consider the three cases we could have have:
-		\begin{align*}
-			w < 0 \\
-			w = 0 \\
-			w > 0 \\
-		\end{align*}
-		If $w < 0$:
-		\begin{align*}
-			|z - (-w)| + |-w| &= |z + w| + |w| \\
-			\therefore \; z &< |z - w| + |w| \\
-		\end{align*}
-		If $w = 0$:
-		\begin{align*}
-			|z - w| + |w| &= |z - 0| + |0| = z \\
-			\therefore \; z &= |z -w| + |w| \\
-		\end{align*} 
-		If $w > 0$, with $z_w + w = z$:
-		\begin{align*}
-			|z - w| + |w| &= z_w + |w| = z \\
-			\therefore \; z &= |z - w | + |w|
-		\end{align*}
-		By these three cases combined we have:
-		\begin{align*}
-			|z| \leq |z - w| + |w| \\
-		\end{align*}
-		\qed
+	      \begin{enumerate}
+		      \item $|z| \leq |z - w| + |w|$
+
+		            \textbf{Proof:}
+		            Consider the three cases we could have have:
+		            \begin{align*}
+			            w < 0 \\
+			            w = 0 \\
+			            w > 0 \\
+		            \end{align*}
+		            If $w < 0$:
+		            \begin{align*}
+			            |z - (-w)| + |-w| & = |z + w| + |w| \\
+			            \therefore \; z   & < |z - w| + |w| \\
+		            \end{align*}
+		            If $w = 0$:
+		            \begin{align*}
+			            |z - w| + |w|   & = |z - 0| + |0| = z \\
+			            \therefore \; z & = |z -w| + |w|      \\
+		            \end{align*}
+		            If $w > 0$, with $z_w + w = z$:
+		            \begin{align*}
+			            |z - w| + |w|   & = z_w + |w| = z  \\
+			            \therefore \; z & = |z - w | + |w|
+		            \end{align*}
+		            By these three cases combined we have:
+		            \begin{align*}
+			            |z| \leq |z - w| + |w| \\
+		            \end{align*}
+		            \qed
 
 
-		\item $|z| - |w| \leq |z - w|$
-		
-		\textbf{Proof:}
-		By (a) above we just subtract $|w|$ off the right and left, and have a logically equivalent statement.
-		\qed
+		      \item $|z| - |w| \leq |z - w|$
+
+		            \textbf{Proof:}
+		            By (a) above we just subtract $|w|$ off the right and left, and have a logically
+		            equivalent statement.
+		            \qed
 
 
-		\item $|z| - |w| \leq |z + w|$
-		
-		\textbf{Proof:}
-		If the above were not true, then (b) would be false, but (b) is true, so then: 
-		\[|z| -|w| \leq |z + w| \]
-		\qed
-	\end{enumerate}
-	
+		      \item $|z| - |w| \leq |z + w|$
+
+		            \textbf{Proof:}
+		            If the above were not true, then (b) would be false, but (b) is true, so then:
+		            \[|z| -|w| \leq |z + w| \]
+		            \qed
+	      \end{enumerate}
+
 	\item Let $\alpha = a +ib$ and $z = x +iy.$ Let $c \in \mathbb{R} > 0.$ Transform the condition:
-	$$|z - \alpha| = c$$
-	into an equation involving only $x, y, a, b$ and $c$, and describe in a simple way what geometric figure is represented by this equation.
+	      $$|z - \alpha| = c$$
+	      into an equation involving only $x, y, a, b$ and $c$, and describe in a simple way what geometric figure is
+	      represented by this equation.
 
-	\textbf{Proof:}
-	The equation comes out as:
-	\begin{align*}
-		|z - \alpha| &= | x + iy - (a + ib) | \\
-		&= | (x - a) + i(y - b) | \\
-		&= c
-	\end{align*}
-	Which is a vector always moved from the origin of $\mathbb{C}$ by $\alpha$ and this vector forms a circular perimeter as we consider the values 
-	of $x, y$ and see that no matter what you select you must be on that circular perimeter a distance of $c$ from whatever origin we are at.
-	\qed
-	
+	      \textbf{Proof:}
+	      The equation comes out as:
+	      \begin{align*}
+		      |z - \alpha| & = | x + iy - (a + ib) |  \\
+		                   & = | (x - a) + i(y - b) | \\
+		                   & = c
+	      \end{align*}
+	      Which is a vector always moved from the origin of $\mathbb{C}$ by $\alpha$ and this vector forms a circular
+	      perimeter as we consider the values of $x, y$ and see that no matter what you select you must be on that
+	      circular perimeter a distance of $c$ from whatever origin we are at.
+	      \qed
+
 	\item Describe geometrically the sets of points $z$ satisfying the following conditions:
-	\begin{enumerate}
-		\item $|z - i + 3| = 5$
+	      \begin{enumerate}
+		      \item $|z - i + 3| = 5$
 
-		The perimeter of the circle that has a radius of $5$ and with an origin $|z - i + 3|$ from the origin of $\mathbb{C}.$
-		\item $|z - i + 3| > 5$
+		            The perimeter of the circle that has a radius of $5$ and with an origin $|z - i + 3|.$ A circle.
+		      \item $|z - i + 3| > 5$
 
-		The complex plane outside a set that sits $|z -i + 3|$ from the origin of $\mathbb{C}$ with a radius of $5$ with 
-		no points \textit{on} the perimeter of the radius.
+		            The complex plane, outside a set that sits $|z -i + 3|$ from the origin of $\mathbb{C}$, with
+		            a radius of $5$ and no points \textit{on} the perimeter. A plane or sheet with a hole of
+		            radius $5.$
 
-		\item $|z - i + 3| \leq 5$
+		      \item $|z - i + 3| \leq 5$
 
-		The disc of points in $\mathbb{C}$ centered at $|z - i + 3|$ with a radius of $5.$
+		            The closed disc of points in $\mathbb{C}$ centered at $|z - i + 3|$ with a radius of $5.$ A disc.
 
-		\item $|z + 2i| \leq 1$
+		      \item $|z + 2i| \leq 1$
 
-		The disc of radius $1$ that is centered at $z$ and moved vertically by $2i.$
-		\item $\mathfrak{Im}(z) > 0$ 
-	
-		The set of points in $\mathbb{C}$ not including $0$ that have real parts $= 0$ and imaginary parts $>0$, so the $y$-axis.
-		\item $\mathfrak{Im}(z) \geq 0$
+		            The closed disc of radius $1$ that is centered at an origin of $|z + 2i|.$ A disc.
+		      \item $\mathfrak{Im}(z) > 0$
 
-		The set of points along the positive axis of $\mathbb{C}$ including $0.$
-		\item $\mathfrak{Re}(z) > 0$
+		            The set of points $> 0$ in $\mathbb{C}$, \emph{not} including $0$, that have
+		            $\mathfrak{Re}(z)= 0$, so the $y$-axis, or a line along the $\beta i$-axis, starting
+		            after zero. A line.
+		      \item $\mathfrak{Im}(z) \geq 0$
 
-		The set of points along the positive axis of $\mathbb{R} \subset \mathbb{C}$ not including $0.$
-		\item $\mathfrak{Re}(z) \geq 0$
+		            The set of points $\geq 0$ in $\mathbb{C}$, including $0$, that have $\mathfrak{Re}(z)= 0$,
+		            so the $y$-axis, or a line along the $\beta i$-axis, starting at zero. A line.
+		      \item $\mathfrak{Re}(z) > 0$
 
-		The set of points along the positive axis of $\mathbb{R} \subset \mathbb{C}$ including $0.$
-	\end{enumerate}
+		            The set of points along the positive axis of $\mathbb{R} \subset \mathbb{C}$ not including $0.$
+		            A line.
+		      \item $\mathfrak{Re}(z) \geq 0$
+
+		            The set of points along the positive axis of $\mathbb{R} \subset \mathbb{C}$ including $0.$
+		            A line.
+	      \end{enumerate}
 \end{enumerate}
 
 \newpage

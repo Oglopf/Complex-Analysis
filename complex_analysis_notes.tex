@@ -38,33 +38,41 @@
 % creating custom command to change Chapter # display in header
 % and some custom changes to the headrle and page # display
 \renewcommand{\chaptermark}[1]{%
- \markboth{\thechapter.\ #1}{}}
-% \rfoot{\tiny\textit{Composed by: Travis Ravert}}
-%\lfoot{\thepage}
-\rhead{\thepage}
+ \markboth{\thechapter \ #1}{}}
+\fancyhead[REO]{\thepage\filleft}
+% set header width to look correct.
+\setlength{\headwidth}{125ex}
 \cfoot{}
-\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\headrulewidth}{0.0pt}
 
 % Body formatting.
-\geometry{left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+% what about the rest?
+\geometry{left=1.5cm,right=1cm,top=1.5cm,bottom=2.5cm}
 
 % Theorem and Defn formatting.
 \newtheorem{thm}{T}[chapter] % Reset thm count by chapter and set var T.
 \newtheorem{defn}{D}[chapter] % Reset defn count by chapter and set var D.
 \newtheorem{prop}{P}[section] % Set propositions by section and set var P.
-\renewcommand\qedsymbol{$\blacksquare$} % Change proof completion symbol.
+\renewcommand\qedsymbol{$\Box$} % Change proof completion symbol to empty box.
 
 % Chapter titles formatting.
 \titleformat{\chapter}[display]
-	% For the chapter title.
-	{\centering\bfseries\huge}
-	% For the chapter numbering above title.
-	{\centering\huge\chaptertitlename~\thechapter}
-	{3ex}
-	% The title bars.
-	{\titlerule\vspace{1ex}}
-	[\vspace{0.5ex}\titlerule]
-	
+	% format
+	{\bfseries\Huge}
+	% label
+	{\filleft\MakeUppercase{\chaptertitlename} \Huge\thechapter }
+	% horizontal seperartion between label and title body, must be not-empty.
+	% vertical in display shape.
+	{2ex}
+	% The title bars around the chapter name itself
+	{\titlerule\vspace{2ex}}
+	[\vspace{2ex}\titlerule]
+
+% \titleformat{command}[shape]{format}{label}{sep}{before-code}.
+% The {sep} must have a value.
+\titleformat{\section}[block]{\bfseries\huge}{\thesection}{15pt}{}
+\titleformat{\subsection}[block]{\bfseries\Large}{}{0pt}{}
+
 % TOC formatting.
 \hypersetup {
 	colorlinks=true,
@@ -73,22 +81,22 @@
 	}
 
 % prevent auto intendation with paragraphs.
-\setlength{\parindent}{0ex}
+%S\setlength{\parindent}{0ex}
 
 % Front Title Page
-\begin{document}	
-	\author{By: Travis Ravert}
-	\title{
-		Notes on Serge Lang's Complex Analysis ($4^{ed}$)
-	}
-	\date{Began: June 20, 2022}
-	\frontmatter
-	\maketitle
-	\tableofcontents
-	\mainmatter
-	\include{./complex_analysis/chapter_one}
-	\include{./complex_analysis/chapter_two}
-	\include{./complex_analysis/chapter_three}
-	\backmatter
-	% bibliography, glossary and index would go here.
+\begin{document}
+\author{By: Travis Ravert}
+\title{\huge
+	Notes on Serge Lang's Complex Analysis ($4^{ed}$)
+}
+\date{Began: June 20, 2022}
+\frontmatter
+\maketitle
+\tableofcontents
+\mainmatter
+\include{./complex_analysis/chapter_one}
+\include{./complex_analysis/chapter_two}
+\include{./complex_analysis/chapter_three}
+\backmatter
+% bibliography, glossary and index would go here.
 \end{document}
